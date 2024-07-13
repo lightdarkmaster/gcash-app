@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_layout" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/lstocks_toolbar_layout" layout="@layout/content_lstocks_toolbar" />
+        <ScrollView android:id="@id/wrapperScrollView" android:background="@color/bg_0096" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_stocks_bal" android:background="@color/background_color" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" app:layout_constraintTop_toTopOf="parent">
+                    <TextView android:textSize="@dimen/font_large" android:textStyle="bold" android:textColor="@color/heading_text_color" android:id="@id/txt_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_5sdp" android:text="Hi, Nikki!" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="@dimen/_10sdp" app:layout_constraintTop_toTopOf="parent" />
+                    <include android:id="@id/portfolio_value" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/txt_name" layout="@layout/inc_stock_portfolio_value" />
+                    <include android:id="@id/stock_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:layout_constraintTop_toBottomOf="@id/portfolio_value" layout="@layout/layout_philippines_stock_value" />
+                    <include android:id="@id/buying_power" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" app:layout_constraintTop_toBottomOf="@id/stock_value" layout="@layout/inc_stock_buying_power" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView android:textSize="@dimen/powered_by_text_size" android:textColor="@color/font_00102" android:id="@id/powered_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lstocks_margin_top" android:layout_marginBottom="1.0dip" android:text="@string/powered_by" android:fontFamily="@font/gotham_rounded_medium" app:layout_constraintEnd_toStartOf="@id/ab_capital_logo" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/ab_capital_logo" app:layout_constraintVertical_bias="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:id="@id/ab_capital_logo" android:paddingRight="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="@dimen/no_height" android:layout_marginBottom="@dimen/_32sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="H,152.15:24" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/powered_by" app:layout_constraintVertical_chainStyle="packed" app:srcCompat="@drawable/placeholder" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

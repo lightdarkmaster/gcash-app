@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_small" android:id="@id/added_referral_contact_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/title_referral_selected_contact" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="@font/gcash_font_body_regular" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/added_referral_contact_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/added_referral_contact_list_title" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/new_header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbarNft" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:titleTextAppearance="@style/GcToolbar" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nft_title" android:includeFontPadding="false" android:fontFamily="@font/poppins_semibold" app:layout_constraintBottom_toBottomOf="@id/toolbarNft" app:layout_constraintEnd_toEndOf="@id/toolbarNft" app:layout_constraintStart_toStartOf="@id/toolbarNft" app:layout_constraintTop_toTopOf="@id/toolbarNft" />
+</androidx.constraintlayout.widget.ConstraintLayout>

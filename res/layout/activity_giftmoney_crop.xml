@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:orientation="vertical" android:background="@color/bg_0001" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.oginotihiro.cropview.CropView android:id="@id/crop_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/wrapper_tools" />
+            <RelativeLayout android:gravity="center" android:id="@id/wrapper_tools" android:background="@color/bg_0001" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/font_large" android:textColor="@color/font_0025" android:gravity="center" android:id="@id/btn_confirm" android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Next" android:fontFamily="@font/gcash_font_header_bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

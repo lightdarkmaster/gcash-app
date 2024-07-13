@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/griver_AU_DIVIDER_SPACE3" android:insetRight="@dimen/griver_AU_DIVIDER_SPACE3" android:insetTop="@dimen/griver_AU_DIVIDER_SPACE3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <stroke android:width="@dimen/griver_AU_DIVIDER_SPACE1" android:color="@color/griver_AU_COLOR_LINE" />
+        <solid android:color="@color/griver_AU_COLOR_UNIVERSAL_BG" />
+    </shape>
+</inset>

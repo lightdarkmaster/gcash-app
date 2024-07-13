@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_transparent_hover_10" android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:layout_gravity="center_vertical" android:id="@id/key" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:fontFamily="@font/gcash_font_header_bold" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0023" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentRight="true" android:fontFamily="@font/gcash_font_header_bold" />
+</LinearLayout>

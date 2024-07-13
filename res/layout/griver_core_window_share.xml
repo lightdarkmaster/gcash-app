@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/griver_core_title_drawable" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/griver_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/griver_share" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/griver_panel_background_color" android:layout_width="fill_parent" android:layout_height="110.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/recycler_view" android:background="@color/griver_panel_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/griver_text_color" android:gravity="center" android:id="@id/tv_cancel" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/griver_cancel" />
+</LinearLayout>

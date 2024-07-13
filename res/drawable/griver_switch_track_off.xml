@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/griver_switch_off_color" />
+    <stroke android:width="2.0dip" android:color="@color/griver_switch_off_color" />
+    <corners android:radius="20.0dip" />
+</shape>

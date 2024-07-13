@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Frequency">
+        <item>Select</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Quarterly</item>
+    </string-array>
+    <string-array name="account_recovery_products">
+        <item>GStocks</item>
+        <item>GFunds</item>
+        <item>GCrypto</item>
+        <item>GSave</item>
+        <item>GInsure</item>
+    </string-array>
+    <string-array name="al_exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/al_exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <integer-array name="al_exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
+    <array name="assume_strong_biometrics_prefixes" />
+    <string-array name="auto_invest_week_list">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Activities</item>
+        <item>Entertainment</item>
+        <item>Family</item>
+        <item>Food</item>
+        <item>Friends</item>
+        <item>Gift</item>
+        <item>Shopping</item>
+        <item>Transportation</item>
+        <item>Travel</item>
+        <item>Utilities</item>
+    </string-array>
+    <array name="chip_colors">
+        <item>#ff0033b8</item>
+        <item>#ff4b94ff</item>
+        <item>#ff54d5df</item>
+        <item>#ff3ad0ff</item>
+        <item>#ff004c52</item>
+    </array>
+    <string-array name="contentsquare_developer_session_replay_preset_url_types">
+        <item>Configuration</item>
+        <item>Custom endpoint</item>
+        <item>Local player (Docker)</item>
+        <item>Staging</item>
+        <item>Production</item>
+        <item>QA Mock</item>
+    </string-array>
+    <string-array name="contentsquare_developer_session_replay_preset_url_values">
+        <item>from_configuration</item>
+        <item>custom</item>
+        <item>http://10.0.2.2:8080</item>
+        <item>https://ka-aeu1-staging.contentsquare.net</item>
+        <item>https://ka-aeu1.contentsquare.net</item>
+        <item>https://qa-mock-server.contentsquare.net</item>
+    </string-array>
+    <string-array name="crypto_fingerprint_fallback_prefixes">
+        <item>SM-G95</item>
+        <item>SM-G96</item>
+        <item>SM-G97</item>
+        <item>SM-N95</item>
+        <item>SM-N96</item>
+        <item>SM-N97</item>
+        <item>SM-A20</item>
+    </string-array>
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="ecdd_document_list">
+        <item>Payslip</item>
+        <item>Income Tax Return</item>
+        <item>Certificate of Employment</item>
+        <item>Certificate of Compensation</item>
+        <item>Bank Statements</item>
+        <item>Remittance Slip</item>
+    </string-array>
+    <string-array name="eligibility_list">
+        <item>Your account is fully verified</item>
+        <item>Your age is 18 years old and above</item>
+        <item>Your email is verified</item>
+        <item>You submitted a valid ID</item>
+        <item>You are a Filipino citizen</item>
+    </string-array>
+    <array name="env_array" />
+    <string-array name="exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <integer-array name="exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
+    <string-array name="fund_house_list">
+        <item>ATRAM</item>
+        <item>BPI Wealth</item>
+    </string-array>
+    <string-array name="fund_risk_appetite">
+        <item>Suitable for you</item>
+        <item>Conservative</item>
+        <item>Moderately Conservative</item>
+        <item>Moderate</item>
+        <item>Moderately Aggressive</item>
+        <item>Aggressive</item>
+    </string-array>
+    <array name="griverSegmentItemArray">
+        <item>@id/griver_segment_item1</item>
+        <item>@id/griver_segment_item2</item>
+        <item>@id/griver_segment_item3</item>
+        <item>@id/griver_segment_item4</item>
+    </array>
+    <string-array name="gsave_suggested_amt">
+        <item>P 100</item>
+        <item>P 250</item>
+        <item>P 500</item>
+        <item>Max</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-G97</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SM-N97</item>
+        <item>SC-01M</item>
+        <item>SCV45</item>
+    </string-array>
+    <array name="imgly_empty_array" />
+    <string-array name="imgly_operation_adjustment">
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxClarityOperation</item>
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxSharpnessOperation</item>
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxAdjustOperation</item>
+    </string-array>
+    <string-array name="imgly_operation_cropmask">
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxCropMaskOperation</item>
+    </string-array>
+    <string-array name="imgly_operation_filter">
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxFilterOperation</item>
+    </string-array>
+    <string-array name="imgly_operation_focus">
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxFocusOperation</item>
+    </string-array>
+    <string-array name="imgly_operation_layer">
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxLayerCombineOperation</item>
+    </string-array>
+    <string-array name="imgly_operation_load">
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxVideoCompositionOperation</item>
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxLoadOperation</item>
+    </string-array>
+    <string-array name="imgly_operation_save">
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxSaveOperation</item>
+    </string-array>
+    <string-array name="imgly_operation_segmentation">
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxBackgroundRemoveOperation</item>
+    </string-array>
+    <string-array name="imgly_operation_show">
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxScreenOperation</item>
+    </string-array>
+    <string-array name="imgly_operation_watermark">
+        <item>ly.img.android.pesdk.backend.operator.rox.RoxWatermarkOperation</item>
+    </string-array>
+    <array name="imgly_operator_export_stack">
+        <item>@array/imgly_operation_load</item>
+        <item>@array/imgly_operation_segmentation</item>
+        <item>@array/imgly_operation_filter</item>
+        <item>@array/imgly_operation_adjustment</item>
+        <item>@array/imgly_operation_focus</item>
+        <item>@array/imgly_operation_layer</item>
+        <item>@array/imgly_operation_cropmask</item>
+        <item>@array/imgly_operation_watermark</item>
+        <item>@array/imgly_operation_save</item>
+    </array>
+    <array name="imgly_operator_stack">
+        <item>@array/imgly_operation_load</item>
+        <item>@array/imgly_operation_segmentation</item>
+        <item>@array/imgly_operation_filter</item>
+        <item>@array/imgly_operation_adjustment</item>
+        <item>@array/imgly_operation_focus</item>
+        <item>@array/imgly_operation_layer</item>
+        <item>@array/imgly_operation_cropmask</item>
+        <item>@array/imgly_operation_watermark</item>
+        <item>@array/imgly_operation_show</item>
+    </array>
+    <string-array name="lbl_delete_account_bullets">
+        <item>Pay pending balances in GCredit and GGives</item>
+        <item>Withdraw savings from GSave and GInvest</item>
+        <item>Spend money online, in store or in GLife</item>
+        <item>Pay bills or send load to your friends</item>
+        <item>Cash out remaining balance</item>
+    </string-array>
+    <string-array name="list_of_transaction">
+        <item>Savings/Investments</item>
+        <item>Transactional Requirements</item>
+        <item>Payments</item>
+        <item>Payroll/Salary</item>
+        <item>Personal Loans</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="paypal_list_terms_condition">
+        <item>By linking your PayPal account to your GCash wallet and availing of the Service, you confirm that you agree to the existing GCash Terms and Conditions and the existing PayPal’s Terms and Conditions as defined in PayPal’s User Agreement https://www.paypal.com/ph/webapps/mpp/ua/useragreement-full (collectively, the “Agreements”). You agree that all other provisions of the Agreements shall remain in full force and effect except to the extent amended by these terms and conditions.</item>
+        <item>In case of any dispute, demands, actions, proceedings (Disputes) between you and GCash on account of delayed or non-payment of any funds due to you, you hereby hold harmless and indemnify PayPal, its affiliates and its employees from any damages, claims, charges, expenses and losses arising out of such Disputes. You further agree that PayPal shall not be liable to you in relation to any funds which have already been transferred from your PayPal account to GCash.</item>
+        <item>You agree and understand that by linking your PayPal account and availing of the Service, PayPal shall not be held responsible for any loss or damage incurred or suffered by you on account of any (i) failure; (ii) interruption; (iii) defect; or (iv) negligent or willful misuse of the Service; or (v) consequences arising out of delayed or non-receipt of funds withdrawn through the Service.</item>
+        <item>GCash and PayPal reserves the right in their discretion to take any action that may be available, including to cancel, terminate, modify or suspend the Service and/or disqualify any customer, at any time with or without notice to a participant and without any liability to any customer.</item>
+    </string-array>
+    <string-array name="us_cash_in_instructions">
+        <item>Review the list of US Bank to ensure you can Cash In from your US Bank.</item>
+        <item>Click on the Cash In button below to begin the Cash In process.</item>
+        <item>Verify your mobile number with an OTP.</item>
+        <item>Input the amount you would like to Cash In.</item>
+        <item>For first-time users Cashing In via US Banks, input your basic information (i.e. name, social security number, and date of birth) as well as your address.</item>
+        <item>Connect your US Bank.</item>
+        <item>Review your information and Cash In.</item>
+    </string-array>
+</resources>

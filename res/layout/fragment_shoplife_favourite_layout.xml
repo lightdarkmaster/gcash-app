@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/fragment_favorite_rv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/bg_transparent_hover_10" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wrapper_no_favlist" android:padding="@dimen/padding_regular" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="#ff292b30" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/load_favourite_emptylist_text" android:fontFamily="@font/karla_bold" />
+        <ImageView android:id="@id/img_buyload" android:layout_width="wrap_content" android:layout_height="250.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/img_favorites_empty" />
+    </LinearLayout>
+</RelativeLayout>

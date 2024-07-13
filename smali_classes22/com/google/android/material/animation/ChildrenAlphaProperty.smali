@@ -1,0 +1,279 @@
+.class public Lcom/google/android/material/animation/ChildrenAlphaProperty;
+.super Landroid/util/Property;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/util/Property<",
+        "Landroid/view/ViewGroup;",
+        "Ljava/lang/Float;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final CHILDREN_ALPHA:Landroid/util/Property;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/Property<",
+            "Landroid/view/ViewGroup;",
+            "Ljava/lang/Float;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    new-instance v0, Lcom/google/android/material/animation/ChildrenAlphaProperty;
+
+    const-string v1, "298795"
+
+    invoke-static/range {v1 .. v1}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lcom/google/android/material/animation/ChildrenAlphaProperty;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lcom/google/android/material/animation/ChildrenAlphaProperty;->CHILDREN_ALPHA:Landroid/util/Property;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    const-class v0, Ljava/lang/Float;
+
+    invoke-direct {p0, v0, p1}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public get(Landroid/view/ViewGroup;)Ljava/lang/Float;
+    .locals 1
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 2
+    sget v0, Lcom/google/android/material/R$id;->mtrl_internal_children_alpha_tag:I
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Float;
+
+    if-eqz p1, :cond_2
+
+    return-object p1
+
+    :cond_2
+    const/high16 p1, 0x3f800000    # 1.0f
+
+    .line 3
+    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    check-cast p1, Landroid/view/ViewGroup;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/material/animation/ChildrenAlphaProperty;->get(Landroid/view/ViewGroup;)Ljava/lang/Float;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public set(Landroid/view/ViewGroup;Ljava/lang/Float;)V
+    .locals 3
+    .param p1    # Landroid/view/ViewGroup;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Float;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
+
+    move-result p2
+
+    .line 3
+    sget v0, Lcom/google/android/material/R$id;->mtrl_internal_children_alpha_tag:I
+
+    invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 4
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, v0, :cond_2
+
+    .line 5
+    invoke-virtual {p1, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    .line 6
+    invoke-virtual {v2, p2}, Landroid/view/View;->setAlpha(F)V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    return-void
+.end method
+
+.method public bridge synthetic set(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    check-cast p1, Landroid/view/ViewGroup;
+
+    check-cast p2, Ljava/lang/Float;
+
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/animation/ChildrenAlphaProperty;->set(Landroid/view/ViewGroup;Ljava/lang/Float;)V
+
+    return-void
+.end method

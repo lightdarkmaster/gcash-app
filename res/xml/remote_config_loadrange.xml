@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>buyload_regular_message</key>
+        <value>Enter a value between 10 - 150 or choose from any of the denominations below.</value>
+    </entry>
+</defaultsMap>

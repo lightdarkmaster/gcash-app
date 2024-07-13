@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:layout_marginHorizontal="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="2.0dip" app:layout_constraintTop_toTopOf="parent" style="@style/LabelTextAppearance" />
+    <com.google.android.material.textfield.TextInputLayout android:theme="@style/GSaveTextInputLayoutSelect" android:id="@id/til_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:layout_constraintTop_toTopOf="@id/tv_label">
+        <AutoCompleteTextView android:id="@id/actv_field" android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="none" android:drawableEnd="@drawable/ic_chevron_grey_down_selector" style="@style/GSaveUpgradeTextView" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

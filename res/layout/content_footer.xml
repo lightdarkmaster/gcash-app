@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/font_f6f9fd" android:paddingTop="@dimen/_15sdp" android:paddingBottom="@dimen/_25sdp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_9sdp" android:textColor="@color/font_6010346F" android:gravity="start" android:id="@id/tv_footer_ineligible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gloan_footer_content_1" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/gilroy_semibold" android:layout_marginStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_15sdp" />
+    <include android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" app:layout_constraintStart_toStartOf="parent" layout="@layout/layout_powered_by_fuse" />
+</LinearLayout>

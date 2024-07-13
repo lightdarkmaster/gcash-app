@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="336.0dip" android:layout_height="170.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" app:cardBackgroundColor="#ffeef2f9" app:cardCornerRadius="8.0dip" app:cardElevation="2.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageView1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tooltipthird" android:scaleType="fitXY" />
+        <ImageView android:id="@id/imageView2" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tooltipfirst" android:scaleType="fitXY" />
+        <ImageView android:id="@id/imageView3" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tooltipfirst" android:scaleType="fitXY" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

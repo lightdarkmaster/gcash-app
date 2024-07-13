@@ -1,0 +1,373 @@
+.class public Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;
+.super Lorg/apache/commons/compress/harmony/unpack200/bytecode/BCIRenumberedAttribute;
+.source "SourceFile"
+
+
+# static fields
+.field private static f:Lorg/apache/commons/compress/harmony/unpack200/bytecode/CPUTF8;
+
+
+# instance fields
+.field private final c:I
+
+.field private final d:[I
+
+.field private final e:[I
+
+
+# direct methods
+.method public constructor <init>(I[I[I)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    sget-object v0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->f:Lorg/apache/commons/compress/harmony/unpack200/bytecode/CPUTF8;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0}, Lorg/apache/commons/compress/harmony/unpack200/bytecode/BCIRenumberedAttribute;-><init>(Lorg/apache/commons/compress/harmony/unpack200/bytecode/CPUTF8;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iput p1, p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->c:I
+
+    .line 7
+    .line 8
+    iput-object p2, p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->d:[I
+
+    .line 9
+    .line 10
+    iput-object p3, p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->e:[I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public static setAttributeName(Lorg/apache/commons/compress/harmony/unpack200/bytecode/CPUTF8;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    sput-object p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->f:Lorg/apache/commons/compress/harmony/unpack200/bytecode/CPUTF8;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    if-ne p0, p1, :cond_2
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method
+
+.method protected getLength()I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iget v0, p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->c:I
+
+    mul-int/lit8 v0, v0, 0x4
+
+    add-int/lit8 v0, v0, 0x2
+
+    return v0
+.end method
+
+.method protected getNestedClassFileEntries()[Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassFileEntry;
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    new-array v0, v0, [Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassFileEntry;
+
+    .line 3
+    .line 4
+    const/4 v1, 0x0
+
+    .line 5
+    invoke-virtual {p0}, Lorg/apache/commons/compress/harmony/unpack200/bytecode/Attribute;->getAttributeName()Lorg/apache/commons/compress/harmony/unpack200/bytecode/CPUTF8;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v2
+
+    .line 9
+    aput-object v2, v0, v1
+
+    .line 10
+    .line 11
+    return-object v0
+.end method
+
+.method protected getStartPCs()[I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iget-object v0, p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->d:[I
+
+    return-object v0
+.end method
+
+.method protected resolve(Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassConstantPool;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    invoke-super {p0, p1}, Lorg/apache/commons/compress/harmony/unpack200/bytecode/Attribute;->resolve(Lorg/apache/commons/compress/harmony/unpack200/bytecode/ClassConstantPool;)V
+
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "426250"
+
+    invoke-static/range {v1 .. v1}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->c:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, "426251"
+
+    invoke-static/range {v1 .. v1}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected writeBody(Ljava/io/DataOutputStream;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    iget v0, p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->c:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, v0}, Ljava/io/DataOutputStream;->writeShort(I)V
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 v0, 0x0
+
+    .line 7
+    :goto_0
+    iget v1, p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->c:I
+
+    .line 8
+    .line 9
+    if-ge v0, v1, :cond_2
+
+    .line 10
+    .line 11
+    iget-object v1, p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->d:[I
+
+    .line 12
+    .line 13
+    aget v1, v1, v0
+
+    .line 14
+    .line 15
+    invoke-virtual {p1, v1}, Ljava/io/DataOutputStream;->writeShort(I)V
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Lorg/apache/commons/compress/harmony/unpack200/bytecode/LineNumberTableAttribute;->e:[I
+
+    .line 19
+    .line 20
+    aget v1, v1, v0
+
+    .line 21
+    .line 22
+    invoke-virtual {p1, v1}, Ljava/io/DataOutputStream;->writeShort(I)V
+
+    .line 23
+    .line 24
+    .line 25
+    add-int/lit8 v0, v0, 0x1
+
+    .line 26
+    .line 27
+    goto :goto_0
+
+    .line 28
+    :cond_2
+    return-void
+.end method

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/griver_AU_COLOR_UNIVERSAL_BG" />
+            <stroke android:width="@dimen/griver_AU_DIVIDER_SPACE1" android:color="@color/griver_AU_COLOR8" />
+            <corners android:radius="@dimen/griver_AU_CORNER3" />
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/griver_AU_COLOR_UNIVERSAL_BG_PRESSED" />
+            <corners android:radius="@dimen/griver_AU_CORNER3" />
+        </shape>
+    </item>
+    <item>
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/griver_AU_COLOR_UNIVERSAL_BG" />
+            <stroke android:width="@dimen/griver_AU_DIVIDER_SPACE1" android:color="@color/griver_AU_COLOR8" />
+            <corners android:radius="@dimen/griver_AU_CORNER3" />
+        </shape>
+    </item>
+</selector>

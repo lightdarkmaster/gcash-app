@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_qr_code_payment" android:background="@color/bg_0095" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip">
+        <ScrollView android:id="@id/scrollView" android:paddingLeft="@dimen/padding_regular" android:paddingRight="@dimen/padding_regular" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:fillViewport="true" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/receiptLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivLogo" android:layout_width="130.0dip" android:layout_height="130.0dip" android:src="@drawable/ic_bank_processing" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/font_x_large" android:textColor="@color/font_0025" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/your_bank_transfer_is_being_processed" android:fontFamily="@font/gcash_font_header_bold" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0025" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Details" android:fontFamily="@font/gcash_font_body_regular" />
+                <TableLayout android:id="@id/detailsLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rvTransactionDetails" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/padding_regular" android:paddingBottom="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <gcash.common.android.util.adtech.AdLoaderView android:gravity="center|top" android:id="@id/ad_loader_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0025" android:gravity="center" android:paddingLeft="@dimen/padding_regular" android:paddingRight="@dimen/padding_regular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_normal" android:layout_marginRight="@dimen/padding_normal" android:layout_marginBottom="@dimen/padding_regular" android:text="You will receive an SMS and/or an email to confirm your transaction." android:fontFamily="@font/gcash_font_body_regular" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_done" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_normal" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/padding_normal" android:text="OKAY" android:onClick="onClick" style="@style/GCashWhiteButton" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/x_wrapper" android:background="@drawable/bg_transparent_hover_10" android:padding="20.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:gravity="center" android:id="@id/btnClose" android:background="@drawable/ic_close" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:onClick="onClick" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

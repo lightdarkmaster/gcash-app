@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_transaction_detail_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dip" android:textColor="@color/font_0a2757" android:gravity="center" android:id="@id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/tv_value" app:layout_constraintHorizontal_chainStyle="spread_inside" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/GCashFontPrimary.Medium" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/font_183462" android:gravity="center" android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@id/tv_label" app:layout_constraintTop_toTopOf="parent" style="@style/GCashFontPrimary.Medium" />
+</androidx.constraintlayout.widget.ConstraintLayout>

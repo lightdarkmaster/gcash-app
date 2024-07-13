@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.griver.ui.ant.layout.AULinearLayout android:gravity="end" android:orientation="horizontal" android:padding="@dimen/griver_AU_SPACE3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/cancel" android:text="@string/griver_cancel" android:layout_marginEnd="@dimen/griver_AU_SPACE2" style="@style/griver_textSubButtonStyle" />
+    <Button android:id="@id/ensure" android:text="@string/griver_confirm" style="@style/griver_textButtonStyle" />
+</com.alibaba.griver.ui.ant.layout.AULinearLayout>

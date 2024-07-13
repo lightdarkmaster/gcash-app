@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:focusable="true" android:clickable="true" android:layout_width="282.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:foreground="?android:selectableItemBackground" android:layout_marginStart="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_made_easy_image" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" android:contentDescription="@string/content_description_featured_product_logo" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="31:12" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

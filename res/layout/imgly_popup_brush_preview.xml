@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/brushPreviewPopup" style="?Imgly.PESDK.Editor.Popup.Brush.BrushPreview"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.widget.Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="25.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="50.0">
+            <android.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="30.0" />
+            <RelativeLayout android:id="@id/blurView" style="?Imgly.PESDK.Editor.Popup.Brush"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <ly.img.android.pesdk.ui.widgets.BrushToolPreviewView android:id="@id/brushToolPreview" style="?Imgly.PESDK.Editor.Popup.Brush.BrushToolPreview" />
+            </RelativeLayout>
+            <android.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="30.0" />
+        </LinearLayout>
+        <android.widget.Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="25.0" />
+    </LinearLayout>
+</RelativeLayout>

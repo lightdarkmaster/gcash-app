@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/apx_badge_layout_container" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@id/apx_badge_background" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.apxor.androidsdk.plugins.realtimeui.inline.views.ApxHorizontalScrollView android:id="@id/apx_badge_horizontal_scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/apx_badge_scroll_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/apx_badge_left_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                    <TextView android:gravity="center" android:id="@id/apx_badge_label" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/apx_badge_left_icon" android:layout_centerVertical="true" android:layout_toEndOf="@id/apx_badge_left_icon" />
+                    <ImageView android:id="@id/apx_badge_right_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_toRightOf="@id/apx_badge_label" android:layout_centerVertical="true" android:layout_toEndOf="@id/apx_badge_label" />
+                </RelativeLayout>
+            </com.apxor.androidsdk.plugins.realtimeui.inline.views.ApxHorizontalScrollView>
+            <com.apxor.androidsdk.plugins.realtimeui.inline.views.ApxShineView android:id="@id/apx_badge_shine" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

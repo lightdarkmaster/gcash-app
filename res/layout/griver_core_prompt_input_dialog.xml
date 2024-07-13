@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialog_bg" android:background="@drawable/griver_core_dialog_bg" android:paddingTop="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="start" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="start" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/title" />
+    <EditText android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/inputContent" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:singleLine="true" android:layout_below="@id/message" android:textAlignment="viewStart" />
+    <ImageView android:id="@id/edit_line" android:background="#ff1284d6" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="2.7999878dip" android:layout_below="@id/inputContent" />
+    <LinearLayout android:id="@id/bottom_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/edit_line" android:layout_marginEnd="-6.0dip" android:layout_alignParentEnd="true">
+        <Button android:id="@id/cancel" android:text="@string/griver_cancel" android:layout_marginEnd="8.0dip" style="@style/griver_core_prompt_dialogButtonStyle" />
+        <Button android:id="@id/ensure" android:text="@string/griver_confirm" style="@style/griver_core_prompt_dialogButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:enterFadeDuration="400" android:exitFadeDuration="400"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="?imgly_text_on_image_background_color" android:endColor="?imgly_transparent_color" android:angle="90.0" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wrapperNextView" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/guide_next_view_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_guide_finger_new" />
+    <TextView android:textSize="@dimen/font_message" android:textColor="#ffffffff" android:id="@id/next_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_space_dp" android:fontFamily="@font/gilroy_semibold" />
+</LinearLayout>

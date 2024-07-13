@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/wrapperService" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/wrapperServiceItem" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dip" android:textColor="@color/font_0024" android:gravity="center_horizontal" android:id="@id/tvItemLabel" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip" android:lines="2" android:layout_below="@id/frame" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip" />
+            <RelativeLayout android:id="@id/frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center" android:id="@id/ivItemLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_paybills_transportation" android:adjustViewBounds="true" />
+                <ImageView android:id="@id/ivItemAdd" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_add_service" android:layout_alignEnd="@id/ivItemLogo" />
+                <ImageView android:id="@id/ivItemLess" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_less_service" android:layout_alignEnd="@id/ivItemLogo" />
+            </RelativeLayout>
+            <ImageView android:id="@id/badge" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="12.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/ic_red_badge_new_font" android:layout_marginEnd="-5.0dip" android:layout_alignEnd="@id/frame" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

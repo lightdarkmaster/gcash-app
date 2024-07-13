@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_0052" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_x4_large" android:textStyle="bold" android:textColor="@color/font_0002" android:id="@id/referral_code_review_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_marginBottom="10.0dip" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="@font/gcash_font_body_regular" />
+    <TextView android:textColor="@color/font_0002" android:id="@id/review_referral_code_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/confirm_referral_recipient_list_header_text" android:layout_below="@id/referral_code_review_tv" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+</RelativeLayout>

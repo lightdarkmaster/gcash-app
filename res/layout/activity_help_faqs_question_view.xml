@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:id="@id/ingredient_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:fontFamily="@font/gcash_font_header_bold" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:id="@id/child_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:fontFamily="@font/gcash_font_body_regular" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/griver_dialog_padding_top" android:paddingBottom="@dimen/griver_AU_SPACE3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/griver_AU_SPACE6" android:paddingEnd="@dimen/griver_AU_SPACE6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/griver_ui_notice_dialog" />
+</LinearLayout>

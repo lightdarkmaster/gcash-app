@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_parent_send_money_protect_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0099" android:gravity="start" android:id="@id/tv_send_money_protect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_money_protect" android:layout_weight="1.0" android:fontFamily="@font/gotham_rounded_bold" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0099" android:gravity="end" android:id="@id/tv_send_money_protect_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_money_protect_amount" android:layout_weight="1.0" android:fontFamily="@font/gotham_rounded_medium" />
+</LinearLayout>

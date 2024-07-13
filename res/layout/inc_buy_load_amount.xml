@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip">
+            <TextView android:textSize="@dimen/font_x_large" android:textColor="@color/font_0035" android:id="@id/phpLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PHP" android:fontFamily="@font/gcash_font_body_regular" />
+            <EditText android:textSize="@dimen/font_x_large" android:textColor="@color/font_0020" android:gravity="right" android:id="@id/txt_amount" android:background="@null" android:layout_width="180.0dip" android:layout_height="wrap_content" android:hint="0.00" android:maxLines="1" android:maxLength="6" android:inputType="number" android:fontFamily="@font/gcash_font_body_regular" />
+        </LinearLayout>
+        <View android:background="#ff6d6e72" android:layout_width="fill_parent" android:layout_height="1.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+</merge>

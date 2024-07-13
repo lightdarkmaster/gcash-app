@@ -1,0 +1,184 @@
+.class public Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field private builderConfigSettings:Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings;
+
+.field private builderLastFetchStatus:I
+
+.field private builderLastSuccessfulFetchTimeInMillis:J
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$1;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public build()Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl;
+    .locals 7
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    new-instance v6, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl;
+
+    iget-wide v1, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;->builderLastSuccessfulFetchTimeInMillis:J
+
+    iget v3, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;->builderLastFetchStatus:I
+
+    iget-object v4, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;->builderConfigSettings:Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings;
+
+    const/4 v5, 0x0
+
+    move-object v0, v6
+
+    invoke-direct/range {v0 .. v5}, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl;-><init>(JILcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings;Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$1;)V
+
+    return-object v6
+.end method
+
+.method withConfigSettings(Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings;)Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iput-object p1, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;->builderConfigSettings:Lcom/google/firebase/remoteconfig/FirebaseRemoteConfigSettings;
+
+    return-object p0
+.end method
+
+.method withLastFetchStatus(I)Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iput p1, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;->builderLastFetchStatus:I
+
+    return-object p0
+.end method
+
+.method public withLastSuccessfulFetchTimeInMillis(J)Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iput-wide p1, p0, Lcom/google/firebase/remoteconfig/internal/FirebaseRemoteConfigInfoImpl$Builder;->builderLastSuccessfulFetchTimeInMillis:J
+
+    return-object p0
+.end method

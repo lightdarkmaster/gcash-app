@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config>
+        <trust-anchors>
+            <certificates n1:src="system"
+              xmlns:n1="http://schemas.android.com/apk/res/android" />
+            <certificates n2:src="@raw/rootCA_pem"
+              xmlns:n2="http://schemas.android.com/apk/res/android" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

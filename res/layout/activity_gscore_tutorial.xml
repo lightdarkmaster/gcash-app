@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/bg_0052" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_got_it" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabDots" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" app:tabBackground="@drawable/tab_selector" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" />
+        <TextView android:textSize="@dimen/font_xx_large" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/btn_got_it" android:background="@drawable/bg_transparent_hover_10" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Got it!" android:layout_alignParentBottom="true" android:fontFamily="@font/gcash_font_body_regular" />
+    </RelativeLayout>
+</FrameLayout>

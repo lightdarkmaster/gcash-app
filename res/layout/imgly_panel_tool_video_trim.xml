@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootView" style="?Imgly.PESDK.Editor.Panel.VideoTrim"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:id="@id/currentTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+        <android.widget.Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ToggleButton android:id="@id/playPauseToggle" android:background="@drawable/imgly_icon_play_pause" android:layout_width="24.0dip" android:layout_height="24.0dip" android:textOn="" android:textOff="" />
+        <android.widget.Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+    </LinearLayout>
+    <ly.img.android.pesdk.ui.widgets.TrimSlider android:id="@id/trimSlider" android:paddingLeft="56.0dip" android:paddingTop="12.0dip" android:paddingRight="56.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="88.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="?Imgly.PESDK.Editor.Panel.default.OptionContainer" />
+</LinearLayout>

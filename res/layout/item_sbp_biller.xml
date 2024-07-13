@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.5">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginStart="19.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/img_status" android:background="@drawable/stepper_new" android:layout_width="11.0dip" android:layout_height="11.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_vertical_div" android:background="@color/light_gray_bills" android:layout_width="@dimen/_2sdp" android:layout_height="40.0dip" android:alpha="0.5" android:layout_marginStart="28.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.25">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/light_blue" android:id="@id/tv_due_dates" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:text="Apr 1, 2022" android:layout_weight="0.2" android:alpha="0.4" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="5.0dip" />
+            <Button android:textSize="@dimen/_6sdp" android:textStyle="normal" android:textColor="@color/bg_0001" android:gravity="end" android:id="@id/tv_status" android:background="@drawable/img_complt" android:layout_width="wrap_content" android:layout_height="15.0dip" android:text="" android:layout_weight="0.1" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="10.0dip" android:layout_marginEnd="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/_11sdp" android:textStyle="normal" android:textColor="@color/light_blue" android:id="@id/tv_refernceno" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:text="Reference No: 123456787" android:layout_weight="0.2" android:alpha="0.4" android:fontFamily="@font/gilroy_bold" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

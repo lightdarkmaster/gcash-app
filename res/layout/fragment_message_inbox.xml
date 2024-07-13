@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/notification_banner_layout" android:background="@color/bg_0009" android:padding="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/notif_banner_icon" android:layout_width="100.0dip" android:layout_height="70.0dip" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_toStartOf="@id/img_chevron" android:layout_toEndOf="@id/notif_banner_icon">
+            <TextView android:textSize="16.0dip" android:textColor="@color/font_0020" android:id="@id/txt_inbox_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginEnd="10.0dip" style="@style/Body.Bold" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/font_0020" android:id="@id/txt_inbox_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="10.0dip" style="@style/Body" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_chevron" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_chevron_iris_blue" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/font_xx_small" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/txt_inbox_new_message" android:background="@drawable/bg_inbox_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NEW" android:fontFamily="@font/gcash_font_body_regular" />
+</FrameLayout>

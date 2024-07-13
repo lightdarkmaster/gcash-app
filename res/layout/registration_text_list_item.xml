@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/bg_circle_9e9e9e" android:layout_marginEnd="6.0dip" />
+    <TextView android:textSize="@dimen/font_x_small" android:textStyle="normal" android:textColor="@color/font_0035" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/karla_regular" />
+</LinearLayout>

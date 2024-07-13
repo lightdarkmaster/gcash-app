@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0dip" android:textColor="@color/font_0035" android:id="@id/tvUnpaidName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="Accomodation" android:fontFamily="@font/karla_regular" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tvUnpaidAmount" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Body" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/font_0035" android:id="@id/tvUnpaidAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PHP 2,000.00" android:fontFamily="@font/karla_regular" app:layout_constraintBottom_toBottomOf="@id/tvUnpaidName" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tvUnpaidName" style="@style/Body" />
+</androidx.constraintlayout.widget.ConstraintLayout>

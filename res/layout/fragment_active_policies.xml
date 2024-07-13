@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewSwitcher android:id="@id/vs" android:background="@color/bg_fafcfe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureAllChildren="false">
+        <include layout="@layout/empty_state_item" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/inc_my_insurance" />
+    </ViewSwitcher>
+</FrameLayout>

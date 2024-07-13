@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.griver.image.photo.widget.PhotoPreview android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/photoZone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.alibaba.griver.image.photo.widget.PhotoView android:layout_gravity="center" android:id="@id/iv_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/griver_image_pb_default" />
+        <com.alibaba.griver.image.photo.widget.CircleProgressBar android:layout_gravity="center" android:id="@id/pb_exactly_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</com.alibaba.griver.image.photo.widget.PhotoPreview>

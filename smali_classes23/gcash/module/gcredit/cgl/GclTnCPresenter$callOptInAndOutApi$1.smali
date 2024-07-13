@@ -1,0 +1,599 @@
+.class public final Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;
+.super Lgcash/common_data/utility/observer/ResponseErrorCodeObserver;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lgcash/module/gcredit/cgl/GclTnCPresenter;->callOptInAndOutApi(Ljava/lang/String;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lgcash/common_data/utility/observer/ResponseErrorCodeObserver<",
+        "Lgcash/common/android/network/api/service/TripleGApiService$Response$CGLResponseDTO;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u00001\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0003\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0006*\u0001\u0000\u0008\n\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0016J\"\u0010\u0007\u001a\u00020\u00042\u0008\u0010\u0008\u001a\u0004\u0018\u00010\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\rH\u0016J\u0018\u0010\u000e\u001a\u00020\u00042\u0006\u0010\u000f\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016J\u0008\u0010\u0010\u001a\u00020\u0004H\u0016J\u0008\u0010\u0011\u001a\u00020\u0004H\u0016J\"\u0010\u0012\u001a\u00020\u00042\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u00022\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\rH\u0016\u00a8\u0006\u0013"
+    }
+    d2 = {
+        "gcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1",
+        "Lgcash/common_data/utility/observer/ResponseErrorCodeObserver;",
+        "Lgcash/common/android/network/api/service/TripleGApiService$Response$CGLResponseDTO;",
+        "onError",
+        "",
+        "it",
+        "",
+        "onFail",
+        "body",
+        "Lgcash/common_data/model/response_error/ResponseError;",
+        "statusCode",
+        "",
+        "traceId",
+        "",
+        "onReHandShake",
+        "responseError",
+        "onStartLoading",
+        "onStopLoading",
+        "onSuccessful",
+        "module-gcredit_prodRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+.field final synthetic d:Ljava/lang/String;
+
+.field final synthetic e:I
+
+
+# direct methods
+.method constructor <init>(Lgcash/module/gcredit/cgl/GclTnCPresenter;Ljava/lang/String;I)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    iput-object p1, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->d:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    iput p3, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->e:I
+
+    .line 6
+    .line 7
+    invoke-direct {p0}, Lgcash/common_data/utility/observer/ResponseErrorCodeObserver;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public onError(Ljava/lang/Throwable;)V
+    .locals 2
+    .param p1    # Ljava/lang/Throwable;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    const-string v0, "318620"
+
+    invoke-static/range {v0 .. v0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Lgcash/module/gcredit/cgl/GclTnCPresenter;->getView()Lgcash/module/gcredit/cgl/GclTnCActivity;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    invoke-virtual {v0}, Lgcash/module/gcredit/cgl/GclTnCActivity;->hideProgress()V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object v0, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    .line 16
+    .line 17
+    const/4 v1, 0x0
+
+    .line 18
+    invoke-virtual {v0, p1, v1}, Lgcash/module/gcredit/cgl/GclTnCPresenter;->onException(Ljava/lang/Throwable;Z)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+.end method
+
+.method public onFail(Lgcash/common_data/model/response_error/ResponseError;ILjava/lang/String;)V
+    .locals 7
+    .param p1    # Lgcash/common_data/model/response_error/ResponseError;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    const-string v0, "318621"
+
+    invoke-static/range {v0 .. v0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 2
+    .line 3
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1, p2, p3}, Lgcash/common_data/utility/observer/ResponseErrorCodeObserver;->onFail(Lgcash/common_data/model/response_error/ResponseError;ILjava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    const/4 p2, 0x0
+
+    .line 10
+    if-eqz p1, :cond_2
+
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Lgcash/common_data/model/response_error/ResponseError;->getCode()Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p3
+
+    .line 16
+    goto :goto_0
+
+    .line 17
+    :cond_2
+    move-object p3, p2
+
+    .line 18
+    :goto_0
+    const-string v0, "318622"
+
+    invoke-static/range {v0 .. v0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 19
+    .line 20
+    const/4 v1, 0x1
+
+    .line 21
+    invoke-static {p3, v0, v1}, Lkotlin/text/StringsKt;->equals(Ljava/lang/String;Ljava/lang/String;Z)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p3
+
+    .line 25
+    if-eqz p3, :cond_5
+
+    .line 26
+    .line 27
+    iget-object p3, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    .line 28
+    .line 29
+    new-instance v6, Lgcash/module/gcredit/navigation/NavigationRequest$NavigateToCustomPrompt;
+
+    .line 30
+    .line 31
+    if-eqz p1, :cond_3
+
+    .line 32
+    .line 33
+    invoke-virtual {p1}, Lgcash/common_data/model/response_error/ResponseError;->getHeader()Ljava/lang/String;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    move-object v1, v0
+
+    .line 38
+    goto :goto_1
+
+    .line 39
+    :cond_3
+    move-object v1, p2
+
+    .line 40
+    :goto_1
+    if-eqz p1, :cond_4
+
+    .line 41
+    .line 42
+    invoke-virtual {p1}, Lgcash/common_data/model/response_error/ResponseError;->getMessage()Ljava/lang/String;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p2
+
+    .line 46
+    :cond_4
+    move-object v2, p2
+
+    .line 47
+    iget-object p1, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    .line 48
+    .line 49
+    invoke-virtual {p1}, Lgcash/module/gcredit/cgl/GclTnCPresenter;->getView()Lgcash/module/gcredit/cgl/GclTnCActivity;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p1
+
+    .line 53
+    sget p2, Lgcash/module/gcredit/R$string;->ok:I
+
+    .line 54
+    .line 55
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object v3
+
+    .line 59
+    const/4 v4, 0x0
+
+    .line 60
+    sget-object v5, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1$onFail$1;->INSTANCE:Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1$onFail$1;
+
+    .line 61
+    .line 62
+    move-object v0, v6
+
+    .line 63
+    invoke-direct/range {v0 .. v5}, Lgcash/module/gcredit/navigation/NavigationRequest$NavigateToCustomPrompt;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-virtual {p3, v6}, Lgcash/common_presentation/base/BasePresenter;->requestNavigation(Lgcash/common_presentation/base/BaseNavigationRequest;)V
+
+    .line 67
+    .line 68
+    .line 69
+    goto :goto_2
+
+    .line 70
+    :cond_5
+    if-eqz p1, :cond_6
+
+    .line 71
+    .line 72
+    iget-object p2, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    .line 73
+    .line 74
+    invoke-virtual {p2, p1}, Lgcash/module/gcredit/cgl/GclTnCPresenter;->showErrorMessage(Lgcash/common_data/model/response_error/ResponseError;)V
+
+    .line 75
+    .line 76
+    .line 77
+    :cond_6
+    :goto_2
+    return-void
+.end method
+
+.method public onReHandShake(Lgcash/common_data/model/response_error/ResponseError;I)V
+    .locals 3
+    .param p1    # Lgcash/common_data/model/response_error/ResponseError;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    const-string p2, "318623"
+
+    invoke-static/range {p2 .. p2}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 2
+    .line 3
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p1, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Lgcash/module/gcredit/cgl/GclTnCPresenter;->getView()Lgcash/module/gcredit/cgl/GclTnCActivity;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    new-instance p2, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1$onReHandShake$1;
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    .line 15
+    .line 16
+    iget-object v1, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->d:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    iget v2, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->e:I
+
+    .line 19
+    .line 20
+    invoke-direct {p2, v0, v1, v2}, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1$onReHandShake$1;-><init>(Lgcash/module/gcredit/cgl/GclTnCPresenter;Ljava/lang/String;I)V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {p1, p2}, Lgcash/common_presentation/base/BaseAuthActivity;->onHandshakeSuccess(Lkotlin/jvm/functions/Function0;)V
+
+    .line 24
+    .line 25
+    .line 26
+    return-void
+.end method
+
+.method public onStartLoading()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iget-object v0, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    invoke-virtual {v0}, Lgcash/module/gcredit/cgl/GclTnCPresenter;->getView()Lgcash/module/gcredit/cgl/GclTnCActivity;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lgcash/module/gcredit/cgl/GclTnCActivity;->showProgress()V
+
+    return-void
+.end method
+
+.method public onStopLoading()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iget-object v0, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    invoke-virtual {v0}, Lgcash/module/gcredit/cgl/GclTnCPresenter;->getView()Lgcash/module/gcredit/cgl/GclTnCActivity;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lgcash/module/gcredit/cgl/GclTnCActivity;->hideProgress()V
+
+    return-void
+.end method
+
+.method public onSuccessful(Lgcash/common/android/network/api/service/TripleGApiService$Response$CGLResponseDTO;ILjava/lang/String;)V
+    .locals 1
+    .param p1    # Lgcash/common/android/network/api/service/TripleGApiService$Response$CGLResponseDTO;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    const-string p2, "318624"
+
+    invoke-static/range {p2 .. p2}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {p3, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p1, :cond_2
+
+    .line 2
+    iget-object p2, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    invoke-virtual {p2, p1}, Lgcash/module/gcredit/cgl/GclTnCPresenter;->setRespBody(Lgcash/common/android/network/api/service/TripleGApiService$Response$CGLResponseDTO;)V
+
+    .line 3
+    iget-object p1, p0, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->c:Lgcash/module/gcredit/cgl/GclTnCPresenter;
+
+    invoke-virtual {p1}, Lgcash/module/gcredit/cgl/GclTnCPresenter;->callGCreditEligibilityAPI()V
+
+    :cond_2
+    return-void
+.end method
+
+.method public bridge synthetic onSuccessful(Ljava/lang/Object;ILjava/lang/String;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    check-cast p1, Lgcash/common/android/network/api/service/TripleGApiService$Response$CGLResponseDTO;
+
+    invoke-virtual {p0, p1, p2, p3}, Lgcash/module/gcredit/cgl/GclTnCPresenter$callOptInAndOutApi$1;->onSuccessful(Lgcash/common/android/network/api/service/TripleGApiService$Response$CGLResponseDTO;ILjava/lang/String;)V
+
+    return-void
+.end method

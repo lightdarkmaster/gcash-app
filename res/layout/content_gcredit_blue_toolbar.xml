@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/toolbar" android:background="@color/bg_1972f9" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_back_arrow_btn" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/trailing_icon" android:layout_marginStart="@dimen/_14sdp" app:layout_constraintBottom_toBottomOf="@id/toolbar" app:layout_constraintStart_toStartOf="@id/toolbar" app:layout_constraintTop_toTopOf="@id/toolbar" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@android:color/white" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gcredit" android:includeFontPadding="false" android:fontFamily="@font/gotham_rounded_medium" app:layout_constraintBottom_toBottomOf="@id/toolbar" app:layout_constraintEnd_toEndOf="@id/toolbar" app:layout_constraintStart_toStartOf="@id/toolbar" app:layout_constraintTop_toTopOf="@id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

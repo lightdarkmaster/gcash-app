@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_tickets_history_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:id="@id/no_tickets_llc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="@color/font_025AE9" android:gravity="center" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Nothing to see here" android:fontFamily="@font/gotham_rounded_bold" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/font_292b30" android:gravity="center" android:id="@id/tv_no_transaction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/you_don_t_have_any_recent_conversations" android:fontFamily="@font/gilroy_medium" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/wrapperTabBalance" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_balance" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="32.0dip" android:elevation="0.0dip" app:tabIndicatorColor="@color/colorPrimaryDark" app:tabSelectedTextColor="@android:color/white" app:tabTextAppearance="@style/DashboardTabWidget" app:tabTextColor="@color/colorPrimaryDark" />
+    <gcash.common.android.view.ViewPagerNoSwipe android:id="@id/vpBalance" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_below="@id/tab_balance" />
+</RelativeLayout>

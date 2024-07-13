@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/wrapper_send_money_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_container_item" android:paddingLeft="15.0dip" android:paddingTop="12.0dip" android:paddingRight="15.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_item_send_money" android:layout_width="64.0dip" android:layout_height="64.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_item_send_money" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="@dimen/font_large" android:textColor="@color/font_0099" android:id="@id/tv_send_money_use_case" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="500.0" android:fontFamily="@font/gotham_rounded_medium" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0100" android:id="@id/tv_send_money_use_case_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="600.0" android:fontFamily="@font/gilroy_semibold" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/divider_send_money" android:background="@color/bg_F3F8FF" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

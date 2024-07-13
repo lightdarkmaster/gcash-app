@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textColor="#ff333333" android:gravity="left" android:id="@id/tv_title" android:paddingLeft="24.0dip" android:paddingTop="16.0dip" android:paddingRight="24.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Title" android:maxLines="1" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="left" android:id="@id/tv_msg" android:paddingLeft="24.0dip" android:paddingTop="16.0dip" android:paddingRight="24.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+    <RelativeLayout android:paddingLeft="24.0dip" android:paddingTop="12.0dip" android:paddingRight="24.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="#ff108ee9" android:id="@id/tv_ok" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inter_uitools_ok" android:maxLines="1" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff999999" android:id="@id/tv_cancel" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="31.0dip" android:text="@string/inter_uitools_cancel" android:maxLines="1" android:layout_toLeftOf="@id/tv_ok" />
+    </RelativeLayout>
+</LinearLayout>

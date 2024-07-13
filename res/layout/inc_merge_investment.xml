@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/btn_invest" android:background="@drawable/bg_transparent_hover_10" android:paddingTop="3.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/img_invest_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:id="@id/img_invest" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/dashboard_font_xx_small" android:textColor="@color/font_0024" android:id="@id/lbl_invest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="GInvest" android:layout_below="@id/img_invest_frame" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" android:textAlignment="center" />
+    </RelativeLayout>
+</merge>

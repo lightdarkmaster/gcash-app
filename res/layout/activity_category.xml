@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_parent" android:background="@color/bg_0130f" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/toolbar_layout" layout="@layout/content_new_toolbar" />
+        <include android:id="@id/inc_banner" layout="@layout/banner_list_item" />
+        <include android:id="@id/inc_search_specific_category" layout="@layout/search_layout_category_page" />
+        <androidx.core.widget.NestedScrollView android:id="@id/nsv_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_wrapper" android:background="@color/bg_0130f" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ViewSwitcher android:id="@id/vs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/tv_footer" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="spread_inside">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_products" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_wrapper_empty_search_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="74.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="74.0dip" android:layout_marginBottom="34.0dip">
+                        <ImageView android:id="@id/iv_empty_search_result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/empty_search_result_icon" android:contentDescription="@string/content_description_empty_search_result_image" />
+                        <TextView android:textSize="@dimen/font_large" android:textColor="@color/font_0a2757" android:gravity="center" android:id="@id/tv_empty_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_search_result_text_1" android:fontFamily="@font/gotham_rounded_bold" />
+                        <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_292b30" android:gravity="center" android:id="@id/tv_empty_state2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/please_try_a_different_search" android:alpha="0.6" android:fontFamily="@font/gilroy_semibold" />
+                    </LinearLayout>
+                </ViewSwitcher>
+                <include android:id="@id/tv_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/vs" layout="@layout/footer_list_item" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

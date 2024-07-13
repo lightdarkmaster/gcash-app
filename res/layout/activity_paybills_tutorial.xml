@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_webview" android:background="@color/bg_0052" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/bg_0052" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/webView" android:background="@color/bg_0052" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_got_it" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/font_xx_large" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/btn_got_it" android:background="@drawable/bg_transparent_hover_10" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Got it!" android:layout_alignParentBottom="true" android:fontFamily="@font/gcash_font_body_regular" />
+    </RelativeLayout>
+</FrameLayout>

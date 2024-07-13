@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/containerSendMoney" android:background="@color/new_header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/bg_f6f9fd" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <gcash.common_presentation.custom.CustomToolbar android:id="@id/custom_toolbar" android:tag="@string/send_money_v2" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.core.widget.NestedScrollView android:id="@id/sv_send_money_landing_page" android:background="@color/bg_f6f9fd" android:scrollbars="none" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/custom_toolbar">
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/bg_f6f9fd" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="false">
+                <FrameLayout android:id="@id/ad_container" android:background="@color/bg_f6f9fd" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <RelativeLayout android:id="@id/fragment_ad" android:layout_width="fill_parent" android:layout_height="100.0dip">
+                        <androidx.viewpager.widget.ViewPager android:id="@id/pagerAd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        <com.google.android.material.tabs.TabLayout android:id="@id/tabDots" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:tabBackground="@drawable/tab_selector_ad" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" app:tabMinWidth="0.0dip" />
+                        <ImageView android:id="@id/img_collapse_ad" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <gcash.common.android.util.adtech.AdLoaderView android:id="@id/ad_loader_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="12.0dip" android:layout_marginVertical="8.0dip" />
+                </FrameLayout>
+                <include android:id="@id/incSendMoneyUseCase" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ad_container" layout="@layout/inc_send_money_use_case_v2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

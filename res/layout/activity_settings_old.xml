@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/bg_0096" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0041" android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SECURITY" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/header_semibold" android:paddingStart="10.0dip" />
+                <RelativeLayout android:id="@id/btn_change_pin" android:background="@color/bg_0108" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                    <ImageView android:id="@id/change_mpin_iv" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Change MPIN" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="@dimen/padding_regular" android:layout_toEndOf="@id/change_mpin_iv" />
+                    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_chevron_gray" android:scaleType="fitXY" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+                <RelativeLayout android:id="@id/btn_account_recovery" android:background="@color/bg_0108" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                    <ImageView android:id="@id/account_recovery_iv" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Account Recovery" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="@dimen/padding_regular" android:layout_toEndOf="@id/account_recovery_iv" />
+                    <ImageView android:id="@id/iv_account_recovery_arrow" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_chevron_gray" android:scaleType="fitXY" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0042" android:id="@id/tv_recovery_is_set" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Now" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginEnd="10.0dip" android:layout_toStartOf="@id/iv_account_recovery_arrow" />
+                </RelativeLayout>
+                <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0041" android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REMINDERS" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/header_semibold" android:paddingStart="10.0dip" />
+                <RelativeLayout android:id="@id/wrapperSetReminder" android:background="@color/bg_0108" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                    <ImageView android:id="@id/img_invest" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:id="@id/txt_set_reminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Reminder for GInvest" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="@dimen/padding_regular" android:layout_toEndOf="@id/img_invest" />
+                    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_chevron_gray" android:scaleType="fitXY" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0041" android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NOTIFICATIONS" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/header_semibold" android:paddingStart="10.0dip" />
+                <RelativeLayout android:id="@id/wrapperPartnerNotification" android:background="@color/bg_0108" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                    <ImageView android:id="@id/img_notif" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:id="@id/txt_partner_notif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Partner Notifications" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="@dimen/padding_regular" android:layout_toEndOf="@id/img_notif" />
+                    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_chevron_gray" android:scaleType="fitXY" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_logo" android:paddingBottom="2.0dip" android:layout_width="140.0dip" android:layout_height="40.0dip" />
+                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0047" android:id="@id/txt_gcash_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_logo" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

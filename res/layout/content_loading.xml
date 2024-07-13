@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:layout_marginStart="@dimen/margin_normal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/progress_bar" app:layout_constraintTop_toTopOf="parent" style="@style/Loan_Text_Body" />
+</androidx.constraintlayout.widget.ConstraintLayout>

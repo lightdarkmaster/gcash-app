@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/option_gcash" android:background="@drawable/bg_transparent_hover_10" android:padding="@dimen/padding_regular" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@mipmap/ic_launcher" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    <TextView android:textSize="@dimen/font_x_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="GCash" android:fontFamily="@font/gcash_font_body_regular" />
+</LinearLayout>

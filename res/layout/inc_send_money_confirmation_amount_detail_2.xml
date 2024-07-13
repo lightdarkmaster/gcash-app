@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/wrapper_a" android:background="@color/bg_0110" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0041" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/pay_with" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="24.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/bg_0108" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0035" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gcash" android:layout_weight="1.0" android:lineSpacingExtra="6.0sp" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="24.0dip" />
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="24.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/font_0040" android:gravity="end" android:id="@id/tvBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="6.0sp" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff9e9e9e" android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Available Balance" android:lineSpacingExtra="4.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0041" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/your_about_to_send" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="24.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/bg_0108" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0040" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_amount" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="24.0dip" />
+            <TextView android:textSize="@dimen/font_large" android:textColor="@color/font_0035" android:gravity="right" android:id="@id/txt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" android:layout_marginEnd="24.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

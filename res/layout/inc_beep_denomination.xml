@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/layout_denomination" android:background="@drawable/bg_shape_rect" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/_12sdp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_denomination" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dumy" android:fontFamily="@font/karla_regular" />
+</RelativeLayout>

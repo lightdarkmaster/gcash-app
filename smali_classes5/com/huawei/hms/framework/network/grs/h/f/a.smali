@@ -1,0 +1,248 @@
+.class public Lcom/huawei/hms/framework/network/grs/h/f/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static a(Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;)Ljavax/net/ssl/HttpsURLConnection;
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_2
+
+    return-object v1
+
+    :cond_2
+    new-instance v0, Ljava/net/URL;
+
+    invoke-direct {v0, p0}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/google/firebase/perf/network/FirebasePerfUrlConnection;->instrument(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/net/URLConnection;
+
+    instance-of v0, p0, Ljavax/net/ssl/HttpsURLConnection;
+
+    const-string v2, "82060"
+
+    invoke-static/range {v2 .. v2}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    if-eqz v0, :cond_3
+
+    check-cast p0, Ljavax/net/ssl/HttpsURLConnection;
+
+    :try_start_0
+    invoke-static {p1}, Lcom/huawei/hms/framework/network/grs/h/g/a;->a(Landroid/content/Context;)Ljavax/net/ssl/SSLSocketFactory;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Ljavax/net/ssl/HttpsURLConnection;->setSSLSocketFactory(Ljavax/net/ssl/SSLSocketFactory;)V
+
+    invoke-static {}, Lcom/huawei/hms/framework/network/grs/h/g/a;->a()Ljavax/net/ssl/HostnameVerifier;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Ljavax/net/ssl/HttpsURLConnection;->setHostnameVerifier(Ljavax/net/ssl/HostnameVerifier;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    const-string v0, "82061"
+
+    invoke-static/range {v0 .. v0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v2, v0}, Lcom/huawei/hms/framework/common/Logger;->w(Ljava/lang/String;Ljava/lang/Object;)V
+
+    :goto_0
+    const/16 v0, 0x2710
+
+    invoke-virtual {p0, v0}, Ljava/net/URLConnection;->setConnectTimeout(I)V
+
+    invoke-virtual {p0, v0}, Ljava/net/URLConnection;->setReadTimeout(I)V
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Ljava/net/URLConnection;->setDoOutput(Z)V
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Ljava/net/URLConnection;->setUseCaches(Z)V
+
+    const-string v0, "82062"
+
+    invoke-static/range {v0 .. v0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {p1, v0, p2}, Lcom/huawei/hms/framework/network/grs/h/a;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "82063"
+
+    invoke-static/range {v0 .. v0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {v2, p2}, Lcom/huawei/hms/framework/common/Logger;->d(Ljava/lang/String;Ljava/lang/Object;)V
+
+    const-string p2, "82064"
+
+    invoke-static/range {p2 .. p2}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p0, p2, p1}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object p0
+
+    :cond_3
+    const-string p0, "82065"
+
+    invoke-static/range {p0 .. p0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v2, p0}, Lcom/huawei/hms/framework/common/Logger;->w(Ljava/lang/String;Ljava/lang/Object;)V
+
+    return-object v1
+.end method
+
+.method public static a(Ljavax/net/ssl/HttpsURLConnection;Ljava/lang/String;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    const-string v0, "82066"
+
+    invoke-static/range {v0 .. v0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez p1, :cond_2
+
+    const-string p0, "82067"
+
+    invoke-static/range {p0 .. p0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    :goto_0
+    invoke-static {v0, p0}, Lcom/huawei/hms/framework/common/Logger;->i(Ljava/lang/String;Ljava/lang/Object;)V
+
+    return-void
+
+    :cond_2
+    if-nez p0, :cond_3
+
+    const-string p0, "82068"
+
+    invoke-static/range {p0 .. p0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_3
+    :try_start_0
+    invoke-virtual {p0}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
+
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    const-string v0, "82069"
+
+    invoke-static/range {v0 .. v0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/io/OutputStream;->write([B)V
+
+    invoke-virtual {p0}, Ljava/io/OutputStream;->flush()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    invoke-static {p0}, Lcom/huawei/hms/framework/common/IoUtils;->closeSecure(Ljava/io/OutputStream;)V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :catchall_1
+    move-exception p1
+
+    const/4 p0, 0x0
+
+    :goto_1
+    invoke-static {p0}, Lcom/huawei/hms/framework/common/IoUtils;->closeSecure(Ljava/io/OutputStream;)V
+
+    throw p1
+.end method

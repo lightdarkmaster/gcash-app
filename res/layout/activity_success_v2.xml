@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_success_v1" android:background="@color/bg_0099" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_success_container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="15.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/outerLayer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="85.0">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/firstLayer" android:paddingLeft="35.0dip" android:paddingTop="5.0dip" android:paddingRight="35.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/ivLogo" android:layout_width="130.0dip" android:layout_height="130.0dip" android:scaleType="fitCenter" />
+                        <TextView android:textSize="@dimen/font_x_large" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:fontFamily="@font/gcash_font_header_bold" />
+                        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/txt_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/gcash_font_body_regular" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/fragment_ad" android:background="@color/bg_0052" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/firstLayer" android:animateLayoutChanges="false">
+                        <RelativeLayout android:id="@id/img_ad_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_centerVertical="true" android:animateLayoutChanges="false">
+                            <ImageView android:id="@id/img_collapse_ad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/img_ad_default" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/x_wrapper" android:background="@drawable/bg_transparent_hover_10" android:padding="20.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:gravity="center" android:id="@id/x" android:clickable="true" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_close" android:onClick="onClick" />
+        </FrameLayout>
+        <gcash.common.android.util.adtech.AdLoaderView android:gravity="center|top" android:id="@id/ad_loader_view" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_above="@id/container_button" />
+        <LinearLayout android:orientation="vertical" android:id="@id/container_button" android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_done" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="OK" android:onClick="onClick" style="@style/GCashWhiteButton" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

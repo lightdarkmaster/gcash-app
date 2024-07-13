@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/font_x_small" android:textStyle="normal" android:textColor="@color/font_0036" android:id="@id/tv_key" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/karla_regular" app:layout_constraintEnd_toStartOf="@id/tv_value" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/font_x_small" android:textStyle="normal" android:textColor="@color/font_0041" android:gravity="end" android:id="@id/tv_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/karla_regular" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_key" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

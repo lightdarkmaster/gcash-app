@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_parent_not_covered" android:padding="@dimen/_19sdp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0a2757" android:id="@id/tv_header_not_covered" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/whats_excluded" android:fontFamily="@font/gotham_rounded_bold" app:drawableEndCompat="@drawable/ic_close_circle_blue_border" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:id="@id/tv_desc_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/gcl_excluded_desc_1" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" app:layout_constraintTop_toBottomOf="@id/tv_header_not_covered" />
+    <TableLayout android:id="@id/tl_bullets_not_covered" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_8sdp" app:layout_constraintTop_toBottomOf="@id/tv_desc_1">
+        <TableRow>
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_column="1" android:text="•" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_width="wrap_content" android:layout_column="2" android:text="@string/gcl_excluded_1st_point" android:layout_weight="1.0" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_column="1" android:text="•" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_width="wrap_content" android:layout_column="2" android:text="@string/gcl_excluded_2nd_point" android:layout_weight="1.0" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_column="1" android:text="•" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_width="wrap_content" android:layout_column="2" android:text="@string/gcl_excluded_3rd_point" android:layout_weight="1.0" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </TableRow>
+    </TableLayout>
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:id="@id/tv_desc_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/gcl_excluded_desc_2" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" app:layout_constraintTop_toBottomOf="@id/tl_bullets_not_covered" />
+</androidx.constraintlayout.widget.ConstraintLayout>

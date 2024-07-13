@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/apx_select_screen" android:title="@string/apx_select_this_screen" />
+    <item android:id="@id/apx_hide_me" android:title="@string/apx_remove" />
+</menu>

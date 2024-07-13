@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/griver_page_background_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.griver.ui.ant.AUTitleBar android:id="@id/griver_tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/griver_tool_bar">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/griver_default_text_color" android:layout_gravity="center_vertical" android:id="@id/tv_griver_open_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/griver_open_setting_intro" android:layout_marginStart="20.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/layout_user" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <RelativeLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textColor="@color/griver_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/griver_userinfo" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" />
+                <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/griver_more_right" android:layout_centerVertical="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View android:background="@color/griver_page_background_color" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_griver_open_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_empty" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="150.0dip">
+        <TextView android:textColor="@color/griver_default_text_color" android:id="@id/tv_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/griver_no_permission_used" />
+    </LinearLayout>
+</RelativeLayout>

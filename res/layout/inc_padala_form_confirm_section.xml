@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_form_confirm_section" android:background="@color/bg_f6f9fd" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_padal_service_fee" android:background="@color/bg_f6f9fd" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/bg_0128f" android:gravity="center" android:id="@id/tv_padala_form_fee_reminder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="50.0dip" android:text="@string/gcash_padala_form_fee_reminder" android:fontFamily="@font/gilroy_medium" />
+            <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/bg_0128f" android:gravity="center" android:id="@id/tv_Service_fee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/gcash_padala_form_fee_500" android:fontFamily="@font/gilroy_bold" />
+        </LinearLayout>
+        <Button android:textColor="@android:color/white" android:id="@id/sendMoney_padalaForm_btnNext" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/next" android:fontFamily="@font/gotham_rounded_bold" style="@style/RoyalBlue.Button" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

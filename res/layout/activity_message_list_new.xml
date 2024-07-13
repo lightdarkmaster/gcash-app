@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gli_container" android:background="@color/blue_b500" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/gli_toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" />
+    <RelativeLayout android:id="@id/gli_message_container" android:background="@color/blue_b500" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="20.0dip">
+        <TextView android:textSize="@dimen/font_xx_large" android:textColor="@color/bg_0009" android:gravity="center" android:id="@id/tv_gli_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Inbox" android:layout_centerVertical="true" android:fontFamily="@font/gotham_rounded_bold" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/gli_empty_container" android:background="@color/bg_0122f" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_message_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_mail_wrapper" android:background="@color/bg_0122f" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ImageView android:id="@id/img_empty_mailbox" android:layout_width="wrap_content" android:layout_height="180.0dip" android:layout_marginTop="-40.0dip" app:srcCompat="@drawable/ic_mail_empty" />
+            <TextView android:textSize="@dimen/font_xx_large" android:textColor="@color/font_0099" android:gravity="center" android:id="@id/tv_gli_empty_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="You have no messages yet." android:fontFamily="@font/gotham_rounded_bold" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_445C85" android:gravity="center" android:id="@id/tv_gli_empty_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Keep an eye out for deals and promos soon!" android:fontFamily="@font/gilroy_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

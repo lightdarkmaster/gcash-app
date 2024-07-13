@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/search_view" android:background="@color/background_blue" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_search" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/search_iv_paybills" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/searchpaybills" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" />
+        <EditText android:textAppearance="@style/search_some" android:textSize="@dimen/font_small" android:id="@id/searchEditText_sbd1" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" android:layout_toRightOf="@id/search_iv_paybills" android:layout_centerVertical="true" android:lineSpacingExtra="10.0sp" android:inputType="text" android:paddingStart="5.0dip" android:layout_marginEnd="@dimen/_20sdp" />
+        <EditText android:textAppearance="@style/search_some" android:textSize="@dimen/font_small" android:id="@id/searchEditText_sbd" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/managebill_searchtxt" android:layout_toRightOf="@id/search_iv_paybills" android:layout_centerVertical="true" android:lineSpacingExtra="10.0sp" android:inputType="text" android:paddingStart="5.0dip" android:layout_marginEnd="@dimen/_20sdp" />
+        <ImageView android:id="@id/closeIv_sbd" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_close" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/vw_line" android:background="@color/bg_0054" android:layout_width="fill_parent" android:layout_height="5.0px" android:layout_below="@id/rl_search" />
+</RelativeLayout>

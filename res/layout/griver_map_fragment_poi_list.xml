@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.griver.ui.ant.AUTitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.alibaba.griver.ui.ant.layout.AUFrameLayout android:id="@id/map_container" android:layout_width="fill_parent" android:layout_height="240.0dip">
+            <com.alibaba.griver.map.apmap.AdapterTextureMapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.alibaba.griver.ui.ant.AUImageView android:layout_gravity="start|bottom|center" android:id="@id/map_my_location" android:background="@drawable/griver_map_my_poi_btn_selector" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_margin="3.2999878dip" />
+            <com.alibaba.griver.ui.ant.AUImageView android:layout_gravity="bottom" android:background="@color/griver_AU_COLOR_LINE" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </com.alibaba.griver.ui.ant.layout.AUFrameLayout>
+        <com.alibaba.griver.ui.ant.listview.AUListView android:id="@id/poi_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0px" android:choiceMode="singleChoice" />
+    </LinearLayout>
+</LinearLayout>

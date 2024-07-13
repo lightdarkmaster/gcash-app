@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/const_layout" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/primary_blue" android:visibility="visible" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <RelativeLayout android:background="@android:color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/paybills_search_view" />
+            <View android:id="@id/vw_line" android:background="@color/bg_0054" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/search_view" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_searchVw" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="500.0dip" android:layout_marginTop="80.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="300.0dip" android:src="@drawable/search_img" />
+                <TextView android:textSize="@dimen/_16sdp" android:textStyle="normal" android:textColor="#ff2f4e9c" android:gravity="center" android:id="@id/tv_searchtxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="No result for Biller" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp" />
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="#ff2f4e9c" android:gravity="center" android:id="@id/tv_trytxt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_14sdp" android:text="Try searching for something else!" android:fontFamily="@font/gilroy_regular" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp" />
+            </LinearLayout>
+            <ScrollView android:id="@id/scrollView_msb" android:background="@color/bg_0009" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/vw_line">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_schedule_billpayment" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:minHeight="60.0dip" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_x_large" android:textStyle="normal" android:textColor="@color/font_0099" android:ellipsize="end" android:id="@id/tv_sbf_schedule_payment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Scheduled Bill Payments" android:maxLines="1" android:fontFamily="@font/gotham_rounded_bold" />
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_sbf_closeimg" android:layout_width="45.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/calendarpaybills" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginEnd="4.0dip" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/btn_addbiller" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/ll_schedule_billpayment" style="@style/GCashBlueButton2v">
+                        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/white" android:id="@id/button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="Add Biller" android:layout_centerInParent="true" android:fontFamily="@font/gotham_rounded_bold" />
+                        <ImageView android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="40.0dip" android:layout_height="60.0dip" android:src="@drawable/addimg" android:layout_toLeftOf="@id/button_text" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <ListView android:id="@id/rv_scheduled_biller_list" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" android:listSelector="@color/white" android:choiceMode="none" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

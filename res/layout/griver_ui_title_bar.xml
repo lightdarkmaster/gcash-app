@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.griver.ui.ant.layout.AURelativeLayout android:id="@id/title_bar_kernel" android:layout_width="fill_parent" android:layout_height="wrap_content" aui:isAP="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/title_bar_status_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/griver_AU_SPACE6" />
+    <com.alibaba.griver.ui.ant.layout.AULinearLayout android:orientation="horizontal" android:id="@id/title_bar_horizon" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar_status_bar" android:paddingStart="@dimen/griver_AU_MARGIN_UNIVERSAL" aui:isAP="false">
+        <com.alibaba.griver.ui.ant.text.AUIconView android:id="@id/back_button" android:layout_width="@dimen/griver_AU_SPACE11" android:layout_height="@dimen/griver_AU_SPACE12" android:layout_marginStart="-14.0dip" aui:iconImageSize="24.0dip" aui:imageresid="@drawable/griver_ui_ic_header_back" />
+        <com.alibaba.griver.ui.ant.layout.AURelativeLayout android:gravity="center_vertical" android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="@dimen/griver_AU_SPACE12" android:layout_weight="1.0" aui:isAP="false">
+            <com.alibaba.griver.ui.ant.text.AUTextView android:textSize="@dimen/griver_AU_TEXTSIZE5" android:ellipsize="end" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <ProgressBar android:visibility="gone" android:layout_width="@dimen/griver_AU_ICONSIZE2" android:layout_height="@dimen/griver_AU_ICONSIZE2" android:indeterminateDrawable="@drawable/griver_ui_rotate_process_bar" android:layout_alignTop="@id/title_text" android:layout_alignBottom="@id/title_text" android:layout_marginStart="@dimen/griver_AU_SPACE2" android:layout_toEndOf="@id/title_text" />
+        </com.alibaba.griver.ui.ant.layout.AURelativeLayout>
+        <com.alibaba.griver.ui.ant.layout.AURelativeLayout android:id="@id/right_container_1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="4.0dip" aui:isAP="false">
+            <com.alibaba.griver.ui.ant.text.AUIconView android:id="@id/left_text" android:layout_width="wrap_content" android:layout_height="fill_parent" aui:isAP="false" />
+            <View android:layout_width="@dimen/griver_AU_MARGIN_UNIVERSAL" android:layout_height="fill_parent" android:layout_toEndOf="@id/left_text" />
+        </com.alibaba.griver.ui.ant.layout.AURelativeLayout>
+        <com.alibaba.griver.ui.ant.layout.AURelativeLayout android:id="@id/right_container_2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="4.0dip" aui:isAP="false">
+            <com.alibaba.griver.ui.ant.text.AUIconView android:id="@id/right_text" android:layout_width="wrap_content" android:layout_height="fill_parent" aui:isAP="false" />
+            <View android:layout_width="@dimen/griver_AU_MARGIN_UNIVERSAL" android:layout_height="fill_parent" android:layout_toEndOf="@id/right_text" />
+        </com.alibaba.griver.ui.ant.layout.AURelativeLayout>
+    </com.alibaba.griver.ui.ant.layout.AULinearLayout>
+</com.alibaba.griver.ui.ant.layout.AURelativeLayout>

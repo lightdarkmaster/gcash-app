@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/font_EEF2F9" android:paddingTop="@dimen/margin_ggives_normal_uniform" android:paddingBottom="@dimen/margin_ggives_normal_uniform" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/cta_btn_card_padding" android:paddingEnd="@dimen/cta_btn_card_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cv_tips_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/margin_ggives_medium_uniform" app:cardElevation="@dimen/empty_dimen" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_tips_banner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_tips_banner" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitXY" app:layout_constraintDimensionRatio="H, 336:115" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

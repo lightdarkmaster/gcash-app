@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/action_card" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:ellipsize="end" android:id="@id/card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:fontFamily="@font/poppins_semibold" />
+        <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0035" android:ellipsize="end" android:id="@id/card_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:lines="1" android:layout_below="@id/card_title" android:fontFamily="@font/karla_regular" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/bg_0093" android:id="@id/card_top_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/karla_bold" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/hsv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" />
+</LinearLayout>

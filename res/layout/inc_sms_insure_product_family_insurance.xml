@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/bg_0096" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/bg_0108" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_large" android:textStyle="normal" android:textColor="@color/font_072C87" android:id="@id/tvHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/family_insurance" android:lineSpacingExtra="3.0sp" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/font_x_small" android:textStyle="normal" android:textColor="@color/font_7085A9" android:id="@id/tvSubText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/choose_an_insurance_coverage_level_for_you_and_2_of_your_family_members" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/gilroy_semibold" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+        <LinearLayout android:gravity="center" android:id="@id/llInsureFamLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:foreground="?android:selectableItemBackground" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvSubText">
+            <TextView android:textSize="@dimen/font_x_small" android:textStyle="bold" android:textColor="@color/font_0090" android:id="@id/tvFamilyLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_more_details" android:fontFamily="@font/gilroy_semibold" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

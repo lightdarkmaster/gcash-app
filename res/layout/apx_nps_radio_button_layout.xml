@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.apxor.androidsdk.plugins.survey.views.RatingButton android:id="@id/apx_nps_rating_radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/apx_nps_radio_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:contentDescription="@string/apx_icon" />
+    </com.apxor.androidsdk.plugins.survey.views.RatingButton>
+    <TextView android:textSize="10.0sp" android:id="@id/apx_nps_radio_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/apx_nps_rating_radio_button" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <View android:id="@id/indicator" android:background="@color/font_001A5D" android:visibility="invisible" android:layout_width="@dimen/margin_ggives_xsmall_uniform" android:layout_height="@dimen/ggives_overlay_indicator_height" android:layout_marginTop="@dimen/margin_ggives_xlarge" android:layout_marginStart="@dimen/show_case_guide_line_height" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

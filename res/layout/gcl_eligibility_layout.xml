@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_parent_eligibility" android:padding="@dimen/_19sdp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0a2757" android:id="@id/tv_header_eligibility" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Who can buy this product?" android:fontFamily="@font/gotham_rounded_bold" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:id="@id/tv_sub_header_eligibility" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/gcl_eligibility_desc" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" app:layout_constraintTop_toBottomOf="@id/tv_header_eligibility" />
+    <TableLayout android:id="@id/tl_bullets_eligibility" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginStart="@dimen/_8sdp" app:layout_constraintTop_toBottomOf="@id/tv_sub_header_eligibility">
+        <TableRow>
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_column="1" android:text="•" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_width="wrap_content" android:layout_column="2" android:text="@string/gcl_eligibility_1st_point" android:layout_weight="1.0" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_column="1" android:text="•" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_width="wrap_content" android:layout_column="2" android:text="@string/gcl_eligibility_2nd_point" android:layout_weight="1.0" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_column="1" android:text="•" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_width="wrap_content" android:layout_column="2" android:text="@string/gcl_eligibility_3rd_point" android:layout_weight="1.0" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_column="1" android:text="•" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_width="wrap_content" android:layout_column="2" android:text="@string/gcl_eligibility_4th_point" android:layout_weight="1.0" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_column="1" android:text="•" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_10346F" android:layout_width="wrap_content" android:layout_column="2" android:text="@string/gcl_eligibility_5th_point" android:layout_weight="1.0" android:lineSpacingExtra="3.0sp" android:alpha="0.8" android:fontFamily="@font/gilroy_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

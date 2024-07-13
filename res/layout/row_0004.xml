@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:id="@id/recipient_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:id="@id/txt_separator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " android:layout_toRightOf="@id/recipient_number" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:ellipsize="end" android:id="@id/recipient_name" android:layout_width="150.0dip" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_toRightOf="@id/txt_separator" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+    <ImageView android:id="@id/img_remove_contact" android:clickable="true" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

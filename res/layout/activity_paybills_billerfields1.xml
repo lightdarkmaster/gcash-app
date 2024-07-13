@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <LinearLayout android:orientation="vertical" android:id="@id/wrapper_fields" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:orientation="vertical" android:id="@id/scrollView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <RelativeLayout android:id="@id/biller_name" android:paddingBottom="@dimen/pay_bill_layout_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/ivLogo" android:visibility="gone" android:layout_width="@dimen/pay_bill_view_dim" android:layout_height="@dimen/pay_bill_view_dim" android:layout_marginTop="@dimen/pay_bill_view_margintop" android:layout_centerHorizontal="true" />
+                            <TextView android:textSize="@dimen/font_x3_large" android:textColor="@android:color/white" android:gravity="center" android:id="@id/img_biller" android:background="@drawable/bg_circle_gray" android:layout_width="@dimen/pay_bill_view_dim" android:layout_height="@dimen/pay_bill_view_dim" android:layout_marginTop="@dimen/pay_bill_view_margintop" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+                            <TextView android:textSize="@dimen/gcash_font_body_regular" android:id="@id/txt_biller_name" android:padding="@dimen/pay_bill_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pay_bill_view_padding" android:layout_below="@id/img_biller" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+                            <TextView android:textSize="@dimen/gcash_font_body_regular" android:id="@id/tv_biller_spiel" android:padding="@dimen/pay_bill_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pay_bill_text_margin_top" android:layout_below="@id/txt_biller_name" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/field_wrapper" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <View android:background="#ffd3d3d3" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/font_xx_small" android:textColor="@color/font_0024" android:gravity="center" android:id="@id/tv_reminder" android:paddingTop="@dimen/pay_bill_view_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pay_bill_layout_margin" android:fontFamily="@font/gcash_font_body_light" android:paddingStart="@dimen/pay_bill_view_padding" android:paddingEnd="@dimen/pay_bill_view_padding" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/powered_by_wrapper" android:background="@color/bg_0009" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pay_bill_layout_height" android:layout_marginBottom="@dimen/pay_bill_layout_margin">
+                        <ImageView android:id="@id/ivPoweredBy" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_regular" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/btn_next" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="NEXT" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onClick" style="@style/GCashBlueButton2" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/poweredByWrapperBottom" android:background="@color/bg_0009" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pay_bill_layout_height" android:layout_marginTop="@dimen/pay_bill_layout_margin">
+                    <ImageView android:id="@id/ivPoweredByBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_x_large" android:textColor="@color/font_0020" android:gravity="center" android:layout_gravity="center" android:id="@id/no_fields" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="@font/gcash_font_body_regular" />
+</FrameLayout>

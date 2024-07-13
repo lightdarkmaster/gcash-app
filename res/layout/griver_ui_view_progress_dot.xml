@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/progress_dot1" android:background="@drawable/griver_ui_progress_view_bg" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginEnd="8.0dip" />
+    <View android:id="@id/progress_dot2" android:background="@drawable/griver_ui_progress_view_bg" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginEnd="8.0dip" />
+    <View android:id="@id/progress_dot3" android:background="@drawable/griver_ui_progress_view_bg" android:layout_width="8.0dip" android:layout_height="8.0dip" />
+</LinearLayout>

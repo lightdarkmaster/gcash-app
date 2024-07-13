@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/sendMoney_padalaForm_btnSendPadala" android:background="@color/font_EBF4FF" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_non_gcash_card" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0102" android:id="@id/tv_non_gcash_card_title" android:paddingLeft="18.0dip" android:paddingTop="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/padala_instruction_header" android:fontFamily="@font/gotham_rounded_bold" />
+            <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0102" android:id="@id/tv_non_gcash_card_desc" android:paddingLeft="18.0dip" android:paddingTop="10.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/padala_instruction_desc" android:alpha="0.6" android:fontFamily="@font/gilroy_semibold" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_padala_urls" android:paddingLeft="18.0dip" android:paddingTop="5.0dip" android:paddingRight="18.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0057e4" android:id="@id/tv_non_gcash_card_valid_ids" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/action_learn_more" android:fontFamily="@font/gilroy_semibold" />
+                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0057e4" android:id="@id/tv_non_gcash_card_partners" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="See list of GCash Padala partners here." android:fontFamily="@font/gilroy_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

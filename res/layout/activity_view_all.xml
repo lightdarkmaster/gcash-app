@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_fafcfe" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar_layout" layout="@layout/content_new_toolbar" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tabs_policy_status" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabSelectedTextColor="@color/font_0047" app:tabTextAppearance="@style/TabLayoutStyleWith14SpSizeAndGothamBoldFont" app:tabTextColor="@color/bg_136" />
+    <androidx.core.widget.NestedScrollView android:id="@id/nsv_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/bg_fafcfe" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <gcash.module.ginsure.util.DynamicHeightViewPager android:id="@id/vp_tabs_policy_status" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/footer" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="spread_inside" />
+            <include android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/vp_tabs_policy_status" layout="@layout/footer_list_item" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

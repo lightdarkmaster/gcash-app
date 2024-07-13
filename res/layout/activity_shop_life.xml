@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_buyload_recipient" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:id="@id/fragment_ad" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <androidx.viewpager.widget.ViewPager android:id="@id/pagerAd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <com.google.android.material.tabs.TabLayout android:id="@id/tabDots" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:tabBackground="@drawable/tab_selector_ad" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" app:tabMinWidth="0.0dip" />
+            <ImageView android:id="@id/img_collapse_ad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/bg_0009" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <gcash.common_presentation.custom.DynamicTab android:layout_gravity="center_horizontal" android:id="@id/tabs" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foregroundGravity="center" android:elevation="6.0dip" app:tabGravity="fill" app:tabIndicatorColor="@color/variant_blue" app:tabMaxWidth="500.0dip" app:tabMode="scrollable" app:tabSelectedTextColor="@color/variant_blue" app:tabTextAppearance="@style/tab_text" app:tabTextColor="#ff9e9e9e" />
+            <androidx.viewpager.widget.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tabs" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

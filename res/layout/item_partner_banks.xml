@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlItemBankCategoryParent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlBankIcon_ibc" android:background="@drawable/category_background" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/ivBankIcon_ibc" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_centerInParent="true" android:importantForAccessibility="no" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/rlViewAllBanks_ibc" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="10.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/ivViewAllBanks_ibc" android:background="@drawable/ic_show_more_blue" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" android:importantForAccessibility="no" />
+        <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0020" android:gravity="center" android:id="@id/grid_item_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_view_all" android:maxLines="2" android:layout_below="@id/ivViewAllBanks_ibc" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+    </RelativeLayout>
+</RelativeLayout>

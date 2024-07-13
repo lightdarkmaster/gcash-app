@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="15.0dip" android:paddingEnd="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip" android:src="@drawable/ic_bank_onboarding" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                <TextView android:textSize="@dimen/font_xx_large" android:textColor="@color/font_0035" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onboarding_message1" android:fontFamily="@font/gcash_font_header_bold" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0035" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/onboarding_message2" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/btn_gotit" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_regular" android:text="GOT IT!" android:onClick="onClick" android:fontFamily="@font/gcash_font_header_bold" style="@style/GCashBlueButton2" />
+</LinearLayout>

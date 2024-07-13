@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <com.alibaba.griver.ui.ant.text.AUIconView android:id="@id/item_icon" android:visibility="gone" android:layout_width="@dimen/griver_AU_SPACE6" android:layout_height="@dimen/griver_AU_SPACE6" android:layout_marginEnd="@dimen/griver_AU_SPACE3" aui:iconfontColor="#ff797979" aui:iconfontSize="@dimen/griver_AU_SPACE6" />
+    <com.alibaba.griver.ui.ant.text.AUTextView android:textSize="@dimen/griver_AU_TEXTSIZE4" android:textColor="@color/griver_AU_COLOR_MAIN_CONTENT" android:ellipsize="end" android:gravity="start" android:id="@id/item_name" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_toEndOf="@id/item_icon" />
+    <com.alibaba.griver.ui.ant.badge.AUBadgeView android:id="@id/item_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/griver_AU_SPACE2" android:layout_toEndOf="@id/item_name" />
+</merge>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.imageview.ShapeableImageView android:id="@id/indicator" android:background="@color/font_0048" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginEnd="@dimen/margin_small" app:shapeAppearanceOverlay="@style/Loan_RoundedShape"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

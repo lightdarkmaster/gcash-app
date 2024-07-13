@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.griver.base.ui.widget.GriverSwtich android:id="@id/switch_griver_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:textColor="@color/griver_text_color" android:id="@id/tv_griver_setting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    <View android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+</RelativeLayout>

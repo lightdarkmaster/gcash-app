@@ -1,0 +1,332 @@
+.class Lcom/facebook/appevents/PersistedEvents;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/io/Serializable;
+
+
+# annotations
+.annotation build Lcom/facebook/internal/instrument/crashshield/AutoHandleExceptions;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/facebook/appevents/PersistedEvents$SerializationProxyV1;
+    }
+.end annotation
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x4b1aac909L
+
+
+# instance fields
+.field private events:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Lcom/facebook/appevents/AccessTokenAppIdPair;",
+            "Ljava/util/List<",
+            "Lcom/facebook/appevents/AppEvent;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lcom/facebook/appevents/PersistedEvents;->events:Ljava/util/HashMap;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/HashMap;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/HashMap<",
+            "Lcom/facebook/appevents/AccessTokenAppIdPair;",
+            "Ljava/util/List<",
+            "Lcom/facebook/appevents/AppEvent;",
+            ">;>;)V"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lcom/facebook/appevents/PersistedEvents;->events:Ljava/util/HashMap;
+
+    .line 5
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+
+    return-void
+.end method
+
+.method private writeReplace()Ljava/lang/Object;
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    new-instance v0, Lcom/facebook/appevents/PersistedEvents$SerializationProxyV1;
+
+    iget-object v1, p0, Lcom/facebook/appevents/PersistedEvents;->events:Ljava/util/HashMap;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lcom/facebook/appevents/PersistedEvents$SerializationProxyV1;-><init>(Ljava/util/HashMap;Lcom/facebook/appevents/PersistedEvents$1;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public addEvents(Lcom/facebook/appevents/AccessTokenAppIdPair;Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/facebook/appevents/AccessTokenAppIdPair;",
+            "Ljava/util/List<",
+            "Lcom/facebook/appevents/AppEvent;",
+            ">;)V"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    iget-object v0, p0, Lcom/facebook/appevents/PersistedEvents;->events:Ljava/util/HashMap;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_2
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lcom/facebook/appevents/PersistedEvents;->events:Ljava/util/HashMap;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+
+    .line 15
+    :cond_2
+    iget-object v0, p0, Lcom/facebook/appevents/PersistedEvents;->events:Ljava/util/HashMap;
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    check-cast p1, Ljava/util/List;
+
+    .line 22
+    .line 23
+    invoke-interface {p1, p2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    return-void
+.end method
+
+.method public containsKey(Lcom/facebook/appevents/AccessTokenAppIdPair;)Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iget-object v0, p0, Lcom/facebook/appevents/PersistedEvents;->events:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public get(Lcom/facebook/appevents/AccessTokenAppIdPair;)Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/facebook/appevents/AccessTokenAppIdPair;",
+            ")",
+            "Ljava/util/List<",
+            "Lcom/facebook/appevents/AppEvent;",
+            ">;"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iget-object v0, p0, Lcom/facebook/appevents/PersistedEvents;->events:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/util/List;
+
+    return-object p1
+.end method
+
+.method public keySet()Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Lcom/facebook/appevents/AccessTokenAppIdPair;",
+            ">;"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iget-object v0, p0, Lcom/facebook/appevents/PersistedEvents;->events:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    return-object v0
+.end method

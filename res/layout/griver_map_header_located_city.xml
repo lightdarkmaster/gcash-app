@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.griver.ui.ant.layout.AURelativeLayout android:background="@drawable/griver_map_location_list_bg_selector" android:layout_width="fill_parent" android:layout_height="64.0dip" android:minHeight="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.griver.ui.ant.text.AUTextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@id/poiselect_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="78.0dip" />
+    <com.alibaba.griver.ui.ant.layout.AULinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <com.alibaba.griver.ui.ant.AUImageView android:id="@id/poiselect_selection_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/griver_map_icon_selection" android:layout_marginEnd="16.0dip" />
+    </com.alibaba.griver.ui.ant.layout.AULinearLayout>
+    <com.alibaba.griver.ui.ant.AUImageView android:background="@color/griver_AU_COLOR_LINE" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</com.alibaba.griver.ui.ant.layout.AURelativeLayout>

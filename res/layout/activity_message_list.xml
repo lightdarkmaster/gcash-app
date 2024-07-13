@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <RelativeLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_mail_wrapper" android:background="@color/bg_0009" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/img_empty_mailbox" android:layout_width="wrap_content" android:layout_height="180.0dip" android:src="@drawable/ic_mailbox_empty" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textStyle="italic" android:textColor="@color/font_0027" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="You have no messages yet.\nHave a great day!" android:fontFamily="@font/gcash_font_body_regular" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

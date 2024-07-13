@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <include layout="@layout/partial_new_mpin" />
+                <TextView android:textSize="@dimen/font_small" android:textStyle="italic" android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="You logged in with a temporary MPIN. For your account security, please set a new permanent MPIN." android:fontFamily="@font/gcash_font_body_regular" android:textAlignment="center" />
+                <TextView android:textSize="@dimen/font_small" android:textStyle="italic" android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Your MPIN will serve as your password to log in. For your protection, avoid using weak, easy to guess MPINS such as 1234, 1111, or your birhtdate." android:fontFamily="@font/gcash_font_body_regular" android:textAlignment="center" />
+            </LinearLayout>
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/btn_submit" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="SUBMIT" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onClick" style="@style/GCashBlueButton2" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

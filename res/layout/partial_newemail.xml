@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/padding_regular" android:layout_marginRight="@dimen/padding_regular" layout="@layout/inc_hr_0001" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_0009" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="2.0">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="New Email Address" android:layout_weight="0.9" android:fontFamily="@font/gcash_font_body_regular" />
+            <EditText android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/et_new_email" android:background="@android:drawable/screen_background_light_transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="sample@email.com" android:layout_weight="1.1" android:inputType="textEmailAddress" android:fontFamily="@font/gcash_font_body_regular" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/padding_regular" android:layout_marginRight="@dimen/padding_regular" layout="@layout/inc_hr_0001" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_0009" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="2.0">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Confirm New Email Address" android:layout_weight="0.9" android:fontFamily="@font/gcash_font_body_regular" />
+            <EditText android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/et_verify_new_email" android:background="@android:drawable/screen_background_light_transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="sample@email.com" android:layout_weight="1.1" android:inputType="textEmailAddress" android:fontFamily="@font/gcash_font_body_regular" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/padding_regular" android:layout_marginRight="@dimen/padding_regular" layout="@layout/inc_hr_0001" />
+    </LinearLayout>
+</merge>

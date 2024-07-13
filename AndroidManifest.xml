@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/distribution" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" n1:requiredSplitTypes="base__abi" n1:splitTypes="" package="com.globe.gcash.android" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-sdk android:allowBackup="false" android:minSdkVersion="21" android:targetSdkVersion="33"/>
+    <permission android:name="com.globe.gcash.android.GCASH_BROADCAST" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.globe.gcash.android.GCASH_BROADCAST"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.browser.customtabs.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="market"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+        <intent>
+            <action android:name="com.digitalturbine.ignite.cl.IgniteRemoteService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.ACTION_VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <uses-permission-sdk-23 android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <permission android:name="com.globe.gcash.android.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    <permission android:name="com.globe.gcash.android.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    <permission android:name="com.globe.gcash.android.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.globe.gcash.android.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.globe.gcash.android.permission.PUSH_PROVIDER"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <permission android:name="com.globe.gcash.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.globe.gcash.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="miui.permission.READ_STEPS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="false" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:isSplitRequired="true" android:label="@string/app_name" android:largeHeap="true" android:name="com.globe.gcash.android.GCashApplication" android:networkSecurityConfig="@xml/private_certs_network" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme.01" android:usesCleartextTraffic="false">
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-4591261075232034~3870976641"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="true"/>
+        <meta-data android:name="com.globe.gcash.android.util.helper.GlideTimeoutModule" android:value="GlideModule"/>
+        <meta-data android:name="APXOR_APP_ID" android:value="@string/apxor_app_id"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="@string/clevertap_account_id"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="@string/clevertap_token"/>
+        <meta-data android:name="CLEVERTAP_REGION" android:value="sg1"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="ic_notification"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="barcode"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_api_key"/>
+        <meta-data android:name="com.contentsquare.android.autostart" android:value="false"/>
+        <provider android:authorities="com.globe.gcash.android.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="gcash.module.splashscreen.mvp.view.SplashScreenActivity" android:noHistory="true" android:permission="" android:screenOrientation="portrait" android:theme="@style/AppTheme.Splash" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="gcash.onelink.me" android:pathPrefix="@string/onelink_prefix" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="@string/app_link_url_scheme" android:pathPrefix="@string/app_link_path_prefix"/>
+                <data android:host="@string/app_link_url_scheme" android:pathPrefix="@string/app_link_path_prefix_merchant"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="@string/app_link_url_scheme"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="@string/app_link_url_payment_scheme" android:pathPrefix="@string/app_link_path_prefix"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_url_scheme_host" android:pathPrefix="@string/app_url_scheme_prefix" android:scheme="gcash"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/host_splashscreen" android:scheme="@string/scheme"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="@string/universal_app_link_domain"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.globe.gcash.android.MerryGCash2023" android:roundIcon="@mipmap/ic_launcher_round" android:targetActivity="gcash.module.splashscreen.mvp.view.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.globe.gcash.android.Default" android:roundIcon="@mipmap/ic_launcher_round" android:targetActivity="gcash.module.splashscreen.mvp.view.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="gcash.module.otp.msisdn.msisdn.OtpMsisdnActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="gcash.module.otp.msisdn.msisdn.mvvm.OtpMsisdnActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="gcash.module.otp.msisdn.code.OtpCodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="gcash.module.otp.auth.OtpGenericAuthActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.globe.gcash.android.module.viewprofile.unifiedemail.pin.OtpCodeWithSessionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.globe.gcash.android.module.contacts.ContactListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/contact_selection_search"/>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.module.contact.selection" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.globe.gcash.android.module.contacts.contactdetails.ContactDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.03" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="gcash.common_presentation.sucesspage.SuccessActivityV1" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.common_presentation.sucesspage.SuccessAuthorizedActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="gcash.common_presentation.sucesspage.successV2.SuccessV2Activity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.common_presentation.sucesspage.SuccessAuthorizedV2Activity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.settings.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.settings.contactbadge.SettingsBadgeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.options.OptionsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.bpi.tutorial.TutorialActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.bpi.authenticate.AuthenticateActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.bpi.bpitogcash.BpiToGcashActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.bpi.confirmation.ConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.paypal.cashin.CashInActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.paypal.confirmation.ConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.rcbc.authenticate.AuthenticateActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.rcbc.tutorial.TutorialActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.accounts.options.presentation.OptionsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.accounts.paypal.link.LinkPaypalActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.accounts.paypal.authorize.AuthorizeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.viewprofile.verification.VerificationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.moneygram.partnerlist.RemittanceListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.moneygram.remittancefields.RemittanceFieldsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.moneygram.confirm.ConfirmActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.moneygram.termscondition.TermsConditionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.help.HelpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <service android:exported="false" android:name="gcash.module.otp.msisdn.code.ResendTimerIntentService"/>
+        <service android:exported="false" android:name="com.globe.gcash.android.module.viewprofile.verification.VerificationCodeTimerIntentService"/>
+        <service android:exported="false" android:name="com.globe.gcash.android.service.notification.GcashFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.globe.gcash.android.service.notification.GcashFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.globe.gcash.android.service.notification.FirebaseBackgroundService" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.globe.gcash.android.service.notification.huwaei.HuaweiMessagingService" android:permission="com.globe.gcash.android.permission.PROCESS_PUSH_MSG" android:process=":HmsMessageService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_notification"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/header_blue"/>
+        <activity android:name="com.globe.gcash.android.module.referral.code.CustomerReferralCodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.globe.gcash.android.module.referral.recipient.ReferralRecipientActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.globe.gcash.android.module.referral.confirmation.ReferralConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.common.android.webview.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.common.android.webview.WebViewAuthorizedActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.barcode.amount.InputAmountActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.barcode.merchantlist.MerchantListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.barcode.confirmation.BarcodeDisplayConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.viacode.amount.AmountActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.paypal.tutorial.TutorialActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.viacode.amount.TutorialActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.cashin.viacode.generate.GenerateBarcodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.notification.NotificationActivityKt" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:exported="false" android:name="com.globe.gcash.android.module.viewprofile.unifiedemail.email.EmailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.globe.gcash.android.module.viewprofile.unifiedemail.emailverify.VerifyActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.viewprofile.unifiedemail.sendcode.SendCodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.accounts.options.presentation.GlobeOneUnlinkSuccess" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.accounts.options.presentation.PayoneerSuccessPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.view.photoeditor.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.globe.gcash.android.module.gka.GoogleAuthActivity" android:permission="" android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="com.google.android.payments.standard.AUTHENTICATE_V1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.common.android.util.account.AccountLinkSuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.common.android.util.account.AccountLinkFailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.common.android.util.cashin.CashinSuccessActivity" android:screenOrientation="portrait" android:taskAffinity="unionbank.cashin" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.settings.otp_out.PartnerNotificationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.viewprofile.unifiedemail.sendcode.VerifyEmailSendCodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="com.globe.gcash.android.module.deleteaccount.DeleteAccountActivity" android:screenOrientation="portrait" android:theme="@style/Profile.MaterialTheme"/>
+        <activity android:exported="false" android:name="com.globe.gcash.android.module.viewprofile.newprofile.NewViewProfileActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus"/>
+        <service android:exported="false" android:name="com.globe.gcash.android.module.viewprofile.unifiedemail.emailverify.VerifyCodeResendTimerIntentService"/>
+        <service android:exported="false" android:name="com.globe.gcash.android.service.notification.NotificationActionService"/>
+        <receiver android:exported="false" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="gcash.common.android.util.smsreceiver.SmsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.globe.gcash.android.module.settings.devicemgmt.DeviceManagementActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.settings.devicemgmt.DeviceUnlinkActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.globe.gcash.android.module.settings.devicemgmt.DeviceUnlinkSuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.getload.refactored.presentation.BuyLoadContainerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.getload" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.getload.refactored.presentation.gamingpin.GamingPinsContainerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.getload.refactored.presentation.buyload.denomination.DenominationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.getload.refactored.presentation.gamingpin.denomination.DenominationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.getload.refactored.presentation.buyload.denomination.GamingDenominationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gscore.ShowGScoreActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="gcash.module.paypal.presentation.terms.PayPalTermsAndConditionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="gcash.module.paypal.presentation.cashin.PayPalCashInActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="gcash.module.paypal.presentation.confirm.PayPalCashInConfirmActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="gcash.module.paypal.presentation.linking.PayPalLinkingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01">
+            <intent-filter android:autoVerify="true" android:label="@string/gcash">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_linking_host" android:pathPrefix="@string/app_linking_prefix" android:scheme="gcash"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/gcash">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_linking_host" android:pathPrefix="@string/app_linking_prefix" android:scheme="app"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="gcash.module.international.service.presentation.internationalbank.InternationalBankCashInActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter android:autoVerify="true" android:label="@string/gcash">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/redirect_app_host" android:pathPrefix="@string/redirect_app_prefix" android:scheme="gcash"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/gcash">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/redirect_app_host" android:pathPrefix="@string/redirect_app_prefix" android:scheme="app"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="gcash.module.dashboard.refactored.presentation.DashboardContainerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.module.dashboard" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.dashboard.showmore.ShowMoreActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.03" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.dashboard.refactored.presentation.showmore.ShowMoreReArchActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02.ShowMore" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.dashboard.borrow.BorrowViewAllActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.dashboard.refactored.presentation.home.ginvest.GInvestMenuActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02.ShowMore" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="gcash.module.sendtomany.view.SendToManyLandingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="gcash.module.sendtomany.view.SendToManyUserGuideActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="gcash.module.sendtomany.view.SendToManyConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="gcash.module.sendtomany.view.SendToManyReceiptActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="gcash.module.bank_transfer.presentation.view.AccountListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="gcash.module.bank_transfer.presentation.view.BankCategoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.bank_transfer.presentation.partnerbanks.PartnerBanksActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="gcash.module.sendmoney.option.SendMoneyOptionsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.sendmoney.option" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.sendmoney.personalizedsend.sendwithclipcamera.PSCameraActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.personalizedsend.camera" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.sendmoney.personalizedsend.sendwithclippreview.PSPreviewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.personalizedsend.preview" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.sendmoney.personalizedsend.sendwithclipcropper.PSImgCropperActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.personalizedsend.crop" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.sendmoney.personalizedsend.sendwithvideo.SendWithVideoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.personalizedsend.video" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.sendmoney.personalizedsend.sendwithaudio.SendWithAudioActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.personalizedsend.audio" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.common.android.util.angpao.tutorial.AngPaoTutorialActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.sendmoney.recieveviaqr.generatedqr.GeneratedQRActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.sendmoney.recieveviaqr.customizecode.CustomizeCodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.sendmoney.recieveviaqr.myqrcodes.MyQrCodesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.sendmoney.recieveviaqr.myqrcodes.revamp.MyQrCodesNewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.sendmoney.recieveviaqr.generateqrerror.GenerateQrErrorActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.sendmoney.sendtoanyone.landing.SendToAnyoneActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:name="gcash.module.sendmoney.sendtoanyone.pendingtransaction.PendingTransactionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.sendmoney.sendtoanyone.pendingtransactiondetails.PendingTransactionDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.05" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.sendmoney.util.errorscreen.RiskRejectActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.05" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.sendmoney.sendtobank.refactored.accountlist.AccountListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="gcash.module.sendmoney.sendtobank.refactored.bankfield.BankFieldsActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.sendmoney.sendtobank.refactored.bankfield.updatebank.UpdateBankActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.sendmoney.sendtobank.refactored.confirmation.BankConfirmationActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.sendmoney.sendtobank.refactored.bankreceipt.BankReceiptActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="gcash.module.sendmoney.sendtobank.refactored.scheduledtransfer.ScheduledTransferActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.sendmoney.sendtoanyone.padaladashboard.PadalaDashboardActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.sendmoney.sendtoanyone.padalaform.PadalaFormActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.sendmoney.sendtoanyone.padalatransactiondetails.PadalaTransactionDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:exported="false" android:name="gcash.module.sendmoney.sendtogcash.expresssend.revamp.ExpressSendRecipientActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.sendmoney" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.sendmoney.sendtogcash.expresssend.revamp.userguide.ExpressSendUserGuideActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.sendmoney.sendtogcash.expresssend.confirmation.revamp.ExpressSendConfirmationActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:hardwareAccelerated="true" android:name="gcash.module.sendmoney.sendtogcash.expresssend.receipt.revamp.ExpressSendReceiptActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.sendmoney.util.SendMoneySuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.FullTransparent" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.sendmoney.recieveviaqr.generatedqr.userguide.GeneratedQRUserGuideActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:hardwareAccelerated="true" android:name="gcash.module.sendmoney.personalizedsend.dashboard.SWACDashboardActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:hardwareAccelerated="true" android:name="gcash.module.gcashplus.presentation.GCashPlusInfoPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.payqr.refactored.presentation.landing.PayQRLandingPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.payqr" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="gcash.module.payqr.refactored.presentation.paymentcode.F2FPayMainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.payqr.qr.rqr.payment.QrCodePaymentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payqr.qr.rqr.transaction.TransactionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payqr.qr.rqr.confirmation.QrCodeConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="gcash.module.payqr.fullscreen.BarcodeFullscreenActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payqr.qr.rqr.payment.dynamicpayment.DynamicPaymentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payqr.qr.rqr.confirmation.dynamicpayment.DynamicFieldConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payqr.qr.rqr.qrreader.QrReaderUserGuideActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payqr.refactored.presentation.ScanQrContainerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:alwaysRetainTaskState="true" android:exported="true" android:name="gcash.module.payqr.refactored.presentation.tap_container.TapToPayContainerActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="standard" android:name="gcash.module.payqr.refactored.presentation.nfc.NFCSettingsActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="standard" android:name="gcash.module.payqr.refactored.presentation.terms.TapToPayTermsAndConditionsActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="gcash.module.payqr.refactored.presentation.qr_tab.QRCodeContainerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.paybills.presentation.schedulebillerconfirmation.ScheduleBillerConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.paybills.presentation.schedulebillerlist.ScheduleBillerListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.paybills.presentation.billercategories.BillerCategoriesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.paybills.presentation.billercategories" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.paybills.presentation.billerlist.BillerListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.paybills.presentation.billerfields.BillerFieldsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.paybills.presentation.billerfields" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.paybills.presentation.confirm.ConfirmActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.paybills.presentation.favorites.FavoriteActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.paybills.presentation.receipt.ReceiptActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.paybills.tutorial.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.paybills.presentation.paymentoptions.PaymentOptionsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.paybills.presentation.scanbarcode.ScanBarcodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.paybills.scanbarcode.ScanBarcodeActivity" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.paybills.presentation.scanbarcode.ScanBarcodeLandscapeActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.paybills.scanbarcode.ScanBarcodeLandscapeActivity" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.paybills.presentation.savedbillerlist.SavedBillerListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.paybills.presentation.billerdetails.BillerDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.paybills.presentation.schedulebillerfields.ScheduleBillerFieldsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.paybills.presentation.managescheduledbillpayments.ManageScheduledBillPaymentsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.paybills.presentation.scheduledbillerdates.ScheduleBillerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.paybills.presentation.scheduledbillerdetails.ScheduledBillerDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.registration.manu_life.ManuLifeRegistrationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.investment.investment_products.auto_invest.AutoInvestActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="gcash.module.investment.investment_dashboard.pendingtransactionsdetails.PendingTransactionsDetailsBuyOrder" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.investment.investment_dashboard.cancelledtransactiosdetails.CancelledTransactionsDetails" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.investment.investment_dashboard.cancelledtransactiosdetails.CancelledTransactionsDetailsForSell" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme"/>
+        <activity android:name="gcash.module.investment.investment_dashboard.success_sell_order.SuccessSellTransaction" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme"/>
+        <activity android:name="gcash.module.investment.investment_dashboard.pendingtransactionsdetails.PendingTransactionDetailsSellOrder" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme"/>
+        <activity android:exported="false" android:name="gcash.module.investment.registration.emailregistration.EmailRegistrationActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.investment" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.investment.registration.profilingquestion.ProfilingQuestionActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.registration.fatcaquestion.FatcaQuestionActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.registration.summary.SummaryActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.investment.investment_dashboard.dashboard.DashboardActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.investment.investment_dashboard.dashboard" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.investment.investment_dashboard.pending_orders.application.PendingOrdersActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.investment.investment_dashboard.pending_orders" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.investment.investment_dashboard.set_reminders.SetRemindersActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.investment_dashboard.set_reminders" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.investment.investment_products.product_list.application.ProductListActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.investment_products.product_dashboard.ProductDashboardActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.investment_products.product_application.ProductApplicationActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <service android:name="gcash.module.investment.investment_products.authentication.AuthenticationCodeResendTimerIntentService"/>
+        <activity android:name="gcash.module.investment.investment_products.authentication.AuthenticationActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.product_subscription.BuyOrderActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.product_subscription.confirmation.ConfirmBuyOrderActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.investment.product_redemption.redeem.SellOrderActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.investment.product_redemption.redeem" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.investment.product_redemption.confirm.ConfirmSellOrderActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.investment_dashboard.transaction_history.TransactionHistoryActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.success.ProductSuccessActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.success.ProductSuccessForSell" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.success.csa.CSASuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.investment.registration.csaretakequestionaire.application.CSARetakeApplicationActivity" android:screenOrientation="portrait" android:theme="@style/GInvest.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.tutorial.GinvestTutorial" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.investment.common.GsaveNavigationActivity" android:screenOrientation="portrait" android:theme="@style/GFunds.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.messagecenter.presentation.list.NotificationListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.messagecenter.presentation.details.NotificationDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.messagecenter.presentation.revamp.list.MessageListContainerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.messagecenter.presentation.revamp.detail.DetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gsave.presentation.GSaveActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.gcredit.cgl.SuccessGclActivity" android:theme="@style/AppTheme.NoActionBar.01.09" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.gcredit.cgl.GclTnCActivity" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcredit.cgl.LearnMoreCglActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcredit.application.reviewdetails.GCreditReviewDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.08" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcredit.application.updatedetails.GCreditUpdateDetailsActivity" android:screenOrientation="portrait" android:theme="@style/GCreditMaterialTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcredit.application.summary.GCreditSummaryDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.08" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="gcash.module.gcredit.application.registration.GCreditRegistrationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.08" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.gcredit.application.registration" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="true" android:name="gcash.module.gcredit.application.registration.GCreditRegistrationActivity$BroadCastForErrorPopUp">
+            <intent-filter>
+                <action android:name="gcash.module.gcredit.application.registration"/>
+                <data android:path="gcash.module.gcredit.application.registration" android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="gcash.module.gcredit.account.manage.GCreditAccountActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.08" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.gcredit.account.manage" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.gcredit.account.payment.GCreditPaymentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="gcash.module.gcredit.account.confirm.GCreditConfirmActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcredit.account.transactionlist.GCreditTransactionListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.08" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcredit.account.receipt.GCreditReceiptActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcredit.account.ghana.AutoPaymentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.gcredit.application.reactivation.ReActivationActivity" android:screenOrientation="portrait" android:theme="@style/GCreditMaterialTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.gcredit.application.reactivation" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.gcredit.payment.GCreditMADPaymentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcredit.tutorial.GCreditTutorial" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.08" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.globe_one.presentation.prepaid.GlobeOnePrepaidActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.globe_one.presentation.postpaid.GlobeOnePostpaidActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.globe_one.presentation.otp.GlobeOneOtpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.globe_one.presentation.otp.GlobeOneLinkSuccess" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.globe_one.presentation.otp.GlobeOneResendSuccess" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="gcash.module.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.module.login" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="gcash.module.login.reset.recoverycode.RecoveryCodeResendTimerIntentService"/>
+        <activity android:name="gcash.module.login.reset.recoverycode.RecoveryCodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.reset.newpin.NewPinActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.otp.OtpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.DeviceLinkCongratsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.MaxDeviceActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.SecurityUpdateActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.linksecondarydevice.LinkSecondayDeviceActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.LinkingRequestActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.secdeviceconfirm.LinkSecDeviceConfirmActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.LinkRequestExpiredActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.ErrorDeviceLinkActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.RequestDeviceLinkCongratsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.RejectRequestActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.MaxDeviceReLinkActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.login.devicelink.MaxDeviceReLinkCongratsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.help.presentation.view.helpuserguide.HelpUserGuideActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.help.presentation.view.help.HelpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.help.presentation.view.tickethistory.TicketHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.help.presentation.view.ticketsuccesspage.TicketSuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.help.presentation.view.prechatform.PreChatFormActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="gcash.module.help.presentation.view.livechat_prechatform.LiveChatPreChatFormActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="gcash.module.help.presentation.view.ticketpage.TicketPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.help.presentation.view.chat.ChatActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.ggives.ui.ggivesdocuments.GGivesLoanDocumentsActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="gcash.module.ggives.ui.transactionhistory.GGivesTransactionHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="gcash.module.ggives.ui.payment.GGivesPaymentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="gcash.module.ggives.ui.paymentconfirmation.GGivesPaymentConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06"/>
+        <activity android:name="gcash.module.ggives.ui.management.GGivesManagementActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01"/>
+        <activity android:name="gcash.module.ggives.ui.landingpage.noneligible.GGivesLandingPageNonEligibleActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06"/>
+        <activity android:name="gcash.module.ggives.ui.application.GGivesApplicationActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.02" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="gcash.module.ggives.ui.receipt.GGivesReceiptActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.07"/>
+        <activity android:name="gcash.module.ggives.ui.helppage.HelpPageActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="gcash.module.ggives.ui.paymentschedule.PaymentScheduleActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01"/>
+        <activity android:name="gcash.module.ggives.ui.dashboard.GGivesDashboardActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01"/>
+        <activity android:name="gcash.module.ggives.ui.dashboard.onboarding.GGivesOnboardingActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01"/>
+        <activity android:name="gcash.module.cashout.presentation.view.CashOutInputActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.cashout.presentation.view.CashOutConfirmationActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.cashout.presentation.view.CashOutReceiptActivity" android:screenOrientation="portrait" android:taskAffinity="sendMoney.module" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="gcash.module.profile_limits.presentation.profilelimits.ProfileLimitActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.profile_limits.presentation.transhistory.TransactionHistoryActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="gcash.module.gchat.presentation.settings.GChatSettingsActivity" android:screenOrientation="portrait" android:theme="@style/GCash.MaterialTheme.01" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="gcash.module.gchat.presentation.gchat.GChatActivity" android:screenOrientation="portrait" android:theme="@style/GCash.MaterialTheme.01" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="gcash.module.gchat.presentation.thread.GChatThreadContainerActivity" android:screenOrientation="portrait" android:theme="@style/GCash.MaterialTheme.01" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="gcash.module.gfriends.presentation.list.GFriendsListActivity" android:screenOrientation="portrait" android:theme="@style/GCash.MaterialTheme.01"/>
+        <activity android:name="gcash.module.gcashcontact.presentation.contactlist.ContactListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="gcash.module.gcashcontact.presentation.loadingscreen.ContactLoadingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.02" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="gcash.module.gcashcontact.presentation.search.SearchContactListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.gcashcontact.presentation.contactlist.userguide.ContactListUserGuideActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="gcash.module.ginsure.presentation.DashboardActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06"/>
+        <activity android:name="gcash.module.ginsure.presentation.category.CategoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.ginsure.presentation.sms_insure.SmsInsureActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06"/>
+        <activity android:name="gcash.module.ginsure.presentation.list_insurance_product.ViewAllActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.ginsure.presentation.search_page.SearchActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.requestmoney.ui.refactored.receipt.SuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.requestmoney.ui.refactored.RequestMoneyActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.requestmoney.ui.refactored.history.RequestHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.requestmoney.ui.refactored.request.NewRequestActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.requestmoney.ui.refactored.confirmation.ConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.requestmoney.ui.refactored.receipt.ReceiptActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.requestmoney.ui.refactored.onboarding.OnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:exported="false" android:name="gcash.module.reportissue.reportemail.ReporEmailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.module.reportissue.reportemail" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.reportissue.reportcontent.ReportContentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.reportissue.reportconfirm.ReportConfirmActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="gcash.module.gloan.ui.repaymentreceipt.RepaymentReceiptActivity" android:screenOrientation="portrait" android:theme="@style/Loan.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gloan.ui.repaymentconfirmation.RepaymentConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gloan.ui.repaymentamount.RepaymentAmountActivity" android:screenOrientation="portrait" android:theme="@style/Loan.Theme.custom" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gloan.ui.repaymentamount.RepaymentAmountRevampActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gloan.ui.transactionhistory.TransactionHistoryActivity" android:screenOrientation="portrait" android:theme="@style/Loan.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gloan.ui.disbursement.success.DisbursementSuccessActivity" android:screenOrientation="portrait" android:theme="@style/Loan.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gloan.ui.disbursement.DisbursementLoanActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01"/>
+        <activity android:name="gcash.module.gloan.ui.application.ApplicationLoanActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gloan.ui.loanmanagement.LoanManagementActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gloan.ui.productpage.ProductPageLoanActivity" android:screenOrientation="portrait" android:theme="@style/Loan.Theme"/>
+        <activity android:name="gcash.module.gloan.ui.details.LoanDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Loan.Theme"/>
+        <activity android:name="gcash.module.gloan.ui.details.NanoLoanDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Loan.Theme"/>
+        <activity android:name="gcash.module.gloan.ui.homepage.HomePageLoanActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01"/>
+        <activity android:name="gcash.module.gloan.ui.preapproved.PreApprovedLoanActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01"/>
+        <activity android:name="gcash.module.gloan.ui.onboarding.OnboardingLoanActivity" android:screenOrientation="portrait" android:theme="@style/Loan.Theme"/>
+        <activity android:name="gcash.module.gloan.ui.loandocument.LoanDocumentActivity" android:screenOrientation="portrait" android:theme="@style/Loan.Theme"/>
+        <activity android:name="gcash.module.gloan.paymentschedule.PaymentScheduleActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05"/>
+        <activity android:name="gcash.module.gloan.ui.disbursement.info.DisbursementInfoActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01"/>
+        <activity android:name="gcash.module.gloan.ui.details.BauLoanSelectorActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gloan.ui.details.NanoLoanSelectorActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.02" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gloan.ui.loanlist.ActiveLoanListActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.02"/>
+        <activity android:name="gcash.module.gloan.ui.loanlist.LoanProcessActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue.01"/>
+        <activity android:exported="false" android:name="gcash.module.otp.auth.OtpMaxRetryActivity"/>
+        <activity android:name="gcash.module.bpi.cashin.code.CodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.bpi.cashin.verify.VerifyActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.bpi.view.linking.BpiLinkingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="gcash.module.bpi.view.cashin.BpiAccountsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysVisible|adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="gcash.cashin.bpi" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.bpi.view.cashin.BpiConfirmActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.referral.ReferralActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="gcash.module.referral.shareqr.ShareQrActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="gcash.module.payonline.presentation.options.PayOnlineOptionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.payonline" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.payonline.presentation.paywithgcash.PayWithGCashActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="gcash.module.payonline.presentation.payWithGCashCard.PayWithGCashCardActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="gcash.module.kkb.creategroup.CreateGroupActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.kkb.grouplist.GroupListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.kkb.splitbyitem.SplitByItemActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="gcash.module.kkb.splitequally.SplitEquallyActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="gcash.module.kkb.KKBActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.kkb.create.CreateSplitBillActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.kkb.details.KKBDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.kkb.payment.KKBPaymentConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.kkb.payment.KKBPaymentReceiptActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.kkb.onboarding.OnboardingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.kkb.confirmation.CreateConfirmSplitActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.kkb.confirmation.CreateConfirmEqualActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.kkb.confirmation.CreateSuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.payoneer.presentation.cashin.PayoneerCashinActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payoneer.presentation.cashin.confirmation.PayoneerConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payoneer.presentation.linking.PayoneerLinkingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payoneer.presentation.util.PayoneerWebActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payoneer.presentation.util.ErrorPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payoneer.presentation.util.SuccessPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payoneer.presentation.linking.link.PayoneerWebLinkingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.payoneer.presentation.linking.register.PayoneerWebRegistrationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.gstocksglobal.ui.landingpage.noneligible.GStocksLandingPageNonEligibleActivity" android:screenOrientation="portrait" android:theme="@style/GStock.Theme"/>
+        <activity android:name="gcash.module.gstocksglobal.ui.landingpage.onboarding.GStocksEligibleOnboardingPageActivity" android:screenOrientation="portrait" android:theme="@style/GStock.Theme"/>
+        <activity android:name="gcash.module.gstocksglobal.ui.application.GStocksApplicationActivity" android:screenOrientation="portrait" android:theme="@style/GStock.Theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="gcash.module.gstocksglobal.ui.landingpage.dashboard.GStockDashboardActivity" android:screenOrientation="portrait" android:theme="@style/GStock.Theme"/>
+        <activity android:name="gcash.module.gstocksglobal.ui.landingpage.tutorial.GStocksGameOnboardingActivity" android:screenOrientation="portrait" android:theme="@style/GStock.Theme"/>
+        <activity android:name="gcash.module.localstocks.ui.landingpage.eligible.LStocksEligibleUserActivity" android:screenOrientation="portrait" android:theme="@style/lStock.Theme.Transparent"/>
+        <activity android:name="gcash.module.localstocks.ui.landingpage.noneligible.LStocksNonEligibleUserActivity" android:screenOrientation="portrait" android:theme="@style/lStock.Theme"/>
+        <activity android:name="gcash.module.localstocks.ui.registration.reject.ApplicationAccountStatusActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MaterialLight.NoActionBar"/>
+        <activity android:name="gcash.module.localstocks.ui.landingpage.dashboard.PhilippinesStocksDashboardActivity" android:screenOrientation="portrait" android:theme="@style/lStock.Theme"/>
+        <activity android:name="gcash.module.gcrypto.ui.landingpage.ineligible.GCryptoInEligiblePageActivity" android:screenOrientation="portrait" android:theme="@style/GCrypto.Theme"/>
+        <activity android:name="gcash.module.gcrypto.ui.application.GCryptoMainApplicationActivity" android:screenOrientation="portrait" android:theme="@style/GCrypto.Theme"/>
+        <activity android:name="gcash.module.nft.ui.marketplace.NftMarketplaceActivity" android:screenOrientation="portrait" android:theme="@style/NFT.Theme"/>
+        <activity android:name="gcash.module.nft.ui.application.NFTMainApplicationActivity" android:screenOrientation="portrait" android:theme="@style/NFT.Theme"/>
+        <activity android:name="gcash.module.nft.ui.registration.NFTRegistrationActivity" android:screenOrientation="portrait" android:theme="@style/NFT.Theme"/>
+        <activity android:name="gcash.module.account_recovery.presentation.account_activity.AccountActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.account_recovery.presentation.onboarding.OnboardingActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.account_recovery.presentation.nomination.NominationActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.account_recovery.presentation.personal_information.PersonalInformationActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.account_recovery.presentation.recovery_step.RecoveryStepActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.account_recovery.presentation.registration_precheck.RegistrationPreCheckActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcash_basic.presentation.verification.FaceVerificationClientActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.gcash.module.remittance.presentation.confirm.RemittanceConfirmActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.gcash.module.remittance.presentation.cashin.RemittanceActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="false" android:name="com.gcash.module.remittance.presentation.terms.RemittanceUserConsentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="gcash.module.gcashjr.presentation.landingpage.PreEligibilityDashboardActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcashjr.presentation.onboarding.GCashJrOnboardingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoStatusBar.MaterialThemeBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcashjr.presentation.account_registration.AccountRegistrationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcashjr.presentation.authentication.GCashJrOtpAuthenticationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcashjr.presentation.authentication.GCashJrOtpErrorActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gcashjr.presentation.proof_of_parenthood.UploadBirthCertificateActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.privacy_dashboard.presentation.viewallarticles.ViewAllArticlesActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.privacy_dashboard.presentation.learnmorearticle.LearnMoreArticleActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.privacy_dashboard.presentation.dashboard.PrivacyDashboardActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.privacy_dashboard.presentation.dashboard.transactionhistory.TransactionHistoryPrivacyChoiceActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.gcash.iap.verify.activity.OtpSmsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.gcash.iap.verify.activity.faceverification.FaceRecognitionGuideActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent.NewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.gcash.iap.verify.activity.educate.EducateActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05.Translucent" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <provider android:authorities="com.globe.gcash.android.healthcommon.StepSPProvider" android:exported="false" android:name="com.alipay.mobilesdk.sportscore.biz.provider.StepSPProvider"/>
+        <activity android:exported="false" android:name="com.gcash.iap.wallet.authorization.MerchantAuthActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.05"/>
+        <activity android:name="com.gcash.iap.receipt.ReceiptPageRevampedActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <service android:exported="false" android:name="com.alipay.mobile.healthcommon.stepcounter.APExtStepService"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <activity android:name="gcash.module.splashscreen.mvp.view.NoServiceActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.FullTransparent"/>
+        <activity android:name="gcash.module.splashscreen.mvp.view.OnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:launchMode="singleInstance" android:name="gcash.module.splashscreen.mvp.view.WelcomeActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:exported="false" android:name="gcash.module.gmovies.registration.RegistrationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.bookmovies" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.gmovies.movies.MoviesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.gmovies.cinemanearby.CinemaNearbyActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.gmovies.cinemalist.CinemaListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.gmovies.seatmap.SeatmapActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.gmovies.confirmation.ConfirmBookMoviesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.gmovies.termscondition.TermsConditionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.gmovies.moviedetails.MovieDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:exported="false" android:name="gcash.module.unionbank.presentation.linking.UnionBankWebLinkingActivity" android:screenOrientation="portrait" android:taskAffinity="unionbank.cashin" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.unionbank.presentation.amount.AmountActivity" android:screenOrientation="portrait" android:taskAffinity="unionbank.cashin" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="gcash.module.unionbank.presentation.confirmation.ConfirmationActivity" android:screenOrientation="portrait" android:taskAffinity="unionbank.cashin" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.unionbank.presentation.authentication.AuthenticationActivity" android:screenOrientation="portrait" android:taskAffinity="unionbank.cashin" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.mastercard.linking.MasterCardListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.mastercard.linking" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.mastercard.webview.MCWebViewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.mastercard.webview" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.transactionhistory.history.TransactionHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.transactionhistory.history" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.transactionhistory.email.EmailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.transactionhistory.email" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gcash.module.transactionhistory.refactored.presentation.TransactionsContainerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.transactionhistory.refactored.presentation.email.RequestHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus"/>
+        <activity android:name="gcash.module.transactionhistory.refactored.presentation.success.TransactionRequestSuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.FullTransparent"/>
+        <activity android:name="gcash.module.transactionhistory.refactored.presentation.details.TransactionDetailsActivity" android:screenOrientation="portrait" android:theme="@style/GCash.MaterialTheme.01"/>
+        <activity android:name="gcash.module.debugsettings.DebugSettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.debugsettings.DebugSettingsDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.changepin.newpin.NewPinActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="gcash.module.changepin.newpin.ForcedChangePinActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="gcash.module.changepin.currentpin.CurrentPinActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="gcash.module.registration.presentation.enhance.summary.SummaryEnhanceActivity" android:screenOrientation="portrait" android:theme="@style/RegistrationThemeNotEditable" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.module.registration.presentation.enhance.personaldetails.PersonDetailsEnhanceActivity" android:screenOrientation="portrait" android:theme="@style/RegistrationThemeEditable" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.globe.gcash.android.module.registration.presentation.personaldetails" android:scheme="gcash"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="gcash.module.registration.presentation.enhance.pin.PinEnhanceActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="gcash.module.registration.presentation.enhance.welcome.RegistrationWelcomeActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.module.biometrics.settings.BiometricSettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:exported="false" android:name="gcash.module.biometrics.takeover.EnableBiometricActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.shop_lifestyle.presentation.ShopLifeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.shop_lifestyle.presentation.shoplife.denomination.SkuDenominationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01"/>
+        <activity android:name="gcash.module.amex.presentation.AmexActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.common_presentation.sso_eligibility.presentation.SsoConsentRedirectionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06"/>
+        <activity android:exported="false" android:name="gcash.common_presentation.sso_eligibility.presentation.SsoConsentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01.06" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.common_presentation.tutorial.TutorialActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.common_presentation.page.SuccessActivity" android:screenOrientation="portrait" android:theme="@style/Gcredit.Theme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.common_presentation.page.ErrorActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.01" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.common_presentation.page.NewErrorActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentStatus" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.common_presentation.page.ResultActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.common_presentation.page.NewResultActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.common_presentation.page.NewSuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.FullTransparent" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="gcash.common_presentation.page.NewResultNonAuthActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="gcash.common_presentation.page.MaintenanceActivity" android:screenOrientation="portrait" android:theme="@style/MaterialThemeNewHeaderBlue" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <provider android:authorities="com.globe.gcash.android.commoninitprovider" android:exported="false" android:initOrder="91" android:name="gcash.common.android.application.provider.ContextProvider"/>
+        <service android:name="gcash.common.android.util.services.LogoutService"/>
+        <service android:name="gcash.common.android.util.services.AgreementService"/>
+        <service android:name="gcash.common.android.network.api.service.ComplianceApiService"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.ads.adplayer.FullScreenWebViewDisplay" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <provider android:authorities="com.globe.gcash.android.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.unity3d.services.core.configuration.AdsSdkInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.amazon.aps.ads.activity.ApsInterstitialActivity" android:theme="@style/NoWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.amazon.device.ads.DTBInterstitialActivity"/>
+        <activity android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.settings.SettingsActivity" android:theme="@style/contentsquare_SettingsLayout"/>
+        <activity android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.developer.DeveloperActivationActivity" android:theme="@style/contentsquare_AppTheme.Dialog"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.contentsquare.android.analytics.internal.features.deeplink.DeepLinkActivity" android:theme="@style/contentsquare_AppTheme">
+            <intent-filter android:label="@string/contentsquare_client_mode">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="contentsquare.com" android:scheme="cs-com.globe.gcash.android"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.overlay.OverlayService" android:stopWithTask="false"/>
+        <activity android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.tutorial.ClientModeTutorialActivity" android:screenOrientation="portrait" android:theme="@style/contentsquare_AppTheme"/>
+        <activity android:excludeFromRecents="true" android:name="com.contentsquare.android.analytics.internal.features.clientmode.ui.deactivationdialog.DeactivationActivity" android:theme="@style/contentsquare_AppTheme.Dialog"/>
+        <provider android:authorities="com.globe.gcash.android.CSAutoStart" android:exported="false" android:name="com.contentsquare.android.internal.features.initialize.AutoStart"/>
+        <provider android:authorities="com.globe.gcash.android.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="ly.img.android.pesdk.ui.activity.CameraPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenSize" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="ly.img.android.pesdk.ui.activity.PhotoEditorActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenSize" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="ly.img.android.pesdk.ui.activity.EditorActivity" android:windowSoftInputMode="adjustPan"/>
+        <provider android:authorities="com.globe.gcash.android.IMGLYAutoInit" android:enabled="true" android:exported="false" android:name="ly.img.android.IMGLYAutoInit"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.clevertap.BG_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.globe.gcash.android" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.inmobi.ads.rendering.InMobiAdActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:location" android:value="location:6.8.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:location:location" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.bi.setting" android:value="true"/>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.globe.gcash.android.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.globe.gcash.android.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.globe.gcash.android.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:readPermission="com.globe.gcash.android.permission.PUSH_PROVIDER" android:writePermission="com.globe.gcash.android.permission.PUSH_WRITE_PROVIDER"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.5.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <activity android:exported="false" android:name="com.huawei.hms.support.api.push.TransActivity"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-identifier" android:value="ads-identifier:3.4.39.302"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery">
+            <meta-data android:name="com.huawei.agconnect.applinking.AppLinkingRegistrar" android:value="com.huawei.agconnect.core.ServiceRegistrar"/>
+            <meta-data android:name="com.huawei.agconnect.credential.CredentialServiceRegistrar:100" android:value="com.huawei.agconnect.core.ServiceRegistrar"/>
+        </service>
+        <meta-data android:name="com.huawei.hms.min_api_level:com.huawei.hms:location:location" android:value="1"/>
+        <provider android:authorities="com.globe.gcash.android.aaidinitprovider" android:exported="false" android:initOrder="500" android:name="com.huawei.hms.aaid.InitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.3.0.305"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.5.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <provider android:authorities="com.globe.gcash.android.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.google.android.gms.appinvite.PreviewActivity" android:theme="@style/Theme.AppInvite.Preview">
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.tagmanager.TagManagerService"/>
+        <activity android:exported="true" android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.globe.gcash.android"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.vungle.ads.internal.ui.VungleActivity"/>
+        <provider android:authorities="com.globe.gcash.android.vungle-provider" android:exported="false" android:name="com.vungle.ads.internal.util.VungleProvider"/>
+        <provider android:authorities="com.globe.gcash.android.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <provider android:authorities="com.globe.gcash.android.applovininitprovider" android:exported="false" android:initOrder="101" android:name="com.applovin.sdk.AppLovinInitProvider"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.sdk.AppLovinWebViewActivity"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerDetailActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTcfStringActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerUnifiedFlowActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerWaterfallKeywordsActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.creative.MaxCreativeDebuggerActivity" android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"/>
+        <service android:exported="false" android:name="com.applovin.impl.adview.activity.FullscreenAdService" android:stopWithTask="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.globe.gcash.android.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.globe.gcash.android.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.globe.gcash.android.AudienceNetworkContentProvider" android:exported="false" android:name="com.facebook.ads.AudienceNetworkContentProvider"/>
+        <provider android:authorities="com.globe.gcash.android.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.globe.gcash.android.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/gma_ad_services_config"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.globe.gcash.android.belvedere2.attachments" android:exported="false" android:grantUriPermissions="true" android:name="zendesk.belvedere.BelvedereFileProvider" android:readPermission="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/belvedere_attachment_storage_v2"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <provider android:authorities="com.globe.gcash.android.apxorsdk.core" android:exported="false" android:multiprocess="true" android:name="com.apxor.androidsdk.core.ApxorInitProvider"/>
+        <activity android:name="com.apxor.androidsdk.plugins.realtimeui.inapp.activities.HtmlActivity" android:theme="@style/ApxorTheme.Html.Activity"/>
+        <activity android:name="com.apxor.androidsdk.plugins.survey.SurveyActivity" android:theme="@style/ApxorTheme.Light" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.apxor.androidsdk.plugins.wysiwyg.ApxAddTestDeviceActivity" android:noHistory="true" android:theme="@style/ApxWTheme.Transparent" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="add-test-device" android:path="/com.globe.gcash.android.apxor" android:scheme="apxor"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="add-test-device" android:scheme="com.globe.gcash.android.apxor"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.clevertap.android.geofence.CTGeofenceReceiver"/>
+        <receiver android:name="com.clevertap.android.geofence.CTLocationUpdateReceiver"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.geofence.CTGeofenceBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.fyber.inneractive.sdk.activities.InneractiveInternalBrowserActivity" android:screenOrientation="fullUser"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.fyber.inneractive.sdk.activities.InneractiveFullscreenAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.fyber.inneractive.sdk.activities.InneractiveRichMediaVideoPlayerActivityCore" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:name="com.fyber.inneractive.sdk.activities.InternalStoreWebpageActivity" android:screenOrientation="sensor" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.fyber.inneractive.sdk.activities.FyberReportAdActivity" android:screenOrientation="fullUser"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.alipay.zoloz.zface.ui.ZFaceActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.alipay.zoloz.zface.ui.PhotinusActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.alipay.zoloz.zface.ui.MultiActionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.alipay.zoloz.zface.ui.GarfieldActivity" android:screenOrientation="unspecified" android:theme="@style/FaceTranslucentNoAnimationTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.zoloz.android.phone.zdoc.activities.FalconCardNativeActivityNew" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.tapjoy.TJAdUnitActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tapjoy.TJContentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.ironsource.sdk.controller.ControllerActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.ironsource.sdk.controller.InterstitialActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.ironsource.sdk.controller.OpenUrlActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:excludeFromRecents="true" android:name="com.chartboost.sdk.CBImpressionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.globe.gcash.android.IronsourceLifecycleProvider" android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:enableOnBackInvokedCallback="true" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.chartboost.sdk.view.CBImpressionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.chartboost.sdk.internal.clickthrough.EmbeddedBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.chartboost.sdk.internal.video.repository.exoplayer.VideoRepositoryDownloadService">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.mbridge.msdk.reward.player.MBRewardVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:name="com.mbridge.msdk.interstitial.view.MBInterstitialActivity"/>
+        <activity android:configChanges="keyboard|orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.mbridge.msdk.activity.MBCommonActivity" android:theme="@style/mbridge_transparent_common_activity_style"/>
+        <activity android:name="com.mbridge.msdk.out.LoadingActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" android:theme="@style/tt_landing_page"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity" android:theme="@style/tt_landing_page"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity" android:theme="@style/tt_landing_page"/>
+        <activity android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" android:screenOrientation="portrait" android:theme="@style/tt_privacy_landing_page"/>
+        <service android:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity" android:theme="@style/tt_app_open_ad_no_animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialActivity" android:theme="@style/tt_full_screen_interaction"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialExpressActivity" android:theme="@style/tt_full_screen_interaction"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.smartadserver.android.library.ui.SASInterstitialActivity" android:theme="@style/SASInterstitialActivityTheme"/>
+        <provider android:authorities="com.globe.gcash.android.smartadserver.transparencyreport" android:exported="false" android:grantUriPermissions="true" android:name="com.smartadserver.android.library.components.transparencyreport.SASTransparencyReport$FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths_smartadserver"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="true" android:name="com.ogury.core.internal.OguryLogEnablerReceiver">
+            <intent-filter>
+                <action android:name="com.ogury.sdk.intent.ENABLE_LOGS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="io.presage.interstitial.ui.InterstitialActivity" android:theme="@style/Presage.AdScreen.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="io.presage.interstitial.ui.InterstitialAndroid8TransparentActivity" android:theme="@style/Presage.AdScreen.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="io.presage.interstitial.ui.InterstitialAndroid8RotableActivity" android:theme="@style/Presage.AdScreen"/>
+        <activity android:exported="false" android:name="io.presage.mraid.browser.ShortcutActivity" android:theme="@style/Presage.AdScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="io.presage.mraid.browser.Android8AndLaterShortcutActivity" android:theme="@style/Presage.AdScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.iap.ac.android.acs.plugin.ui.activity.ThirdPartyAuthActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.globe.gcash.android.bcipher" android:name="com.dotx.cipherkey.BCipherProvider"/>
+        <activity android:name="com.pulseid.sdk.activities.CampaignWebView" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.pulseid.sdk.services.BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.pulseid.sdk.services.GeofenceEventBroadcastReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.pulseid.sdk.jobs.LocationUpdateBroadcastReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.pulseid.sdk.services.NotificationClickBroadcastReceiver"/>
+        <service android:exported="true" android:name="com.pulseid.sdk.services.GeofenceTransitionsService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.pulseid.sdk.services.EventService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.pulseid.sdk.services.GeofencingService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.pulseid.sdk.services.NotificationService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.pulseid.sdk.services.ConfigService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.pulseid.sdk.services.SegmentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="androidx.core.app.LogServiceInToolsProcess" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":tools"/>
+        <service android:exported="false" android:name="com.alipay.mobile.rome.syncsdk.service.LongLinkService"/>
+        <activity android:name="com.alipay.mobile.verifyidentity.business.menu.activity.MenuActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.alipay.mobile.verifyidentity.business.security_verification.activity.VerifySecurityActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.alipay.mobile.verifyidentity.business.security.activity.SecurityListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.alipay.mobile.verifyidentity.business.security.activity.SecurityPrepareActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.alipay.mobile.verifyidentity.business.security.activity.SetSecurityActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.alipay.mobile.verifyidentity.business.security.activity.SecuritySuccessActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.alipay.mobile.verifyidentity.business.pin.activity.PinActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.alipay.mobile.verifyidentity.business.otp.activity.OtpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.alipay.mobile.verifyidentity.framework.QueryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.alipay.mobile.verifyidentity.framework.MenuActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="com.samsung.android.health.permission.read" android:value="com.samsung.health.step_count"/>
+        <service android:name="com.alipay.mobile.healthcommon.stepcounter.APMainStepService"/>
+        <service android:enabled="true" android:name="pyxis.uzuki.live.richutilskt.service.RLocationService"/>
+        <activity android:multiprocess="true" android:name="com.iap.ac.android.acs.plugin.downgrade.ui.ErrorPageActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.alibaba.ariver.ipc.RemoteCallService"/>
+        <service android:name="com.alibaba.ariver.ariverexthub.api.ipc.RVERemoteService"/>
+        <service android:name="com.alibaba.griver.base.resource.predownload.AppPreDownloadJobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.alibaba.griver.ui.jsapi.picker.nebula.wheelview.multilevel.MultilevelSelectActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverBaseActivity$Main" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.alibaba.griver.core.kernel.ipc.server.IpcMsgServerService"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverBaseActivity$Back1" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverBaseActivity.Back1" android:theme="@style/Theme.Griver.Activity.Base" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverBaseActivity$Back2" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverBaseActivity.Back2" android:theme="@style/Theme.Griver.Activity.Base" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverBaseActivity$Back3" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverBaseActivity.Back3" android:theme="@style/Theme.Griver.Activity.Base" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverBaseActivity$Back4" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverBaseActivity.Back4" android:theme="@style/Theme.Griver.Activity.Base" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverBaseActivity$Back5" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverBaseActivity.Back5" android:theme="@style/Theme.Griver.Activity.Base" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverBaseActivity$Back6" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverBaseActivity.Back6" android:theme="@style/Theme.Griver.Activity.Base" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverFileChooserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.alibaba.griver.core.ui.activity.GriverBaseActivity$Lite1" android:process=":lite1" android:taskAffinity=":lite1" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.alibaba.griver.core.ui.activity.GriverBaseActivity$Lite2" android:process=":lite2" android:taskAffinity=":lite2" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.alibaba.griver.core.ui.activity.GriverBaseActivity$Lite3" android:process=":lite3" android:taskAffinity=":lite3" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverTransActivity$Main" android:theme="@style/griver_core_transparent" android:windowDisablePreview="true" android:windowIsTranslucent="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.alibaba.griver.core.ui.activity.GriverTransActivity$Lite1" android:process=":lite1" android:taskAffinity=":lite1" android:theme="@style/griver_core_transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.alibaba.griver.core.ui.activity.GriverTransActivity$Lite2" android:process=":lite2" android:taskAffinity=":lite2" android:theme="@style/griver_core_transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.alibaba.griver.core.ui.activity.GriverTransActivity$Lite3" android:process=":lite3" android:taskAffinity=":lite3" android:theme="@style/griver_core_transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverTransActivity$Back1" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverTransActivity.Back1" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverTransActivity$Back2" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverTransActivity.Back2" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverTransActivity$Back3" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverTransActivity.Back3" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverTransActivity$Back4" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverTransActivity.Back4" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverTransActivity$Back5" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverTransActivity.Back5" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.alibaba.griver.core.ui.activity.GriverTransActivity$Back6" android:taskAffinity="com.alibaba.griver.core.ui.activity.GriverTransActivity.Back6" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.alibaba.griver.core.keepalive.GriverProxyActivity" android:theme="@style/Theme.Griver.Activity.Translucent"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:hardwareAccelerated="true" android:name="com.alibaba.griver.image.activity.GriverPhotoSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation" android:hardwareAccelerated="true" android:name="com.alibaba.griver.image.activity.GriverPhotoPreviewActivity" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.alibaba.griver.image.activity.GriverVideoPreviewActivity" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:hardwareAccelerated="true" android:name="com.alibaba.griver.image.activity.GriverCaptureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:hardwareAccelerated="true" android:name="com.alibaba.griver.image.activity.GriverCapturePreviewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:name="com.alibaba.griver.file.ui.FileViewerActivity"/>
+        <provider android:authorities="com.globe.gcash.android.griver.file.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.alibaba.griver.file.utils.GriverFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/griverfilepath"/>
+        </provider>
+        <service android:exported="false" android:name="com.alibaba.griver.core.kernel.ipc.client.IpcMsgClientService$Lite1" android:process=":lite1"/>
+        <service android:exported="false" android:name="com.alibaba.griver.core.kernel.ipc.client.IpcMsgClientService$Lite2" android:process=":lite2"/>
+        <service android:exported="false" android:name="com.alibaba.griver.core.kernel.ipc.client.IpcMsgClientService$Lite3" android:process=":lite3"/>
+        <meta-data android:name="ariver_manifest" android:value="com.alibaba.griver.GriverManifest"/>
+        <activity android:name="com.alibaba.griver.device.ui.GriverOpenSettingActivity"/>
+        <service android:exported="true" android:name="com.alibaba.griver.device.jsapi.nfc.service.TinyAppHostApduService" android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:hardwareAccelerated="true" android:name="com.alibaba.griver.map.openlocation.GriverOpenLocationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:hardwareAccelerated="true" android:name="com.alibaba.griver.map.poiselect.ui.PoiSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.iap.ac.android.container.activity.ACContainerActivity"/>
+        <activity android:name="com.iap.ac.android.container.activity.H5NetworkCheckActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.alipay.iapminiprogram.griverh5ng.activity.GriverH5NavigationActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.alipay.iapminiprogram.griverh5ng.activity.GriverH5FileChooserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="5"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <permission android:name="com.globe.gcash.android.deveventspermission" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.globe.gcash.android.deveventspermission"/>
+</manifest>

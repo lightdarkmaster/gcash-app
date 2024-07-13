@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_marginBottom="30.0dip" android:text="Enter your current MPIN" android:fontFamily="@font/gcash_font_body_regular" />
+            <com.dotx.dpasswordtext.DPasswordText android:textSize="@dimen/font_x4_large" android:layout_gravity="center_horizontal" android:id="@id/txt_current_pin" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:inputType="number" android:fontFamily="@font/gcash_font_body_regular" app:text_hint="dash" app:text_hint_color="@color/font_0024" app:text_mask="circle" app:text_mask_color="@color/font_0024" app:text_max_length="4" style="@style/Theme.AppCompat.Light" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0044" android:layout_gravity="center" android:id="@id/tv_invalid_pin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Please enter the correct MPIN." android:fontFamily="@font/gcash_font_body_regular" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

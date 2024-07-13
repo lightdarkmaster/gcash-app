@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher android:id="@id/vs_insurance_made_easy" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureAllChildren="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_wrapper_insurance_made_easy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="12.0dip">
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textStyle="normal" android:textColor="@color/font_0091" android:id="@id/tv_insurance_made_easy_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/insurance_made_easy" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="24.0dip" android:layout_marginEnd="16.0dip" />
+        <TextView android:textSize="@dimen/font_small" android:textStyle="normal" android:textColor="@color/font_0102" android:id="@id/tv_insurance_made_easy_sub_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/experience_seamless_access_to_our_insurance_services_right_inside_gcash" android:lineSpacingExtra="6.0sp" android:alpha="0.6" android:fontFamily="@font/gilroy_semibold" android:layout_marginStart="24.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintTop_toBottomOf="@id/tv_header" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rv_insurance_made_easy" android:layout_width="fill_parent" android:layout_height="130.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_sub_text" />
+    </LinearLayout>
+    <include layout="@layout/need_help_card" />
+</ViewSwitcher>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/contentHolder" style="?Imgly.PESDK.Editor.Panel.Overlay.OverlayItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ly.img.android.pesdk.ui.panels.ThumbnailView style="?Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Icon" />
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView android:id="@id/selected_overlay" app:srcCompat="@drawable/imgly_item_selected_overlay_dark" style="?Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay" />
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView android:id="@id/selected_shuffle" app:srcCompat="@drawable/imgly_icon_shuffle_light" style="?Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Overlay.Icon" />
+    <TextView android:id="@id/label" style="?Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Label" />
+    <View style="?Imgly.PESDK.Editor.Panel.Overlay.OverlayItem.Border" />
+</RelativeLayout>

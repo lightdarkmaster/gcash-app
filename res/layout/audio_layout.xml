@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btnWrapper">
+                <ProgressBar android:id="@id/progressBarCircle" android:background="@drawable/inner_circle" android:layout_width="200.0dip" android:layout_height="200.0dip" android:max="60" android:indeterminate="false" android:progressDrawable="@drawable/outer_circle" android:layout_centerInParent="true" android:rotation="-90.0" android:layoutDirection="ltr" style="?android:progressBarStyleHorizontal" />
+                <ImageView android:id="@id/ivMic" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/ic_audio_mic" android:layout_centerInParent="true" />
+                <gcash.module.sendmoney.personalizedsend.sendwithaudio.CustomChrono android:textAppearance="@android:style/TextAppearance.Large" android:textColor="#ffffffff" android:id="@id/customChrono" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ivMic" android:layout_centerInParent="true" />
+                <TextView android:textAppearance="@android:style/TextAppearance.Large" android:textColor="#ffffffff" android:id="@id/tvTimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:maxLength="8" android:layout_below="@id/customChrono" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textColor="@color/font_0026" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Record a message up to 60 secs." android:layout_above="@id/btnWrapper" android:layout_centerInParent="true" android:fontFamily="@font/gcash_font_body_regular" />
+            <RelativeLayout android:id="@id/btnWrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"> android:textColor="#fff"/> <TextView android:textColor="#ffffffff" android:id="@id/tvWhiteCircle" android:background="@drawable/circle_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <TextView android:textColor="#ffffffff" android:id="@id/btnRecord" android:background="@drawable/red_circle" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+                <TextView android:textColor="#ffffffff" android:id="@id/btnStop" android:background="@drawable/start_record_button" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_paynamics" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <LinearLayout android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/txt_note">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/ic_myaccount_card_grey" android:scaleType="fitCenter" />
+                        <TextView android:gravity="center" android:id="@id/txt_title" android:paddingLeft="@dimen/padding_regular" android:paddingRight="@dimen/padding_regular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="15.0dip" android:text="No GCash Mastercard linked to this mobile number." android:fontFamily="@font/gcash_font_body_regular" />
+                        <LinearLayout android:id="@id/listWrapper" android:background="@color/bg_0026" android:paddingTop="0.8000001dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                            <ListView android:id="@id/list" android:background="@color/bg_0009" android:paddingLeft="@dimen/padding_regular" android:paddingRight="@dimen/padding_regular" android:scrollbars="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.8000001dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textColor="@android:color/darker_gray" android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@id/txt_note" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="Note: Data charges may apply." android:layout_above="@id/btn_addCard" android:fontFamily="@font/gcash_font_body_light" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_addCard" android:background="@drawable/bg_0004" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/padding_regular" android:text="LINK CARD" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onClick" android:fontFamily="@font/gcash_font_header_bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

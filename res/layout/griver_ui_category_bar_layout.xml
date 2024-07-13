@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.griver.ui.ant.layout.AULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aui="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="43.0dip">
+        <HorizontalScrollView android:id="@id/horizontalScrollView" android:background="@android:color/white" android:scrollbars="none" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/addIcon">
+            <com.alibaba.griver.ui.ant.layout.AULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/scroll_layout" android:layout_width="wrap_content" android:layout_height="41.0dip" />
+                <ImageView android:id="@id/menu_bar" android:background="@color/griver_indicate_color" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="2.0dip" />
+            </com.alibaba.griver.ui.ant.layout.AULinearLayout>
+        </HorizontalScrollView>
+        <com.alibaba.griver.ui.ant.text.AUTextView android:background="@drawable/griver_ui_segment_shadow_gradient_left" android:layout_width="14.0dip" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
+        <com.alibaba.griver.ui.ant.text.AUTextView android:background="@drawable/griver_ui_segment_shadow_gradient_right" android:layout_width="14.0dip" android:layout_height="fill_parent" android:layout_alignEnd="@id/horizontalScrollView" />
+        <com.alibaba.griver.ui.ant.text.AUIconView android:gravity="center" android:id="@id/addIcon" android:background="#ffffffff" android:visibility="gone" android:layout_width="@dimen/griver_au_segment_add_width" android:layout_height="fill_parent" android:layout_alignParentEnd="true" aui:iconfontColor="@color/griver_AU_COLOR_TITLE" aui:iconfontSize="@dimen/griver_AU_TEXTSIZE4" aui:iconfontUnicode="@string/griver_iconfont_add" />
+    </RelativeLayout>
+    <View android:id="@id/bottomLine" android:background="@color/griver_switch_tab_buttom_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/griver_AU_DIVIDER_SPACE1" />
+</com.alibaba.griver.ui.ant.layout.AULinearLayout>

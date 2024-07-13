@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_send_money_recipient" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/wrapper_a" android:background="@color/bg_0052" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/img_a" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginBottom="@dimen/padding_regular" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Confirmation" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="1.0" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wrapper_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/font_x3_large" android:textColor="@color/font_0024" android:id="@id/lbl_total_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:textAllCaps="false" android:fontFamily="@font/gcash_font_body_regular" />
+                <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Total Amount" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_submit" android:background="@drawable/bg_0004" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/padding_regular" android:text="CONFIRM" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onClick" android:fontFamily="@font/gcash_font_header_bold" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0020" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_regular" android:layout_marginRight="@dimen/padding_regular" android:text="There will be a php 1.00 service fee to be deducted from your RCBC account." android:layout_above="@id/btn_submit" android:fontFamily="@font/gcash_font_body_regular" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="@dimen/griver_AU_DIVIDER_SPACE4" android:color="#1a000000" />
+            <corners android:radius="@dimen/griver_AU_CORNER4" />
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="@dimen/griver_AU_DIVIDER_SPACE4" android:color="#9a108ee9" />
+            <corners android:radius="@dimen/griver_AU_CORNER4" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="@dimen/griver_AU_DIVIDER_SPACE4" android:color="@color/griver_AU_COLOR_LINK" />
+            <corners android:radius="@dimen/griver_AU_CORNER4" />
+        </shape>
+    </item>
+</selector>

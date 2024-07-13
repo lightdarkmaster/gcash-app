@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.apxor.androidsdk.plugins.survey.views.OptionView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/apx_option" android:background="@drawable/apx_option_bg_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/apx_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:contentDescription="@string/apx_icon" android:layout_marginStart="12.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/apx_black_color" android:id="@id/apx_text" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" />
+    </LinearLayout>
+    <include android:id="@id/apx_other_text_layout" android:visibility="gone" layout="@layout/apx_layout_text_based_question" />
+</com.apxor.androidsdk.plugins.survey.views.OptionView>

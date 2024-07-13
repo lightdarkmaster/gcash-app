@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/bg_0009" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+        <ImageView android:id="@id/iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_success_upgrade_gsave" />
+        <TextView android:textSize="@dimen/font_x_large" android:textStyle="normal" android:textColor="@color/font_0045" android:gravity="center_horizontal" android:id="@id/tv_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/we_have_received_your_request_to_upgrade_your_savings_account" android:lineSpacingExtra="8.0sp" android:fontFamily="@font/poppins_semibold" />
+        <TextView android:textSize="@dimen/font_x_small" android:textStyle="normal" android:textColor="#ff292b30" android:gravity="center_horizontal" android:id="@id/tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/we_will_send_you_a_confirmation_text_message_shortly_after_we_process_your_request_thank_you_for_trusting_gcash" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/karla_regular" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    </LinearLayout>
+    <Button android:layout_gravity="bottom" android:id="@id/tv_done" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:text="@string/done" app:layout_constraintBottom_toTopOf="@id/btnCancel" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/RoyalBlue.Button" />
+</FrameLayout>

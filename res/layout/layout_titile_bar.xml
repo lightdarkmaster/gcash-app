@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/btn_left" android:paddingLeft="@dimen/z_dimen_20" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:paddingStart="@dimen/z_dimen_20">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_bar_back" />
+        <zoloz.ap.com.toolkit.ui.CustomTextView android:textSize="@dimen/z_text_size_16" android:layout_gravity="center_vertical" android:id="@id/tv_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_separate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/separate" android:layout_toRightOf="@id/btn_left" android:layout_centerVertical="true" />
+    <zoloz.ap.com.toolkit.ui.CustomTextView android:textSize="@dimen/z_text_size_16" android:id="@id/tv_title" android:paddingTop="@dimen/z_dimen_5" android:paddingBottom="@dimen/z_dimen_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/z_dimen_15" android:layout_centerVertical="true" android:layout_marginStart="@dimen/z_dimen_15" />
+    <LinearLayout android:id="@id/btn_right" android:paddingRight="@dimen/z_dimen_20" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingEnd="@dimen/z_dimen_20" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_bar_back" />
+        <zoloz.ap.com.toolkit.ui.CustomTextView android:textSize="@dimen/z_text_size_16" android:layout_gravity="center_vertical" android:id="@id/tv_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

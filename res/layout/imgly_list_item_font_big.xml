@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/contentHolder" style="?Imgly.PESDK.Editor.Panel.Font.FontVerticalItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ly.img.android.pesdk.ui.model.FontStyleTextView android:id="@id/text" style="?Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Text" />
+    <TextView android:id="@id/label" style="?Imgly.PESDK.Editor.Panel.Font.FontVerticalItem.Label" />
+</LinearLayout>

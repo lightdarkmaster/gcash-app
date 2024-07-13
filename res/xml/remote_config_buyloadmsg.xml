@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>buyload_regular_validation</key>
+        <value>10-150,300,500,1000</value>
+    </entry>
+</defaultsMap>

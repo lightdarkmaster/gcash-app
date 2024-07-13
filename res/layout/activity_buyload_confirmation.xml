@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_buyload_confirmation" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/wrapper_a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/bg_0052" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0002" android:gravity="center_horizontal" android:id="@id/lbl1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="You are about to get" android:fontFamily="@font/gcash_font_body_regular" />
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/loadNameWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lbl1">
+                        <RelativeLayout android:gravity="center_horizontal" android:paddingLeft="35.0dip" android:paddingRight="35.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/tv_sku_name" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+                            <ImageView android:id="@id/ivFav" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_favorites_outline" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View android:id="@id/vHr" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="35.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0002" android:id="@id/txt_amount_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="worth" android:layout_below="@id/loadNameWrapper" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+                    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:id="@id/txt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/txt_amount_description" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/tvFor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="10.0dip" android:text="for" android:layout_below="@id/txt_amount" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+                    <LinearLayout android:background="@color/font_0002" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignBottom="@id/img" />
+                    <ImageView android:id="@id/img" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_below="@id/tvFor" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_confirm" android:layout_below="@id/wrapper_a">
+                <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                    <RelativeLayout android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/font_large" android:textColor="@color/font_0020" android:gravity="center" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+                        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:id="@id/txt_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txt_name" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+                        <RelativeLayout android:id="@id/rl_description_wrapper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txt_number">
+                            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:gravity="center" android:id="@id/tv_sku_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_regular" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </ScrollView>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:gravity="center" android:paddingLeft="@dimen/padding_regular" android:paddingRight="@dimen/padding_regular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Please review to ensure that the details are correct before you proceed." android:layout_above="@id/btn_confirm" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="center" android:id="@id/btn_confirm" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/padding_regular" android:text="CONFIRM" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/GCashButton" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

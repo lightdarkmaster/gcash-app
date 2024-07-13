@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageview_tab_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        <TextView android:ellipsize="marquee" android:gravity="center" android:id="@id/textview_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/tab_text_max_width" android:text="Section 1sdassbsd kjasbdkjasbdkasjsajdsda" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:textAllCaps="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/badge_text_color" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/textview_tab_badge" android:background="@drawable/badge_background" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:minWidth="20.0dip" android:minHeight="20.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:layout_marginStart="4.0dip" />
+</LinearLayout>

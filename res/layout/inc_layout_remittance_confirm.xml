@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/remittance_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+            <TextView android:textSize="@dimen/font_xx_large" android:textColor="@color/font_0099" android:id="@id/remittance_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="@font/gotham_rounded_bold" />
+            <View android:background="#ffd3d3d3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/remittance_name" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0099" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="You are about to remit" android:fontFamily="@font/gotham_rounded_medium" />
+            <TextView android:textSize="@dimen/font_xx_large" android:textColor="@color/font_0099" android:gravity="center" android:id="@id/actual_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="1,000.00" android:drawablePadding="3.0dip" android:drawableStart="@drawable/ds_peso_sign" android:fontFamily="@font/gotham_rounded_bold" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ref_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="40.0dip">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0099" android:gravity="center" android:id="@id/tvReferenceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/gotham_rounded_medium" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0099" android:gravity="center" android:id="@id/tvReferenceNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/gotham_rounded_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/rootView" style="?Imgly.PESDK.Editor.Panel.Brush"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include layout="@layout/imgly_popup_brush_preview" />
+    <android.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ly.img.android.pesdk.ui.widgets.HorizontalListView android:id="@id/quickOptionList" style="?Imgly.PESDK.Editor.Panel.Brush.SmallOptionList" />
+    <ly.img.android.pesdk.ui.widgets.SeekSlider android:id="@id/seekBar" style="?Imgly.PESDK.Editor.Panel.Brush.SeekSlider" />
+    <include layout="@layout/imgly_option_list" />
+</LinearLayout>

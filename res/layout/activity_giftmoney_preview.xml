@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/picture_view" android:background="@color/bg_0010" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/wrapper_tools" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/video_indicator" android:background="@color/bg_0026" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/audio_indicator" android:background="@color/bg_0026" android:padding="5.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/wrapper_tools">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="130.0dip" android:src="@drawable/ic_download_white" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/wrapper_tools" android:background="@color/font_0035" android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0025" android:gravity="center" android:id="@id/txt_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:fontFamily="@font/gcash_font_body_regular" />
+                <ImageView android:id="@id/img_retake" android:padding="@dimen/padding_regular" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_retake" android:layout_below="@id/txt_info" android:layout_marginStart="20.0dip" android:layout_alignParentStart="true" />
+                <ImageView android:id="@id/img_confirm" android:padding="@dimen/padding_regular" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check_preview" android:layout_below="@id/txt_info" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

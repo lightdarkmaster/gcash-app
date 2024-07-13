@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_send_money_confirmation" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:layout_gravity="top" android:id="@id/close_container" android:background="@color/bg_0052" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <FrameLayout android:id="@id/x_wrapper" android:background="@drawable/bg_transparent_hover_10" android:padding="@dimen/padding_regular" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:gravity="center" android:id="@id/img_close" android:background="@drawable/ic_close" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            </FrameLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_0012" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/wv_accounts_paypal_authorize" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

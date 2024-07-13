@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="barcode_top_margin">40.0dip</dimen>
+    <dimen name="borrowload_bg_hw">70.0dip</dimen>
+    <dimen name="dashboard_ad_margin">20.0dip</dimen>
+    <dimen name="dashboard_middle_margin">20.0dip</dimen>
+    <dimen name="dashboard_recent_transaction_padding">15.0dip</dimen>
+    <dimen name="f2f_payment_bottom_padding">20.0dip</dimen>
+    <dimen name="f2f_payment_code_height">300.0dip</dimen>
+    <dimen name="f2f_payment_code_top_margin">20.0dip</dimen>
+    <dimen name="f2f_payment_hint_height">46.0dip</dimen>
+    <dimen name="f2f_payment_top_margin">10.0dip</dimen>
+    <dimen name="login_keypad_margin">20.0dip</dimen>
+    <dimen name="login_keypad_padding">40.0dip</dimen>
+    <dimen name="login_top_margin">60.0dip</dimen>
+    <dimen name="qr_top_margin">10.0dip</dimen>
+    <dimen name="regularload_bg_hw">70.0dip</dimen>
+    <dimen name="barcode_size">200.0dip</dimen>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_otp_code" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/toolbar">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/account_recovery_top_view_wrapper" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_centerHorizontal="true">
+                    <ImageView android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/img_account_recovery_grey" />
+                    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:gravity="center" android:id="@id/tvRecoveryTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/text_0024" android:fontFamily="@font/gcash_font_body_regular" />
+                    <RelativeLayout android:gravity="center" android:orientation="vertical" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.dotx.dpasswordtext.DPasswordText android:textSize="@dimen/font_x4_large" android:textColor="@color/font_0024" android:layout_gravity="center_horizontal" android:id="@id/txtpass_recovery_code" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:inputType="number" android:fontFamily="@font/gcash_font_body_regular" app:text_hint="dash" app:text_hint_color="@color/font_0024" app:text_mask_color="@color/font_0024" app:text_max_length="6" style="@style/Theme.AppCompat.Light" />
+                        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Enter Recovery Code" android:layout_below="@id/txtpass_recovery_code" android:fontFamily="@font/gcash_font_body_regular" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:gravity="center" android:id="@id/account_recovery_lower_view_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/account_recovery_top_view_wrapper" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0020" android:id="@id/need_new_code_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Need new code?" android:fontFamily="@font/gcash_font_body_regular" />
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0023" android:gravity="center" android:id="@id/lbl_resend_now" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Resend now" android:layout_below="@id/need_new_code_tv" android:layout_centerHorizontal="true" android:onClick="onClick" android:fontFamily="@font/gcash_font_body_regular" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:id="@id/account_recovery_footer_note_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/btn_submit" android:layout_below="@id/account_recovery_lower_view_wrapper" android:layout_centerHorizontal="true">
+                    <TextView android:gravity="center" android:id="@id/account_recovery_footer_note_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_0023" android:fontFamily="@font/gcash_font_body_regular" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/btn_submit" android:background="@drawable/bg_0004" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/padding_regular" android:text="SUBMIT" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onClick" android:fontFamily="@font/gcash_font_header_bold" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

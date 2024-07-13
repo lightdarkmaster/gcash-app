@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/send_express_receip_text_default" android:orientation="vertical" android:id="@id/lLScamProtectContainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llAmountWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:id="@id/tvAmountLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/amount_sent" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="end" android:id="@id/tvScamProtectReceiptAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/v" android:background="@color/font_0099" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" android:alpha="0.3" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llSubtotalWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <TextView android:id="@id/tvSubTotalLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subtotal" android:layout_weight="1.0" app:layout_constraintEnd_toStartOf="@id/tvSubTotalAmount" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:gravity="end" android:id="@id/tvSubTotalAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:layout_constraintBaseline_toBaselineOf="@id/tvSubTotalLabel" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tvSubTotalLabel" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llSmpWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:id="@id/tvScamProtectLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_money_protect" android:layout_weight="1.0" app:layout_constraintEnd_toStartOf="@id/tvScamProtectFee" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvSubTotalLabel" />
+        <TextView android:gravity="end" android:id="@id/tvScamProtectFee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:layout_constraintBaseline_toBaselineOf="@id/tvScamProtectLabel" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tvScamProtectLabel" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_xx_small" android:textColor="@color/font_6780A9" android:id="@id/tvValidity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/smp_date_validity" android:lineSpacingExtra="3.0sp" android:fontFamily="@font/gilroy_regular" />
+    <View android:id="@id/v2" android:background="@color/font_0099" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="20.0dip" android:alpha="0.3" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llTotalAmountPaidWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:gravity="start" android:id="@id/tvTotalPaidLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/receipt_total_amount_sent" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_xxx_large" android:gravity="end" android:id="@id/tvScamProtectReceiptTotalAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:drawableLeftCompat="@drawable/ic_peso_sign_vector" />
+    </LinearLayout>
+</LinearLayout>

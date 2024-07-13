@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_send_money_denomination" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/toolbar" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:background="@color/bg_0020" android:paddingLeft="@dimen/padding_regular" android:paddingTop="@dimen/padding_toolbar_subtitle" android:paddingRight="@dimen/padding_toolbar_subtitle" android:paddingBottom="@dimen/padding_toolbar_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="via GCash" android:fontFamily="@font/gcash_font_body_regular" />
+            <include layout="@layout/inc_send_money_denom_amount" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Type Amount" android:fontFamily="@font/gcash_font_body_regular" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="- or -" android:fontFamily="@font/gcash_font_body_regular" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="Choose Denomination" android:fontFamily="@font/gcash_font_body_regular" />
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+            <ListView android:id="@id/send_money_denomination_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/bg_transparent_hover_10" android:divider="@drawable/bg_transparent_10" android:dividerHeight="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

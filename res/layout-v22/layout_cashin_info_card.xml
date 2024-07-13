@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/info_card" android:background="@color/font_E0E8F3" android:paddingLeft="@dimen/_20sdp" android:paddingTop="@dimen/_10sdp" android:paddingRight="@dimen/_20sdp" android:paddingBottom="@dimen/_10sdp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/_20sdp" android:paddingVertical="@dimen/_10sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_xx_small" android:textColor="@color/font_104AD6" android:gravity="start" android:id="@id/tv_infocard_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp" android:text="@string/title_paypal_cashin_infocard" android:fontFamily="@font/gotham_rounded_bold" />
+    <TextView android:textSize="@dimen/font_xx_small" android:textColor="@color/bg_0125f" android:gravity="start" android:id="@id/tv_infocard_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/message_paypal_cashin_infocard" android:alpha="0.6" android:fontFamily="@font/gotham_rounded_normal" />
+</LinearLayout>

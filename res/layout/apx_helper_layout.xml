@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/apxor_toast_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/apxor_tooltip_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/apx_tooltip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/apx_title_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+            <TextView android:id="@id/apx_helper_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/apx_close_icon" android:padding="2.0dip" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/apx_tooltip_close_button" android:scaleType="fitCenter" android:layout_marginEnd="8.0dip" />
+    </LinearLayout>
+    <View android:id="@id/horizontal_line" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.5dip" android:layout_marginLeft="-8.0dip" android:layout_marginRight="-8.0dip" android:layout_marginStart="-8.0dip" android:layout_marginEnd="-8.0dip" />
+    <com.apxor.androidsdk.plugins.realtimeui.utils.ButtonsLayout android:theme="@style/ApxorTheme.Modal.ButtonLayout" android:id="@id/apx_custom_buttons_layout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" android:layout_marginEnd="16.0dip" />
+</LinearLayout>

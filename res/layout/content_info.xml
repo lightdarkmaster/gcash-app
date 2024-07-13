@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textview.MaterialTextView android:textSize="@dimen/font_caption" android:textColor="@color/font_0a2757" android:id="@id/info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_info" android:includeFontPadding="false" android:alpha="@dimen/gloan_application_alpha_2" android:fontFamily="@font/gotham_rounded_medium" />
+    <com.google.android.material.textview.MaterialTextView android:textSize="@dimen/font_title" android:textColor="@color/font_0a2757" android:id="@id/info_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/gotham_rounded_medium" />
+</LinearLayout>

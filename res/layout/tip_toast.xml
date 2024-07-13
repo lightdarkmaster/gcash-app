@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/tip_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_root" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="18.0dip">
+            <FrameLayout android:id="@id/fl_fill" android:background="@drawable/tip_fill" android:layout_width="24.0dip" android:layout_height="24.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tip_right" />
+            </FrameLayout>
+        </FrameLayout>
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="操作成功" android:maxLines="1" android:singleLine="true" />
+    </FrameLayout>
+</RelativeLayout>

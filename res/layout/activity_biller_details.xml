@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:gravity="start" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout android:orientation="vertical" android:background="@color/background_blue" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_toastvw" android:background="@color/background_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="0.0dip">
+                <ImageView android:background="@drawable/success_img" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_billerdetails" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <ScrollView android:orientation="vertical" android:id="@id/svBillerDetails" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                    <LinearLayout android:orientation="vertical" android:id="@id/wrappaerBillerDetails" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/font_large" android:textColor="@color/font_0035" android:gravity="center_vertical" android:id="@id/billerName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="ABS Mobile" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="12.0dip" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/textbutton_color_blue" android:layout_gravity="center_vertical" android:id="@id/btnUpdate" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Edit Biller" android:onClick="onClick" android:fontFamily="@font/gcash_font_body_light" android:layout_marginEnd="10.0dip" />
+                        </LinearLayout>
+                        <View android:background="#ffebecf0" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="5.0px" android:layout_marginTop="10.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="10.0dip" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/fieldWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" />
+                    </LinearLayout>
+                </ScrollView>
+                <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/wrapperFooter" android:background="@drawable/bg_billerdetails" android:padding="@dimen/padding_regular" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/btnPay" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="PAY BILL" android:onClick="onClick" style="@style/GCashBlueButton2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

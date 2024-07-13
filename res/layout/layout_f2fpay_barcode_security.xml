@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/f2fpay_ic_security" />
+    <TextView android:textSize="@dimen/font_large" android:textColor="@android:color/black" android:gravity="center" android:paddingTop="30.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Payment Codes are only used for payments with merchants. To prevent fraud, please do not send them to others." android:fontFamily="@font/gcash_font_body_regular" />
+    <TextView android:textSize="@dimen/font_x_large" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_barcode_security_done" android:background="@drawable/f2fpay_button_background" android:layout_width="200.0dip" android:layout_height="50.0dip" android:text="Got it" android:fontFamily="@font/gcash_font_body_regular" />
+</LinearLayout>

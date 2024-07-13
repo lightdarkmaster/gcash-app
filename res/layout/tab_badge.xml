@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_gravity="center" android:id="@id/tvTabTitle" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Credit" android:fontFamily="@font/karla_regular" android:layout_marginEnd="5.0dip" />
+    <View android:layout_gravity="right" android:id="@id/view_gcredit_badge" android:background="@drawable/shape_red_circle" android:layout_width="8.0dip" android:layout_height="8.0dip" />
+</FrameLayout>

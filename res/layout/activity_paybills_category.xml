@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <RelativeLayout android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/wrapperView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include layout="@layout/search_view" />
+                    <LinearLayout android:orientation="vertical" android:tag="billsPay_dashboard_ctnFavorite" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/llSavedBiller" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0020" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Favorite Billers" android:fontFamily="@font/gcash_font_header_bold" />
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0023" android:id="@id/tvAddBiller" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Biller" android:onClick="onClick" android:fontFamily="@font/gcash_font_header_bold" android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/wrapperBiller" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/llSavedBiller">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/wrapperSavedBillerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+                                <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                        <LinearLayout android:orientation="vertical" android:id="@id/llAddBiller" android:background="@drawable/bg_transparent_hover_10" android:padding="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onClick" android:layout_marginEnd="5.0dip">
+                                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_save_item" android:scaleType="fitXY" />
+                                            <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0020" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add a biller" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+                                        </LinearLayout>
+                                        <TextView android:textSize="14.0sp" android:textColor="#ff737177" android:layout_gravity="center_vertical" android:id="@id/saved_biller_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save your favorite billers for \n easier access!" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/karla_regular" android:layout_marginStart="20.0dip" />
+                                        <LinearLayout android:orientation="horizontal" android:id="@id/wrapperSavedBiller" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                    </LinearLayout>
+                                </HorizontalScrollView>
+                            </LinearLayout>
+                            <TextView android:gravity="center_horizontal" android:id="@id/tvNoSavedBiller" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="We cannot retrieve your saved billers at this time. Please try again later." android:layout_centerInParent="true" android:fontFamily="@font/gcash_font_body_regular" android:textAlignment="center" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_schedulemanage_lblcontainer" android:background="@color/background_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_centerVertical="true">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@color/background_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="15.0dip">
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0099" android:ellipsize="end" android:id="@id/tv_sbf_schedule_payment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Scheduled Bill Payments" android:maxLines="1" android:fontFamily="@font/gotham_rounded_bold" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/deep_blue" android:layout_gravity="center_vertical" android:id="@id/tv_manage_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Manage" android:onClick="onClick" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginEnd="16.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_schedulebiller" android:background="@color/background_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_billerdetails" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:minHeight="50.0dip" android:layout_centerVertical="true" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/biller_logo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/calendar" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="@dimen/font_small" android:textStyle="normal" android:textColor="@color/font_0094" android:ellipsize="end" android:id="@id/txt_biller_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Scheduled Bill Payments" android:maxLines="1" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="10.0dip" android:layout_marginEnd="20.0dip" />
+                                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0020" android:id="@id/txt_other_payment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" />
+                            </LinearLayout>
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/tvSchduleBiller" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/addicon" android:onClick="onClick" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginEnd="20.0dip" />
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/imgArrow" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/circle_arrow" android:onClick="onClick" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginEnd="20.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/rl_sbpwrapperBiller" android:background="@color/background_blue" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/llSavedBiller">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/sbpwrapperSavedBillerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+                            <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:id="@id/sbpWrapperBiller" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_sbperror_container" android:background="#ffecf1fa" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/font_x_small" android:layout_gravity="center" android:id="@id/txt_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/connection" android:fontFamily="@font/gotham_rounded_normal" />
+                        <Button android:textSize="@dimen/font_x_small" android:textColor="@color/bg_0095" android:layout_gravity="center" android:id="@id/btn_retry" android:background="@drawable/btn_borderblue" android:padding="5.0dip" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="25.0dip" android:text=" Retry " android:onClick="onClick" android:fontFamily="@font/gotham_rounded_bold" />
+                        <ProgressBar android:layout_gravity="center" android:id="@id/pb_retry" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="25.0dip" android:layout_marginBottom="40.0dip" android:indeterminate="true" android:indeterminateTint="@color/bg_0121f" />
+                    </LinearLayout>
+                    <View android:id="@id/dividerSavedBiller" android:background="@color/background_blue" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/wrapperBiller" />
+                    <LinearLayout android:orientation="vertical" android:tag="billsPay_dashboard_ctnCatergoriesAll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:id="@id/categoryGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/dividerSavedBiller">
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0020" android:id="@id/tvCategories" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Categories" android:fontFamily="@font/gcash_font_header_bold" />
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0023" android:id="@id/tvViewAll" android:padding="10.0dip" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="View all" android:onClick="onClick" android:fontFamily="@font/gcash_font_header_bold" android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                        <GridView android:gravity="center" android:id="@id/gvBillerCategory" android:paddingBottom="@dimen/padding_regular" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:verticalSpacing="20.0dip" android:stretchMode="spacingWidthUniform" android:columnWidth="80.0dip" android:numColumns="4" android:layout_below="@id/categoryGroup" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/noBillerLayout" android:background="@color/bg_0009" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@drawable/img_gcat_sad_gray" />
+                    <TextView android:textSize="@dimen/font_large" android:textColor="@color/bg_0027" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Pay Bills is currently not available.\nPlease check back later" android:fontFamily="@font/gcash_font_body_regular" android:textAlignment="center" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

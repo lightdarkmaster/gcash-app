@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_parent" android:background="@color/bg_fafcfe" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0a2757" android:id="@id/tv_statement_balance_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:text="Statement Balance" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="@dimen/_12sdp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0a2757" android:id="@id/tv_premium_charge_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Premium Charge" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginEnd="@dimen/_12sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tv_statement_balance_txt" />
+    <View android:id="@id/v_underline" android:background="@color/font_10346F" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/_12sdp" android:alpha="0.1" app:layout_constraintTop_toBottomOf="@id/tv_statement_balance_txt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.apxor.androidsdk.plugins.survey.views.RatingButton android:id="@id/apx_nps_starView_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/apx_nps_starView" android:background="@drawable/apx_nps_star_outline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/apx_nps_star_filled" />
+    </com.apxor.androidsdk.plugins.survey.views.RatingButton>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/limited_offer_height" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/bg_0113f" android:layout_width="@dimen/limited_offer_hypotenuse" android:layout_height="@dimen/limited_offer_hypotenuse" android:layout_marginTop="@dimen/limited_offer_neg_margin_top_adj" android:rotation="@dimen/limited_offer_rotation" android:layout_marginEnd="@dimen/limited_offer_neg_margin_end_adj" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/limited_offer_text_fixed_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_limited_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/limited_offer_text_margin_top" android:layout_marginBottom="@dimen/limited_offer_text_margin_bottom" android:text="@string/ggives_onboarding_limited_time_offer" android:layout_alignParentBottom="true" android:fontFamily="@font/karla_bold" android:textAlignment="center" android:layout_marginStart="@dimen/limited_offer_text_margin_start" />
+    </RelativeLayout>
+</RelativeLayout>

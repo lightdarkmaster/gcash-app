@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textColor="@color/font_0035" android:id="@id/tv_gcash_account" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/lbl_gcash_account" android:fontFamily="@font/karla_bold" app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.textview.MaterialTextView android:textColor="@color/font_0035" android:id="@id/tv_available_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_available_balance" android:fontFamily="@font/karla_bold" app:layout_constraintBaseline_toBaselineOf="@id/tv_gcash_account" app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

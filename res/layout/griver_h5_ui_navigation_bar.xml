@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/h5_rl_title_bar" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <RelativeLayout android:id="@id/h5_title_bar_layout" android:layout_width="fill_parent" android:layout_height="@dimen/griver_h5_title_height">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/h5_iv_nav_back" android:layout_width="40.0dip" android:layout_height="32.0dip" android:src="@drawable/griver_h5_ic_back" android:layout_centerVertical="true" android:contentDescription="@string/griver_h5_backward" />
+            <ImageView android:gravity="center" android:id="@id/h5_nav_close" android:background="@android:color/transparent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="32.0dip" android:src="@drawable/griver_h5_left_close" android:layout_centerVertical="true" android:contentDescription="@string/griver_h5_close" android:layout_toEndOf="@id/h5_iv_nav_back" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/h5_rl_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="6.0dip" android:layout_toEndOf="@id/h5_nav_close">
+                <com.alipay.iapminiprogram.griverh5ng.view.EllipsizeGroupLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/h5_ll_title_stub" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="start|center" android:orientation="vertical" android:id="@id/h5_ll_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/griver_h5_nav_title_text" android:textStyle="bold" android:textColor="@color/griver_h5_white" android:ellipsize="end" android:gravity="start|center" android:id="@id/h5_tv_title" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                            <ImageView android:id="@id/h5_tv_title_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:scaleType="centerInside" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </com.alipay.iapminiprogram.griverh5ng.view.EllipsizeGroupLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@id/h5_h_divider_intitle" android:background="@color/griver_h5_nav_bar_bottomline" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</FrameLayout>

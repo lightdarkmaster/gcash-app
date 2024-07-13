@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#80000000" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/llOptions" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/ivBack" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/griver_base_ic_image_title_back" android:layout_marginStart="6.5999756dip" />
+        <View android:layout_gravity="center_vertical" android:background="#4dffffff" android:layout_width="1.0dip" android:layout_height="33.0dip" android:layout_marginStart="6.5999756dip" />
+        <TextView android:textSize="17.299988sp" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="14.599976dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llOptions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivFlash" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/griver_image_ic_flash_off" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivChangeCamera" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/griver_image_ic_change_camera" android:scaleType="centerInside" android:layout_marginStart="12.599976dip" />
+    </LinearLayout>
+</RelativeLayout>

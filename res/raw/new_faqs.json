@@ -1,0 +1,83 @@
+[
+  {
+    "GCash Overview": [
+      {
+        "What is GCash?": "GCash is a mobile money service that lets you buy load, purchase items, send and receive money, pay bills, and more using your Globe or TM mobile number. Experience safe and convenient money transactions at the speed of an SMS."
+      },
+      {
+        "How do I activate my GCash wallet / How do I register to GCash?": "Registration is done through a simple, one-time process. After downloading the app, enter your mobile number in the landing page then click next to proceed. Click ‘Register’ once you get the prompt message. Fill in your mandatory information in the next pages to complete your registration. You will also be asked to nominate a 4-digit MPIN that you will use to confirm your GCash transactions.\n\nNote: Your GCash mobile number must be the activated SIM in your phone to ensure a successful App registration."
+      },
+      {
+        "How many wallets can I activate per mobile number?": "Since your mobile number is your account, you can only activate one GCash wallet per mobile number."
+      },
+      {
+        "What is a GCash MPIN?": "The Mobile Personal Identification Number or MPIN is a four-digit passcode that you will use for all your GCash transactions. This will be asked from you upon registration. For your protection, do not share your MPIN, delete all messages containing your MPIN immediately, and regularly change your MPIN. Note that you cannot reuse an MPIN from your last 3 changes."
+      },
+      {
+        "What should I do if I forget my MPIN?": "In case you forget your MPIN, message us on Facebook (fb.com/gcashofficial) or call our hotline 2882 for free using your Globe or TM mobile phone. The Customer Service Representative will ask for details to confirm your identity before initiating a GCash MPIN reset. You will receive a temporary GCash MPIN via SMS from 2882. You MUST be able to change your MPIN within 5 minutes of receipt or the temporary MPIN will expire.\n\nTo change your GCash MPIN, log in to the app using our temporary GCash MPIN. In the side menu, go to ‘Settings’ then click ‘Change GCash MPIN’. To proceed, key in your temporary MPIN, enter your new desired MPIN and confirm."
+      }
+    ]
+  },
+  {
+    "Using GCash": [
+      {
+        "How do I start using the app?": "Once you are a GCash subscriber, enter your GCash-registered mobile number on the landing page to log in. This number will be sent an SMS with your 6-digit authentication code. Once you have inputted the correct authentication code, you will be redirected to the MPIN login page. Enter your correct 4-digit GCash MPIN to enter the App."
+      },
+      {
+        "What is the authentication code?": "The authentication code is a 6-digit number which is sent to your GCash-registered number. This is used to link your GCash number to your device, allowing you to save your GCash credentials for 90 days. This means the next time you log in to the App, you only need to enter your GCash MPIN.\n\nFor your security, after 90 days, you will need to authenticate your device again. You will be automatically asked to enter your mobile number then input a new authentication code to proceed to log in."
+      },
+      {
+        "Is there anything else I need to do to be able to start transacting?": "You must ensure that you have enough funds in your GCash wallet for your desired transactions. To get full access to all GCash services, you must also undergo the customer verification process."
+      },
+      {
+        "What is the customer verification process?": "The verification process (also known as the Know-Your- Customer or KYC process) is required by the Bangko Sentral ng Pilipinas. It is a one-time validation of a GCash user’s identity. When you are verified, you will be able to send money to other GCash subscribers, use mobile banking methods to Cash-In, and do Cash-Out transactions.\n\nYour transactional limits will also change: 1. maximum wallet funds increases from Php40,000 to Php100,000; 2. American Express Virtual Pay total spend limit of Php5,000 is lifted and is then subject to your wallet balance; and 3. Load purchase daily limit of Php500 increases to Php20,000."
+      },
+      {
+        "How can I be verified?": "To undergo the verification process, prepare 1 valid ID and visit fb.com/gcashverify or go to the following GCash Partner Outlets (including Globe Stores, Villarica Pawnshops, and Tambunting Pawnshops). For more information on verification outlets, visit gcash.com/personal/verify."
+      },
+      {
+        "How do I fund my GCash Wallet?": "The process of funding your GCash Wallet (or converting your regular cash to GCash) is called ‘Cash-In’. You can Cash-In through BPI Mobile Banking and PayPal Funds Transfer found in the GCash App, or by going to any GCash Partner Outlets (GPOs), including Globe Stores, Puregold, SM Business Center, Cebuana Lhuillier, Villarica Pawnshop, Tambunting Pawnshop, RD Pawnshop, and 7-Eleven Cliqq Kiosks.\n\nFor more information, go to gcash.com/cash-in/."
+      },
+      {
+        "Is there a minimum amount of GCash that I need to maintain in my GCash wallet?": "No, there is no maintaining balance required."
+      },
+      {
+        "Does my GCash wallet have a maximum limit?": "Yes, your GCash wallet can only have up to Php40,000 if you are not verified, and Php100,000 if you have been verified. Within each month, you can receive or cash-in up to Php100,000."
+      },
+      {
+        "Do the funds in my GCash wallet have an expiration date?": "The funds do not have an expiration, but make sure to keep your GCash active by buying load, paying bills, sending money, using GCash MasterCard for online or POS payments, using GCash American Express ® Virtual Pay, cashing-in/out or withdrawing via ATM. Inactive accounts (those without wallet movement) for over 6 months may be automatically closed or charged with dormancy fee."
+      },
+      {
+        "Will my GCash earn interest if I leave it in my GCash wallet for some time?": "No, your GCash does not earn interest."
+      },
+      {
+        "After cashing-in to my GCash Wallet, how do I proceed with my transactions?": "Simply launch the GCash App and proceed with your desired transaction. Provide the required information as prompted. You will receive an SMS confirmation from 2882 for every transaction made. You can also access these services by dialing *143# with your mobile phone."
+      },
+      {
+        "How do I encash or withdraw the GCash in my GCash wallet?": "The process of converting your GCash to regular cash is called Cash-Out. You may proceed to any GCash Partner Outlet to Cash-Out. You may also transfer your GCash to your BPI Savings Account by dialing *119# with your mobile phone. If you have a GCash Card, you may withdraw your GCash from any BancNet ATM nationwide."
+      }
+    ]
+  },
+  {
+    "Products and Services": [
+      {
+        "What are the transactions I can do with GCash?": "You can transfer money, shop with our card products both via POS and online, buy load, and pay bills."
+      },
+      {
+        "How can I transfer money?": "GCash allows you to send money to a Globe or TM number, free of charge. In the App dashboard, select ‘Send Money’. Input the recipient’s number or select from your contact list then enter the amount you wish to send. You can opt to put in a purpose or message which the recipient will see in his notification message. Recipient must also be GCash-registered for them to use the money sent."
+      },
+      {
+        "How can I shop with GCash?": "For people who enjoy international online shopping and browsing through e-commerce sites, especially US-based ones, GCash American Express Virtual Pay is a virtual card linked to your GCash mobile wallet. You can conveniently shop online with a secured virtual card, plus have your purchases delivered straight to your doorstep with a free subscription to My Shopping Box. In the App, select ‘American Express Virtual Pay’ in the side menu to get started.\n\nMeanwhile, for those who take their shopping spree to the next level, the GCash MasterCard is the best accessory to your GCash account. Get to purchase anytime and anywhere when you transact with over 33 million MasterCard merchants worldwide, whether in retail stores or e-commerce sites. You can even use it for beep™ transpo for the GCash beep™ MasterCard card variant. To learn where to get your personalized card, visit gcash.com/personal/products/gcash-mastercard or fb.com/gcashofficial."
+      },
+      {
+        "How can I buy load?": "With GCash, purchase load for anyone from any network, any time you need! In the App dashboard, select ‘Buy Load’ then input the recipient’s number or select from your contact list. Enter the amount to top up and confirm your purchase. Aside from convenience, you also enjoy a 4% instant rebate when you buy load for Globe and TM subscribers."
+      },
+      {
+        "How can I pay bills?": "Pay to over 100 billers nationwide! In the GCash App, select ‘Pay Bills’, choose your biller from the list, and enter the necessary details. Please note that payment for bills must be done at least 3 business days before the due date to be processed, and some billers have service fees which will be reflected in your SMS confirmation."
+      },
+      {
+        "Are there other services I can do with GCash App?": "Aside from the services above, you can also Cash-In through our mobile facilities, change your MPIN, and request for your transaction history."
+      }
+    ]
+  }
+]

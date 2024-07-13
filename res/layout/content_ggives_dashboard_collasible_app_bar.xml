@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/content_ggives_loan_offer" layout="@layout/content_ggives_loan_offer" />
+    <include android:id="@id/content_account_not_activated" android:visibility="gone" layout="@layout/content_account_not_activated" />
+</LinearLayout>

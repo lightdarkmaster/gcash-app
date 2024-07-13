@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_instruction_number" android:background="@drawable/bg_round_blue" android:layout_width="26.0dip" android:layout_height="26.0dip" android:fontFamily="@font/gotham_rounded_bold" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/font_0099" android:layout_gravity="center" android:id="@id/tv_instruction_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.7" android:fontFamily="@font/gilroy_bold" android:layout_marginStart="@dimen/_10sdp" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ly.img.android.pesdk.ui.widgets.HorizontalListView android:id="@id/quickOptionList" style="?Imgly.PESDK.Editor.Panel.SpriteDuration.SmallOptionList" />
+    <LinearLayout android:orientation="vertical" style="?Imgly.PESDK.Editor.Panel.SpriteDuration">
+        <ly.img.android.pesdk_mobile_ui_sprite_duration.widgets.TrimSpriteSlider android:id="@id/trimSlider" android:layout_width="fill_parent" android:layout_height="88.0dip" app:advancedInformationMode="false" style="?Imgly.PESDK.Editor.Panel.SpriteDuration.TrimSpriteSlider" />
+    </LinearLayout>
+</LinearLayout>

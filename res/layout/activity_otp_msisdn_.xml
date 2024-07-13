@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/img_logo_c" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/bg_0012" android:id="@id/txt_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_regular" android:layout_marginRight="@dimen/padding_regular" android:layout_alignParentRight="true" android:fontFamily="@font/gcash_font_body_regular" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center|left" android:id="@id/btn_follow_us" android:background="@drawable/bg_transparent_hover_10" android:padding="@dimen/padding_regular" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_follow_us" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0002" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Follow Us" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:id="@id/btn_faqs" android:background="@drawable/bg_transparent_hover_10" android:padding="@dimen/padding_regular" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_help_faqs_white" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0002" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="FAQs" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:gravity="center" android:id="@id/gcash" android:layout_width="wrap_content" android:layout_height="110.0dip" android:layout_marginTop="80.0dip" android:src="@drawable/gcash_logo1" android:layout_centerHorizontal="true" app:tint="@color/font_0002" />
+        <include layout="@layout/inc_otp_msisdn_fields" />
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_next" android:background="@drawable/bg_0004" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="70.0dip" android:text="NEXT" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+    </RelativeLayout>
+</FrameLayout>

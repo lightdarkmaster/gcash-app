@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/new_header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/llContactList" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <gcash.common_presentation.custom.CustomToolbar android:id="@id/tbContactList" android:tag="@string/tb_contact_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/gcontactSwipeRefresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:id="@id/pbToggleReload" android:visibility="gone" android:layout_width="20.0sp" android:layout_height="20.0sp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" style="?android:progressBarStyleSmall" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_gcash_contacts" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/clReloading" />
+            </RelativeLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</FrameLayout>

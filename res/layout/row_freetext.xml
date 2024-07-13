@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/font_0a2757" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dim_8" android:includeFontPadding="false" android:lineSpacingExtra="3.0sp" android:alpha="@dimen/gloan_application_alpha_2" android:fontFamily="@font/gotham_rounded_medium" android:letterSpacing="-0.01" />
+    <gcash.common_presentation.custom.CustomTextInputLayout android:id="@id/input_layout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:errorIconDrawable="@null" app:errorTextAppearance="@style/Revamp_ErrorTextAppearance" app:errorTextColor="#ffff2c2c" app:hintEnabled="false" style="@style/TextInputLayout.New">
+        <com.google.android.material.textfield.TextInputEditText android:textSize="16.0sp" android:textColor="@color/font_0a2757" android:textColorHint="@color/font_b6becd" android:id="@id/input_edittext" android:padding="@dimen/dim_12" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dim_50" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="@font/gotham_rounded_medium" />
+    </gcash.common_presentation.custom.CustomTextInputLayout>
+</LinearLayout>

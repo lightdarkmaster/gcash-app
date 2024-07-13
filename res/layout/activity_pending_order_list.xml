@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_change_pin" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/wrapper_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <include layout="@layout/content_ginvest_toolbar" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/custom_layout" android:background="@color/bg_0009" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/risk_layout">
+            <com.google.android.material.tabs.TabLayout android:id="@id/custom_tabs" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/blue_b500" app:tabSelectedTextColor="@color/blue_b500" app:tabTextAppearance="@style/tab_text.2" app:tabTextColor="#ff9e9e9e" />
+            <androidx.viewpager.widget.ViewPager android:id="@id/buy_sell_viewpager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/custom_tabs" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

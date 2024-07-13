@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.imageview.ShapeableImageView android:background="@color/font_0036" android:layout_width="@dimen/oval_tab_width" android:layout_height="@dimen/oval_tab_height" android:layout_marginEnd="@dimen/oval_tab_distance" app:shapeAppearanceOverlay="@style/RoundShape"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

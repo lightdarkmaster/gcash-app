@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:enterFadeDuration="400" android:exitFadeDuration="400"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:height="2.0dip" android:top="36.0dip">
+                <shape>
+                    <solid android:color="?imgly_icon_border_color_active" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="?imgly_transparent_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="false">
+        <layer-list>
+            <item android:height="2.0dip" android:top="36.0dip">
+                <shape>
+                    <solid android:color="?imgly_transparent_color" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="?imgly_transparent_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

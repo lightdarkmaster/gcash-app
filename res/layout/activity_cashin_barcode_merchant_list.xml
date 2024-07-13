@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_cashin_barcode_merchant_list" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/inc_cashin_barcode_merchant_list" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

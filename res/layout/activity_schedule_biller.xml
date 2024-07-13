@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_billerView" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/primary_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_27sdp">
+                <TextView android:textSize="@dimen/_20sdp" android:textStyle="bold" android:textColor="@color/light_blue" android:id="@id/tv_schediledlbl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Payment Schedule" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="@dimen/_16sdp" />
+                <ImageView android:id="@id/img_infoicon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/info_blue" android:layout_alignRight="@id/tv_schediledlbl" android:layout_marginEnd="20.0dip" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/_11sdp" android:textStyle="normal" android:textColor="@color/light_blue" android:id="@id/tv_schedule_datas" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Monthly starting Apr 1, 2022 untill Mar 1, 2023" android:maxLines="2" android:alpha="0.7" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="@dimen/_16sdp" />
+            <ListView android:id="@id/rv_scheduledates" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_27sdp" android:divider="#ffffffff" android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/contentHolder" style="?Imgly.PESDK.Editor.Panel.Transform.CropItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout style="?Imgly.PESDK.Editor.Panel.Transform.CropItem.Border">
+        <ly.img.android.pesdk.ui.view.CropAspectView android:id="@id/aspectImage" app:fillColor="@color/imgly_crop_item_fill_color_states" app:strokeColor="@color/imgly_crop_item_line_color_states" style="?Imgly.PESDK.Editor.Panel.Transform.CropItem.Icon" />
+        <ly.img.android.pesdk.ui.widgets.ImageSourceView android:id="@id/icon" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="14.0dip" />
+        <ly.img.android.pesdk.ui.widgets.ImageSourceView android:id="@id/selected_shuffle" app:srcCompat="@drawable/imgly_icon_swap" style="?Imgly.PESDK.Editor.Panel.Transform.CropItem.Overlay.Icon" />
+        <TextView android:id="@id/label" style="?Imgly.PESDK.Editor.Panel.Transform.CropItem.Label" />
+    </RelativeLayout>
+</RelativeLayout>

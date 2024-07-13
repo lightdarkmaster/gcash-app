@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:titleTextAppearance="@style/GcToolbar" />
+        <RelativeLayout android:background="@color/font_0002" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/btn_next">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@id/wrapper_a" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/ivHolder" android:background="@drawable/bg_0016_lightgrey" android:padding="5.0dip" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <include layout="@layout/inc_type_amount_0001" />
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding_regular" android:paddingRight="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/btn_01_padding_right">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:weightSum="2.0">
+                            <TextView android:textSize="@dimen/gcash_font_body_regular" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="GCash" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                            <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="end" android:id="@id/tvGcashAmt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                        </LinearLayout>
+                        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:weightSum="2.0">
+                            <TextView android:textSize="@dimen/gcash_font_body_regular" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="GSave Account Balance" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                            <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="end" android:id="@id/tvGSaveValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                                <TextView android:textSize="@dimen/font_small" android:gravity="end" android:id="@id/tvAsof" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/btn_next" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="NEXT" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onClick" style="@style/GCashBlueButton2" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

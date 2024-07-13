@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.griver.image.photo.meta.PhotoGrid android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ll_camera" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/griver_image_btn_camera_selector" />
+            <TextView android:textColor="@drawable/griver_image_btn_text_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/griver_image_take_picture" />
+        </LinearLayout>
+        <TextView android:background="@drawable/griver_image_dark_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/cameraIv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.5999756dip" android:layout_alignParentBottom="true" android:layout_marginStart="6.5999756dip" android:layout_alignParentStart="true" />
+    <TextView android:textColor="#ffffffff" android:id="@id/videoTimeTv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.5999756dip" android:includeFontPadding="false" android:shadowColor="#ff444444" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" android:layout_alignParentBottom="true" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:id="@id/tv_cover" android:background="#a0000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/rl_select" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+        <CheckBox android:id="@id/cb_selected" android:background="@drawable/griver_image_photo_selector" android:clickable="false" android:layout_width="20.0dip" android:layout_height="20.0dip" android:button="@null" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</com.alibaba.griver.image.photo.meta.PhotoGrid>

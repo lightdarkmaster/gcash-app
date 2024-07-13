@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/rootView" style="?Imgly.PESDK.Editor.Panel.Overlay"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/modeBar" style="?Imgly.PESDK.Editor.Panel.Overlay.ModeContainer">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@drawable/imgly_blend_mode_background_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.6" />
+            <View android:background="@drawable/imgly_blend_mode_background_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.4" />
+        </LinearLayout>
+        <ly.img.android.pesdk.ui.widgets.HorizontalListView android:id="@id/modesList" style="?Imgly.PESDK.Editor.Panel.Overlay.ModeList" />
+    </RelativeLayout>
+    <ly.img.android.pesdk.ui.widgets.SeekSlider android:id="@id/seekBar" style="?Imgly.PESDK.Editor.Panel.Overlay.SeekSlider" />
+    <include layout="@layout/imgly_option_list" />
+</LinearLayout>

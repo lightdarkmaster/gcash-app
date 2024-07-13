@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="?imgly_crop_icon_fill_color_active" />
+    <item android:color="?imgly_crop_icon_fill_color" />
+</selector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_barcode_reader" android:background="@color/header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+            <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:padding="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" android:layout_alignParentTop="true">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Align the Barcode within the frame to start scanning" android:fontFamily="@font/gcash_font_body_regular" android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

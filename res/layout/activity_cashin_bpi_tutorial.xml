@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/bg_0022" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_back" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabDots" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btn_back" app:tabBackground="@drawable/tab_selector" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" />
+        <TextView android:textSize="@dimen/font_xx_large" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/btn_back" android:background="@drawable/bg_transparent_hover_10" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Got It!" android:layout_alignParentBottom="true" android:fontFamily="@font/gcash_font_body_regular" />
+        <FrameLayout android:id="@id/x_wrapper" android:background="@drawable/bg_transparent_hover_10" android:padding="20.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <ImageView android:gravity="center" android:id="@id/img_x" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

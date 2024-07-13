@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/fragment_ad" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/img_ad_wrapper" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+                    <ImageView android:id="@id/img_collapse_ad" android:layout_width="fill_parent" android:layout_height="80.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ScrollView android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/wrapperRegistration" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_eticket_gmovies" />
+                        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:text="Send my movie e-ticket to:" android:fontFamily="@font/gcash_font_body_regular" />
+                        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+                        <LinearLayout android:orientation="horizontal" android:background="@color/bg_0009" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_weight="100.0">
+                            <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="start|center" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Email" android:layout_weight="20.0" android:fontFamily="@font/gcash_font_header_bold" />
+                            <EditText android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/txt_email" android:background="@null" android:layout_width="0.0dip" android:layout_height="30.0dip" android:hint="Email Address" android:maxLines="1" android:ems="10" android:layout_weight="70.0" android:inputType="text" android:imeOptions="actionDone" android:fontFamily="@font/gcash_font_body_regular" />
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/ivEdit" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_gmovies_email_edit" android:layout_weight="10.0" />
+                        </LinearLayout>
+                        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="10.0dip">
+                            <TextView android:textSize="@dimen/font_x_small" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="By proceeding, you agree to share your" android:fontFamily="@font/gcash_font_body_regular" />
+                            <TextView android:textSize="@dimen/font_x_small" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="personal information and accept the " android:fontFamily="@font/gcash_font_body_regular" />
+                            <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0023" android:gravity="center" android:id="@id/tvTermsCondition" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Terms and Conditions." android:onClick="onClick" android:fontFamily="@font/gcash_font_body_regular" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/btn_submit" android:background="@drawable/bg_0004" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="PROCEED" android:onClick="onClick" android:fontFamily="@font/gcash_font_header_bold" />
+                    </LinearLayout>
+                </ScrollView>
+                <include android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/padding_regular" layout="@layout/inc_gmovies_poweredby" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

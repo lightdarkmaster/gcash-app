@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="90.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/img_amex_active" android:scaleType="centerInside" />
+            <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_gravity="center" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_register_with_your_email_address" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/bg_0009" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_email" android:fontFamily="@font/gcash_font_body_regular" />
+                <EditText android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="end|center" android:layout_gravity="center_vertical" android:id="@id/txt_email" android:background="@android:drawable/screen_background_light_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/msg_enter_your_email_address" android:inputType="textEmailAddress" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/btn_register" android:background="@drawable/bg_0004" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/padding_regular" android:text="REGISTER" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onClick" android:fontFamily="@font/gcash_font_header_bold" />
+</LinearLayout>

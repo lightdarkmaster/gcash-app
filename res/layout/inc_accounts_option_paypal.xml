@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wrapper_paypal" android:background="@drawable/bg_transparent_hover_10" android:paddingLeft="@dimen/padding_regular" android:paddingTop="10.0dip" android:paddingRight="@dimen/padding_regular" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_paypal" android:layout_width="55.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_paypal_gray" android:scaleType="fitStart" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="PayPal" android:layout_toRightOf="@id/img_paypal" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+        <ProgressBar android:id="@id/paypal_progress_bar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:fontFamily="@font/gcash_font_body_regular" />
+        <ImageView android:id="@id/paypal_options_account_chevron" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_chevron_iris_blue" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</merge>

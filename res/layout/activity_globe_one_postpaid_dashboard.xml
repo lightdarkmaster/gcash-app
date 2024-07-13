@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/containerGlobePostpaid" android:background="#ff003da5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#ffecf1fa" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.Toolbar android:id="@id/tbGlobeOnePostpaid" android:background="#ff003da5" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:titleTextAppearance="@style/GcToolbar" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/srlGlobeOnePostpaid" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tbGlobeOnePostpaid">
+        <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:textColor="#80ffffff" android:gravity="center" android:background="@color/royal_blue" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="MY NUMBER" android:fontFamily="@font/karla_bold" />
+            <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvGlobeOnePostpaidNumber" android:background="@color/royal_blue" android:layout_width="fill_parent" android:layout_height="28.0pt" android:text="09XXXXXXXXX" android:fontFamily="@font/poppins_semibold" />
+            <include android:id="@id/incCard1" layout="@layout/card_1_globe_one_postpaid_dashboard" />
+            <include android:id="@id/incCard2" layout="@layout/card_2_globe_one_postpaid_dashboard" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/powered_by_globe_one" android:fontFamily="@font/karla_regular" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

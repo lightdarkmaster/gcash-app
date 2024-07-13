@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/bg_0095" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip">
+        <include android:id="@id/incNonUser" layout="@layout/inc_send_money_confirmation_amount_detail_non_user" />
+        <ImageView android:id="@id/img" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <TextView android:textSize="@dimen/font_large" android:textColor="@color/font_0025" android:gravity="center" android:id="@id/txt_name" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:fontFamily="@font/karla_bold" />
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0025" android:id="@id/txt_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/karla_regular" android:textAlignment="center" />
+        <View android:layout_width="fill_parent" android:layout_height="18.0dip" />
+    </LinearLayout>
+</merge>

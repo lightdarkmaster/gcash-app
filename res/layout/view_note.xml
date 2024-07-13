@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@android:color/black" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Note (Optional)" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Body" />
+    <TextView android:id="@id/tvNoteCounter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="140" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Body.2" />
+    <EditText android:textSize="12.0sp" android:gravity="top" android:id="@id/etNoteMessage" android:background="@drawable/bg_oval_black" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_marginTop="8.0dip" android:hint="Write a short description" android:maxLines="4" android:lines="4" android:ems="10" android:maxLength="140" android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM.,- " android:inputType="text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/textView6" style="@style/Body.2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/bg_0052" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/font_x_large" android:textColor="@color/font_0002" android:id="@id/lbl_gscore_tutorial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Pay with GCredit" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/step_1" android:layout_width="180.0dip" android:layout_height="180.0dip" android:src="@drawable/ic_scan_to_pay_white" android:layout_below="@id/lbl_gscore_tutorial" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:id="@id/lbl_gscore_desc1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Pay with GCredit at GCash QR merchants nationwide!" android:fontFamily="@font/gcash_font_body_regular" android:textAlignment="center" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

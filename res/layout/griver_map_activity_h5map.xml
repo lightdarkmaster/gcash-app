@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.griver.map.apmap.AdapterTextureMapView android:id="@id/atm_open_loaction" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/h5_nav_back" android:clickable="true" android:layout_width="40.0dip" android:layout_height="@dimen/griver_title_height" android:layout_centerVertical="true">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/tv_back_button" android:layout_width="wrap_content" android:layout_height="32.0dip" android:src="@drawable/griver_ui_ic_header_back" android:maxWidth="44.0dip" android:maxLines="1" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:gravity="center" android:id="@id/gv_borrowload_category" android:paddingLeft="20.0dip" android:paddingTop="@dimen/padding_regular" android:paddingRight="25.0dip" android:paddingBottom="@dimen/padding_regular" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:verticalSpacing="10.0dip" android:stretchMode="spacingWidthUniform" android:columnWidth="90.0dip" android:numColumns="3" android:layout_above="@id/btn_next_wrapper" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_next_wrapper" android:background="@color/bg_0009" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textStyle="bold" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/btn_next" android:background="@drawable/bg_0004" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="NEXT" android:fontFamily="@font/gcash_font_header_bold" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="@dimen/font_x_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Powered by " android:fontFamily="@font/gcash_font_body_regular" />
+            <ImageView android:id="@id/img_fuse" android:layout_width="60.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_fuse_logo" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" style="?Imgly.PESDK.Editor.Panel.Text"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/contentView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:id="@id/textInputField" style="?Imgly.PESDK.Editor.Panel.Text.InputField" />
+    </RelativeLayout>
+</RelativeLayout>

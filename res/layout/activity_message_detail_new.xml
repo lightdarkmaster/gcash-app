@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" />
+    <LinearLayout android:orientation="vertical" android:background="#fff1f0f7" android:padding="@dimen/message_detail_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.cardview.widget.CardView android:background="@color/bg_0009" android:paddingTop="@dimen/message_detail_padding" android:paddingBottom="@dimen/message_detail_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardCornerRadius="@dimen/message_detail_corner_radius" app:cardElevation="0.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_message_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/ic_read_mail" android:layout_marginEnd="10.0dip" />
+                    <LinearLayout android:orientation="vertical" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0035" android:ellipsize="end" android:id="@id/tv_message_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:maxLines="2" android:fontFamily="@font/gcash_font_body_regular" />
+                        <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0036" android:id="@id/tv_message_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01 Jan 2018 | 6:00 PM" android:lines="1" android:fontFamily="@font/gcash_font_body_regular" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="center" android:id="@id/iv_marketing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:id="@id/tv_message_body" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:maxLength="510" android:fontFamily="@font/gcash_font_body_regular" />
+                    </LinearLayout>
+                </ScrollView>
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="center" android:id="@id/btn_confirm" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="VIEW DETAIL" android:maxLines="1" android:maxLength="30" android:onClick="onClick" style="@style/GCashBlueButton2v" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

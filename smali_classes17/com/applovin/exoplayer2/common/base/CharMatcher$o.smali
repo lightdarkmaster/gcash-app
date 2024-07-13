@@ -1,0 +1,132 @@
+.class final Lcom/applovin/exoplayer2/common/base/CharMatcher$o;
+.super Lcom/applovin/exoplayer2/common/base/CharMatcher$t;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/applovin/exoplayer2/common/base/CharMatcher;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "o"
+.end annotation
+
+
+# static fields
+.field static final nW:Lcom/applovin/exoplayer2/common/base/CharMatcher$o;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    new-instance v0, Lcom/applovin/exoplayer2/common/base/CharMatcher$o;
+
+    invoke-direct {v0}, Lcom/applovin/exoplayer2/common/base/CharMatcher$o;-><init>()V
+
+    sput-object v0, Lcom/applovin/exoplayer2/common/base/CharMatcher$o;->nW:Lcom/applovin/exoplayer2/common/base/CharMatcher$o;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    const-string v0, "213713"
+
+    invoke-static/range {v0 .. v0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0}, Lcom/applovin/exoplayer2/common/base/CharMatcher$t;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public matches(C)Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    const/16 v0, 0x1f
+
+    if-le p1, v0, :cond_3
+
+    const/16 v0, 0x7f
+
+    if-lt p1, v0, :cond_2
+
+    const/16 v0, 0x9f
+
+    if-gt p1, v0, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    const/4 p1, 0x0
+
+    goto :goto_1
+
+    :cond_3
+    :goto_0
+    const/4 p1, 0x1
+
+    :goto_1
+    return p1
+.end method

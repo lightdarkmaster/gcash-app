@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/containerScanQr" android:background="#ff003da5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#ffecf1fa" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.Toolbar android:gravity="center" android:id="@id/scanQrToolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:titleTextAppearance="@style/GcToolbar" />
+    <FrameLayout android:id="@id/frameScanQrContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/scanQrToolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

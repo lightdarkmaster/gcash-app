@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <TextView android:textSize="@dimen/font_small" android:textStyle="normal" android:textColor="@color/font_0041" android:layout_gravity="center" android:id="@id/tvSubValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="-" android:layout_weight="2.0" android:lineSpacingExtra="6.0sp" android:fontFamily="@font/karla_regular" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_small" android:textStyle="normal" android:textColor="@color/font_0041" android:layout_gravity="end" android:id="@id/tvSubAmount" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PHP 0.00" android:lineSpacingExtra="6.0sp" android:fontFamily="@font/karla_regular" />
+            <View android:layout_gravity="center" android:background="@color/bg_0112" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_x_small" android:textStyle="italic" android:id="@id/tvFundRatingRisk" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/karla_regular" />
+</LinearLayout>

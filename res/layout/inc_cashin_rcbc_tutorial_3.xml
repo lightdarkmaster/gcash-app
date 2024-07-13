@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/bg_0052" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/font_x_large" android:textColor="@color/font_0002" android:id="@id/lbl_bpi_code_tutorial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Questions?" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+        <ImageView android:id="@id/img_bpi_card" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="40.0dip" android:layout_below="@id/lbl_bpi_code_tutorial" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/lbl_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/text_0010" android:layout_below="@id/img_bpi_card" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText android:enabled="false" android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0099" android:textColorHint="@color/font_0099" android:id="@id/Q2A6" android:background="@color/bg_0124f" android:layout_width="fill_parent" android:layout_height="30.0dip" android:hint="Please specify" android:maxLength="100" android:fontFamily="@font/gotham_rounded_medium" android:layout_marginStart="65.0dip" android:layout_marginEnd="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

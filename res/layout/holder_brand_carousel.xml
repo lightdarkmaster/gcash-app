@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cta_btn_card_padding" app:cardCornerRadius="@dimen/margin_ggives_medium_uniform" app:cardElevation="@dimen/empty_dimen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv" android:layout_width="@dimen/ggives_onboarding_brand_carousel_width" android:layout_height="@dimen/ggives_onboarding_brand_carousel_height" android:scaleType="fitXY" android:adjustViewBounds="true" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg_0052" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/referral_x_wrapper" android:background="@drawable/bg_transparent_hover_10" android:padding="20.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:gravity="center" android:id="@id/img_x_referral" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </FrameLayout>
+    <ImageView android:id="@id/img_invitation_success" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_below="@id/referral_x_wrapper" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/font_xx_large" android:textColor="@color/font_0002" android:id="@id/invitation_sent_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/invitation_sent_title" android:layout_below="@id/img_invitation_success" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/lbl_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/invitation_sent_message" android:layout_below="@id/invitation_sent_title" android:layout_centerHorizontal="true" />
+</RelativeLayout>

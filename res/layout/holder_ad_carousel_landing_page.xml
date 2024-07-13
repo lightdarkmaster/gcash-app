@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/iv" android:layout_width="fill_parent" android:layout_height="@dimen/ggives_landing_page_ad_carousel_height" android:scaleType="centerCrop" android:adjustViewBounds="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

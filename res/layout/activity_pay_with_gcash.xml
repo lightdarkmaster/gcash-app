@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <ScrollView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/toolbar">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/pay_directly_with_gcash" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                <TextView android:textColor="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/pay_directly_with_gcash_description" android:lineSpacingExtra="4.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/how_can_i_pay_with_gcash" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <TextView android:textColor="@color/bg_0041" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+                    <TextView android:textColor="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hwcipwg_desc1" android:lineSpacingExtra="4.0dip" android:layout_marginStart="16.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <TextView android:textColor="@color/bg_0041" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" />
+                    <TextView android:textColor="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hwcipwg_desc2" android:lineSpacingExtra="4.0dip" android:layout_marginStart="16.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <TextView android:textColor="@color/bg_0041" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" />
+                    <TextView android:textColor="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hwcipwg_desc3" android:lineSpacingExtra="4.0dip" android:layout_marginStart="16.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <TextView android:textColor="@color/bg_0041" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" />
+                    <TextView android:textColor="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hwcipwg_desc4" android:lineSpacingExtra="4.0dip" android:layout_marginStart="16.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                    <TextView android:textColor="@color/bg_0041" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+                    <TextView android:textColor="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hwcipwg_desc5" android:lineSpacingExtra="4.0dip" android:layout_marginStart="16.0dip" />
+                </LinearLayout>
+                <View android:background="@color/bg_s0127" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginTop="24.0dip" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/where_can_i_shop_online" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                <TextView android:textColor="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/where_can_i_shop_online_desc" android:lineSpacingExtra="4.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/online_merchants" android:adjustViewBounds="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/learnMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/bg_0095" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learn_more" />
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_chevron_blue" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+                <View android:id="@id/divider1" android:background="@color/bg_s0127" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="24.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

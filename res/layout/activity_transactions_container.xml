@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/containerGlobePostpaid" android:background="#ff003da5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#ffecf1fa" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.appcompat.widget.Toolbar android:id="@id/transactions_toolbar" android:background="#ff003da5" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:titleTextAppearance="@style/GcToolbar" />
+    <FrameLayout android:id="@id/frameTransactionsContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/transactions_toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

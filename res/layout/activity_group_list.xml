@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/background_grey" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="32.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+            <View android:id="@id/viewBg" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/viewBoundary" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+            <TextView android:id="@id/tvHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="Existing Groups" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Header.Bold" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rvGroups" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toTopOf="@id/tvCreateGroup" app:layout_constraintEnd_toEndOf="@id/tvHeader" app:layout_constraintStart_toStartOf="@id/tvHeader" app:layout_constraintTop_toBottomOf="@id/tvHeader" app:layout_constraintVertical_bias="0.0" />
+            <View android:id="@id/viewBoundary" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rvGroups" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvCreateGroup" android:background="@drawable/bg_oval_blue_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginBottom="16.0dip" android:text="CREATE GROUP" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Header.Button" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/bg_f6f9fd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_channels" android:background="#fffefefe" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:nestedScrollingEnabled="false" />
+    <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="end|bottom|center" android:id="@id/btn_new_chat" android:background="#ff0057e4" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginBottom="88.0dip" android:src="@drawable/ic_chat_start" android:layout_marginEnd="24.0dip" android:elevation="0.0dip" app:contentPadding="14.0dip" app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+    <include android:id="@id/layout_initial" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_gchat_initial" />
+    <include android:id="@id/layout_maintenance" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_gchat_maintenance" />
+    <FrameLayout android:id="@id/layout_loading" android:background="@android:color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/animation_skeleton_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:lottie_autoPlay="true" app:lottie_fileName="skeleton_loading.json" app:lottie_loop="true" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

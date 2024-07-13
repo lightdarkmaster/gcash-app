@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="f2f_payment_bottom_button_padding">8.0dip</dimen>
+    <dimen name="f2f_payment_code_height">400.0dip</dimen>
+    <dimen name="f2f_payment_top_margin">30.0dip</dimen>
+</resources>

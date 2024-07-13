@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/btn_next">
+        <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/wrapper_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0035" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Enter Amount" android:fontFamily="@font/karla_regular" />
+                <include android:id="@id/include_money_denom_amount" layout="@layout/inc_buy_load_amount" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tvMsg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+            <RelativeLayout android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip">
+                <androidx.recyclerview.widget.RecyclerView android:gravity="center" android:id="@id/rv_regularload" android:paddingLeft="20.0dip" android:paddingTop="@dimen/padding_regular" android:paddingRight="25.0dip" android:paddingBottom="@dimen/padding_regular" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:verticalSpacing="10.0dip" android:stretchMode="spacingWidthUniform" android:columnWidth="90.0dip" android:numColumns="3" />
+                <include android:id="@id/emptyView" android:visibility="gone" layout="@layout/view_empty" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Cta.Button" />
+</RelativeLayout>

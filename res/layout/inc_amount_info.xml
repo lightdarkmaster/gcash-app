@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="You can transfer up to" android:fontFamily="@font/gcash_font_body_regular" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Php 50,000.00 per transaction." android:fontFamily="@font/gcash_font_header_bold" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/btn_ok" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="@dimen/padding_regular" android:text="OKAY" android:onClick="onClick" android:fontFamily="@font/gcash_font_header_bold" style="@style/GCashButton" />
+</LinearLayout>

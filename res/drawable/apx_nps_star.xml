@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/apx_nps_star_outline" />
+    <item android:id="@id/stroke">
+        <shape>
+            <stroke android:width="2.0dip" android:color="@color/apx_blue_color" />
+        </shape>
+    </item>
+</layer-list>

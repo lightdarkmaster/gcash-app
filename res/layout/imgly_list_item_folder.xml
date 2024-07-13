@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="72.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/contentHolder" android:layout_width="72.0dip" android:layout_height="72.0dip" style="?Imgly.PESDK.Editor.Panel.Tool.FolderItem">
+        <ly.img.android.pesdk.ui.widgets.ImageSourceView android:id="@id/image" style="?Imgly.PESDK.Editor.Panel.Tool.FolderItem.Icon" />
+        <View android:id="@id/selected_overlay" android:background="@drawable/imgly_item_folder_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:id="@id/label" style="?Imgly.PESDK.Editor.Panel.Tool.FolderItem.Label" />
+    </RelativeLayout>
+</LinearLayout>

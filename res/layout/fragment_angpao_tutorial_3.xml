@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_icon_ap" android:layout_width="0.0dip" android:layout_height="375.0dip" android:layout_marginTop="47.0dip" android:src="@drawable/ic_ang_pao_tutorial_new_3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="@dimen/font_xx_large" android:textColor="@color/font_0035" android:id="@id/txtTitleLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Send Gifts to your family and friends!" android:fontFamily="@font/gcash_font_header_bold" android:layout_marginStart="28.0dip" android:layout_marginEnd="28.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_icon_ap" />
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0041" android:id="@id/txtContentLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ang_pao_tutorial_3_content" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="28.0dip" android:layout_marginEnd="28.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/txtTitleLabel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="13.0sp" android:textColorHint="@color/griver_h5_core_edit_text_color" android:ellipsize="end" android:id="@id/edit" android:background="@drawable/griver_h5_core_au_bg_grey" android:layout_width="fill_parent" android:layout_height="32.0dip" android:maxEms="10" android:textCursorDrawable="@drawable/griver_h5_core_edittext_cursor" android:textAlignment="viewStart" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+</LinearLayout>

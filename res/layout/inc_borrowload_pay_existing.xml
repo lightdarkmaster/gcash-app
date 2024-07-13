@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+        <TextView android:textSize="@dimen/font_x3_large" android:gravity="center" android:id="@id/txt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="8.0dip" android:text="php 20.00" android:fontFamily="@font/gcash_font_body_regular" />
+        <include android:layout_width="170.0dip" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="8.0dip" android:text="Total Amount Due" android:fontFamily="@font/gcash_font_body_regular" />
+    </LinearLayout>
+</merge>

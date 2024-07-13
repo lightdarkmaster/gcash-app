@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/griver_image_bucket_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/griver_image_albumitem_height" android:paddingStart="16.0dip" android:paddingEnd="26.599976dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_photo" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_centerVertical="true">
+        <ImageView android:background="@drawable/griver_image_album_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/iv_album" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" android:scaleType="centerCrop" android:layout_marginEnd="5.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/rl_photo">
+        <TextView android:textSize="17.0sp" android:textColor="@android:color/black" android:id="@id/tv_album_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:id="@id/tv_album_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_selected" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/griver_image_album_selected" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

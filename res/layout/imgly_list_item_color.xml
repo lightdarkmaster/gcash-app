@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/contentHolder" style="?Imgly.PESDK.Editor.Panel.Color.ColorItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View style="?Imgly.PESDK.Editor.Panel.Color.ColorItem.SelectOverlay" />
+    <View android:id="@id/colorView" style="?Imgly.PESDK.Editor.Panel.Color.ColorItem.Background" />
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView android:id="@id/itemOptionIcon" app:srcCompat="@drawable/imgly_icon_item_options" style="?Imgly.PESDK.Editor.Panel.Color.ColorItem.Icon" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/wrapper_a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lbl_description" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14.0sp" android:textColor="#e60a2757" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Expected Amount" android:fontFamily="@font/gotham_rounded_medium" android:layout_marginStart="20.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_remit_amount" android:background="@drawable/bg_round_rectangle_stroke_grey" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+            <EditText android:textSize="16.0sp" android:textColor="#ff0a2757" android:ellipsize="end" android:gravity="center|left" android:id="@id/txt_amount" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="0.00" android:maxLines="1" android:maxLength="11" android:drawablePadding="3.0dip" android:completionThreshold="1" android:inputType="numberDecimal" android:windowSoftInputMode="stateAlwaysHidden" android:imeOptions="actionDone" android:drawableStart="@drawable/ic_peso_sign" android:fontFamily="@font/gotham_rounded_medium" android:paddingStart="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/font_0044" android:id="@id/tv_amount_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Error" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/karla_regular" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+</merge>

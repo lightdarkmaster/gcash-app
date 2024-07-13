@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:enabled="false" android:textColor="@color/font_0035" android:id="@id/etMember" android:background="@null" android:layout_width="0.0dip" android:layout_height="35.0dip" android:hint="@string/text_contact_hint" android:ems="10" android:inputType="textPersonName" android:fontFamily="@font/karla_regular" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Body.2" />
+    <ImageView android:id="@id/ivToggle" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="@id/etMember" app:layout_constraintEnd_toEndOf="@id/etMember" app:layout_constraintTop_toTopOf="@id/etMember" app:srcCompat="@drawable/ic_close_blue" app:tint="@color/font_0035" />
+    <View android:id="@id/memberLine" android:background="@android:color/darker_gray" android:layout_width="0.0dip" android:layout_height="1.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/barrier" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="etMember,ivToggle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

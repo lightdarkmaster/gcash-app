@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:id="@id/tvAccountType" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="@dimen/padding_regular" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:ellipsize="end" android:id="@id/tvAccountNumber" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="16" android:layout_weight="3.0" android:textAllCaps="false" android:fontFamily="@font/gcash_font_body_regular" />
+    <ImageView android:id="@id/tvAccountSelect" android:layout_width="0.0dip" android:layout_height="15.0dip" android:layout_weight="1.0" android:layout_marginEnd="@dimen/padding_regular" app:tint="@color/colorPrimary" />
+</LinearLayout>

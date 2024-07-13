@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Has Face:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_has_face" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Track ID:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Quality:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="LiveScore:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_live_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="RectWidth:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_rectWidth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Light:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Pitch:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_pitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Yaw:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_yaw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Gaussian:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_gaussian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="integrity:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_integrity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Motion:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_motion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="leftEyeOcclusion:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_left_eye_occlusion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="rightEyeOcclusion:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_right_eye_occlusion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="distance:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_face_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="versionName:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/smile_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/face_circle_reset" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="Code:" />
+        <TextView android:textColor="@android:color/holo_red_light" android:id="@id/smile_machine_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+</LinearLayout>

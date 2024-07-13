@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="48.0dip" android:width="48.0dip" android:viewportWidth="48.0" android:viewportHeight="48.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:translateX="12.0" android:translateY="12.0">
+        <group android:scaleX="-1.0" android:scaleY="-1.0" android:translateX="24.0" android:translateY="24.0">
+            <path android:fillColor="?imgly_icon_color_active" android:pathData="M14 23.834083L14 22l4 0 0 -4 4 0 0 -4 1.834083 0C22.991046 19.02501 19.02501 22.991046 14 23.834083Zm-4 0C4.9749903 22.991046 1.0089538 19.02501 0.16591688 14L2 14l0 4 4 0 0 4 4 0 0 1.834083zM14 0.16591688C19.02501 1.0089538 22.991046 4.9749903 23.834083 10L22 10 22 6 18 6 18 2 14 2 14 0.16591688ZM0.16591688 10C1.0089538 4.9749903 4.9749903 1.0089538 10 0.16591688L10 2 6 2 6 6 2 6 2 10 0.16591688 10ZM6 6l4 0 0 4 -4 0 0 -4zm4 -4l4 0 0 4 -4 0 0 -4zm4 4l4 0 0 4 -4 0 0 -4zm-12 4l4 0 0 4 -4 0 0 -4zm4 4l4 0 0 4 -4 0 0 -4zm4 -4l4 0 0 4 -4 0 0 -4zm4 4l4 0 0 4 -4 0 0 -4zm4 -4l4 0 0 4 -4 0 0 -4zm-8 8l4 0 0 4 -4 0 0 -4z" />
+        </group>
+    </group>
+</vector>

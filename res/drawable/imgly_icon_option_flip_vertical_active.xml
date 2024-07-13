@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="48.0dip" android:width="48.0dip" android:viewportWidth="48.0" android:viewportHeight="48.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:pivotX="24.0" android:pivotY="24.0" android:rotation="90.0">
+        <path android:fillColor="?imgly_icon_color_active" android:pathData="M34 13L25 13L25 35L34 35C34.552 35 35 34.552 35 34L35 14C35 13.448 34.552 13 34 13ZM14 13L23 13L23 35L14 35C13.448 35 13 34.552 13 34L13 14C13 13.448 13.448 13 14 13ZM27 15L33 15L33 33L27 33Z" />
+    </group>
+</vector>

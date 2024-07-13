@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/toolbar" />
+            <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="Enter your GCash MPIN" android:fontFamily="@font/gcash_font_body_regular" />
+                <com.dotx.dpasswordtext.DPasswordText android:textSize="@dimen/font_x4_large" android:layout_gravity="center_horizontal" android:id="@id/txtpass_mpin" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:inputType="number" android:fontFamily="@font/gcash_font_body_regular" app:text_hint="dash" app:text_hint_color="@color/font_0024" app:text_mask="circle" app:text_mask_color="@color/font_0024" app:text_max_length="4" style="@style/Theme.AppCompat.Light" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/btn_next" android:background="@drawable/bg_0004" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/padding_regular" android:text="NEXT" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+    </RelativeLayout>
+</FrameLayout>

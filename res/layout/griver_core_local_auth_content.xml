@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/griver_core_white_title_drawable" android:layout_width="fill_parent" android:layout_height="50.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+        <ImageView android:id="@id/iv_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/griver_text_color" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/iv_icon" />
+        <ImageView android:id="@id/iv_more" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/griver_core_more_right" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/tv_name" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/griver_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/griver_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/griver_allow_this_app_to" />
+        <RelativeLayout android:background="@drawable/griver_shadow_panel_background" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:id="@id/iv_scope" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/griver_core_sub_text_color" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:layout_toEndOf="@id/iv_scope" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <Button android:textSize="18.0sp" android:textColor="@color/griver_text_color" android:id="@id/bt_refuse" android:background="@drawable/griver_button_negative" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/griver_dont_allow" android:layout_weight="1.0" android:textAllCaps="false" android:layout_marginEnd="5.0dip" android:elevation="0.0dip" />
+            <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/bt_allow" android:background="@drawable/griver_button_positive" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="@string/griver_allow" android:layout_weight="1.0" android:textAllCaps="false" android:layout_marginStart="5.0dip" android:elevation="0.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/layout_not_retry" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <CheckBox android:id="@id/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/griver_default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/griver_auth_keep_no_ask" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/check_box" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

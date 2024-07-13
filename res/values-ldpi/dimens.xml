@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="message_view_text_content_padding">8.0dip</dimen>
+    <dimen name="take_photo_size">40.0dip</dimen>
+    <dimen name="z_text_size_15">12.0dip</dimen>
+</resources>

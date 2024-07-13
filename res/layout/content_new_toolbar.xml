@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_main" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/AppTheme.NoActionBar.01.06" android:id="@id/toolbar" android:background="@color/new_header_blue" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/new_toolbar_title_text_size" android:textColor="@android:color/white" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/gotham_rounded_medium" app:layout_constraintBottom_toBottomOf="@id/toolbar" app:layout_constraintEnd_toEndOf="@id/toolbar" app:layout_constraintStart_toStartOf="@id/toolbar" app:layout_constraintTop_toTopOf="@id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

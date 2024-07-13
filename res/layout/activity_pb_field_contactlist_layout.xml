@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layBuyloadChooseContact" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/RelativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0020" android:id="@id/key" android:layout_width="110.0dip" android:layout_height="wrap_content" android:text="Mobile number" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+            <AutoCompleteTextView android:textSize="@dimen/font_small" android:textColor="@color/font_0024" android:gravity="center|right" android:id="@id/value" android:tag="autoCom" android:background="@null" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="6.0dip" android:hint="Ex: 09151234567" android:maxLines="1" android:ems="10" android:maxLength="11" android:layout_toLeftOf="@id/ivBrowseContact" android:layout_toRightOf="@id/key" android:layout_alignParentTop="false" android:layout_centerVertical="true" android:inputType="numberSigned" android:fontFamily="@font/gcash_font_body_regular" />
+            <ImageView android:id="@id/ivBrowseContact" android:padding="3.0dip" android:clickable="true" android:layout_width="32.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_add" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

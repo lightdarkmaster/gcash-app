@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardElevation="@dimen/empty_dimen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_partner_icon" android:layout_width="@dimen/ggives_partner_icon_size" android:layout_height="@dimen/ggives_partner_icon_size" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+</androidx.cardview.widget.CardView>

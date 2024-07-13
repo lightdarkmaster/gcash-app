@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/progressView" style="?Imgly.PESDK.Editor.Popup.Progress"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressBar" style="?Imgly.PESDK.Editor.Popup.Progress.ProgressBar" />
+    <TextView android:id="@id/progress" android:text="@string/pesdk_editor_text_exportProgressUnknown" style="?Imgly.PESDK.Editor.Popup.Progress.Value" />
+</RelativeLayout>

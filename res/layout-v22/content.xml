@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="0.0dip" app:elevation="0.0dip">
+        <androidx.appcompat.widget.Toolbar android:gravity="fill" android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:titleTextColor="@color/font_0002" app:popupTheme="@style/AppTheme.PopupOverlay"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <ImageView android:id="@id/toolbar_icon" android:paddingRight="@dimen/padding_regular" android:clickable="true" android:layout_width="44.0dip" android:layout_height="fill_parent" app:srcCompat="@drawable/ic_hamburger_menu" />
+            <ImageView android:layout_gravity="center" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="46.0dip" android:src="@drawable/gcash_logo2" android:adjustViewBounds="true" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:id="@id/wrapper_dashboard_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

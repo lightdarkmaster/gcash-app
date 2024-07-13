@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.griver.image.capture.widget.CustomBgImageView android:id="@id/previewIv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottomBar" android:background="@color/griver_image_colorPortraitBarBg" android:layout_width="fill_parent" android:layout_height="42.669983dip">
+        <TextView android:textSize="15.299988sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="start|center" android:id="@id/takeAgain" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/griver_image_record_again" android:includeFontPadding="false" android:layout_marginStart="19.299988dip" />
+        <TextView android:textSize="15.299988sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/usePhoto" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/griver_image_use_photo" android:includeFontPadding="false" android:layout_marginEnd="19.299988dip" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/background_light" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0035" android:id="@id/key" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" android:text="Type" android:shadowRadius="2.0" android:fontFamily="@font/gcash_font_header_bold" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_rectangle_stroke_gray" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatSpinner android:id="@id/value" android:background="@null" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="28.0dip" android:layout_weight="1.0" android:spinnerMode="dialog" />
+        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_spinner" android:layout_width="10.0dip" android:layout_height="5.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:id="@id/tv_fee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:hint="+ PHP 5.00 Service Fee" android:fontFamily="@font/gcash_font_body_regular" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0046" android:id="@id/tv_inline_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:text="Invalid" android:fontFamily="@font/gcash_font_body_regular" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlTopic" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0041" android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:textAllCaps="false" android:fontFamily="@font/gcash_font_body_regular" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/ivChevron" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_chevron_gray" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

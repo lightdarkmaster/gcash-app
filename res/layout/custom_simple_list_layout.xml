@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="@dimen/font_small" android:ellipsize="end" android:gravity="center" android:id="@id/text1" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

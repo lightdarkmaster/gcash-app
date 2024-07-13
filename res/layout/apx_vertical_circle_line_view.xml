@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/circle_view" android:background="@drawable/apx_background" android:layout_width="11.5dip" android:layout_height="11.5dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/line_view" android:background="#ffffce01" android:layout_width="2.7999878dip" android:layout_height="30.0dip" />
+</LinearLayout>

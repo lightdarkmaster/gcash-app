@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/gradient_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gcash.common_presentation.custom.CustomToolbar android:id="@id/custom_toolbar" android:tag="@string/lbl_gscore" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/fragment_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

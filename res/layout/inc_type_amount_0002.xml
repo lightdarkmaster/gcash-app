@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/wrapper_a" android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lbl_description" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:id="@id/txt_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amount" android:fontFamily="@font/gcash_font_body_regular" />
+            <EditText android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center|right" android:id="@id/txt_amount" android:background="@null" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="Enter Amount in php (1-6) digits" android:maxLength="11" android:inputType="numberDecimal" android:windowSoftInputMode="stateAlwaysHidden" android:imeOptions="actionDone" android:fontFamily="@font/gcash_font_body_regular" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+    </LinearLayout>
+</merge>

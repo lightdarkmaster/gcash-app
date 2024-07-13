@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textStyle="bold" android:textColor="@color/font_0020" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New MPIN" android:fontFamily="@font/gcash_font_body_regular" style="@style/Body.2" />
+            <EditText android:textColor="@color/font_0024" android:gravity="end|bottom|center" android:layout_gravity="bottom" android:id="@id/et_new_mpin" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="Enter your new MPIN" android:maxLength="4" android:inputType="numberPassword" style="@style/Body.2" />
+        </LinearLayout>
+        <View android:id="@id/v_hr" android:background="@color/bg_0011" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0044" android:layout_gravity="end" android:id="@id/tv_pin_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="Please enter your 4-digit MPIN." android:fontFamily="@font/gcash_font_body_regular" android:layout_marginEnd="15.0dip" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textStyle="bold" android:textColor="@color/font_0020" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Verify MPIN" android:fontFamily="@font/gcash_font_body_regular" style="@style/Body.2" />
+            <EditText android:textColor="@color/font_0024" android:gravity="end|bottom|center" android:layout_gravity="bottom" android:id="@id/et_verify_new_mpin" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="Verify your new MPIN" android:maxLength="4" android:inputType="numberPassword" style="@style/Body.2" />
+        </LinearLayout>
+        <View android:id="@id/v_hr2" android:background="@color/bg_0011" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0044" android:layout_gravity="end" android:id="@id/tv_pin_message2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="Please enter your 4-digit MPIN." android:fontFamily="@font/gcash_font_body_regular" android:layout_marginEnd="15.0dip" />
+    </LinearLayout>
+</merge>

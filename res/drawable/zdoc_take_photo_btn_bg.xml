@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:left="@dimen/take_photo_center_inset_size" android:top="@dimen/take_photo_center_inset_size" android:right="@dimen/take_photo_center_inset_size" android:bottom="@dimen/take_photo_center_inset_size">
+                <shape android:shape="oval">
+                    <size android:height="@dimen/take_photo_center_size" android:width="@dimen/take_photo_center_size" />
+                    <solid android:color="@color/zdoc_confirm_btn_press_color" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <size android:height="@dimen/take_photo_size" android:width="@dimen/take_photo_size" />
+                    <stroke android:width="@dimen/take_photo_border_size" android:color="@color/zdoc_confirm_btn_press_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:left="@dimen/take_photo_center_inset_size" android:top="@dimen/take_photo_center_inset_size" android:right="@dimen/take_photo_center_inset_size" android:bottom="@dimen/take_photo_center_inset_size">
+                <shape android:shape="oval">
+                    <size android:height="@dimen/take_photo_center_size" android:width="@dimen/take_photo_center_size" />
+                    <solid android:color="@color/zdoc_confirm_btn_normal_color" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <size android:height="@dimen/take_photo_size" android:width="@dimen/take_photo_size" />
+                    <stroke android:width="@dimen/take_photo_border_size" android:color="@color/zdoc_confirm_btn_normal_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_cashin_barcode_input_amount" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="center_vertical">
+            <RelativeLayout android:id="@id/wrapper_merchant_icon" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:gravity="center" android:id="@id/img_merchant_icon" android:background="@drawable/bg_circle_gray" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textStyle="bold" android:textColor="@color/font_0020" android:id="@id/txt_merchant_name" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/img_merchant_icon" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/wrapper_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/wrapper_merchant_icon">
+                <include layout="@layout/inc_type_amount_0001" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/wrapper_cash_in_barcode_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true">
+                <include layout="@layout/inc_cashin_generate_barcode" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

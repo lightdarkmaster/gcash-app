@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <RelativeLayout android:background="@color/bg_0009" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+            <ImageView android:id="@id/iv_progress1" android:layout_width="100.0dip" android:layout_height="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_group_1" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/iv_progress1">
+                <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0035" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Tell us something about yourself" android:fontFamily="@font/gcash_font_header_bold" />
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Only provide information that is true and correct." android:fontFamily="@font/gcash_font_body_regular" />
+                            <include layout="@layout/inc_registration_personal_profile" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:layout_gravity="center" android:id="@id/btnContinue" android:background="@drawable/bg_button_blue" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/next" android:onClick="onClick" android:fontFamily="@font/gcash_font_header_bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

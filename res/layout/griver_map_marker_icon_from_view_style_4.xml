@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="100.0dip" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_from_view_animation" android:layout_width="100.0dip" android:layout_height="20.0dip" android:layout_marginTop="20.0dip" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/icon_from_view_icon" android:layout_width="100.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.alibaba.griver.map.zebra.widget.TextBox android:textStyle="bold" android:gravity="center" android:id="@id/icon_from_view_str" android:layout_width="100.0dip" android:layout_height="wrap_content" />
+</LinearLayout>

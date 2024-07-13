@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_root" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.alipay.zoloz.hardware.camera.widget.CameraSurfaceView android:layout_gravity="center" android:id="@id/surface" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.zoloz.android.phone.zdoc.ui.DefaultMaskView android:id="@id/layout_mask_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:z_line_color="@color/zdoc_line_color" app:z_mask_background="@color/zdoc_frame_bg_color" app:z_mask_invisible_height="@dimen/operation_height" />
+    <zoloz.ap.com.toolkit.ui.TitleBar android:id="@id/layout_titlebar" android:layout_width="wrap_content" android:layout_height="48.0dip" app:z_custom="true" app:z_left_src="@drawable/title_bar_back" app:z_separate_visibility="false" app:z_text="@string/zdoc_title" app:z_text_color="@color/title_color" />
+    <com.zoloz.android.phone.zdoc.ui.MessageView android:id="@id/layout_message" android:layout_width="fill_parent" android:layout_height="fill_parent" app:z_message_view_custom="true" app:z_showPress="true" layout="@layout/layout_message" />
+</FrameLayout>

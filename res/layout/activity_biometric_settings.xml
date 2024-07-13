@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_0108" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="240.0dip" android:layout_height="185.0dip" android:layout_marginTop="60.0dip" android:src="@drawable/ic_touch_id_logo" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0035" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="Biometrics Login" android:lineSpacingExtra="6.0sp" android:fontFamily="@font/header_semi" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Sign in to your account faster using Biometrics Login" android:lineSpacingExtra="6.0sp" android:fontFamily="@font/gcash_font_body_regular" />
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0035" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable Biometrics Login" android:layout_centerVertical="true" android:lineSpacingExtra="6.0sp" android:fontFamily="@font/gcash_font_body_regular" android:layout_alignParentStart="true" />
+                    <androidx.appcompat.widget.SwitchCompat android:theme="@style/switchStyle2" android:id="@id/switchBiometric" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0041" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="By enabling biometrics login, you allow GCash to access your saved biometrics data in your device to create and save data in GCash that shall be used for securing your login. The data will not be used for any other purposes" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/gcash_font_body_regular" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

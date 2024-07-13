@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" card_view:cardCornerRadius="4.0dip" card_view:cardElevation="2.0dip" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout android:id="@id/piggyBankDetails" android:layout_width="fill_parent" android:layout_height="170.0dip">
+            <ImageView android:id="@id/ivPiggy" android:layout_width="118.0dip" android:layout_height="148.0dip" android:src="@drawable/ic_piggy" android:layout_alignParentBottom="true" android:layout_marginStart="-5.0dip" android:layout_marginEnd="20.0dip" android:layout_alignParentStart="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ivPiggyDetails" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="onClick" android:layout_toEndOf="@id/ivPiggy">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="My Piggy Bank" android:fontFamily="@font/poppins_semibold" />
+                    <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0036" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Earn coins when you use GCash!" android:fontFamily="@font/karla_regular" />
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0040" android:layout_gravity="center_vertical" android:id="@id/tvEmptyPiggyBank" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/empty_piggy" android:fontFamily="@font/karla_regular" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/wrapperPiggyCoins" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:id="@id/tvCurrencyCode" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:text="PHP" android:fontFamily="@font/karla_bold" android:layout_marginEnd="10.0dip" />
+                        <TextView android:textSize="@dimen/font_x3_large" android:textColor="@color/font_0035" android:id="@id/txtPiggyBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:fontFamily="@font/poppins_semibold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0039" android:layout_gravity="center_vertical" android:id="@id/btnPiggy" android:background="@drawable/bg_oval_blue_border2" android:padding="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/btn_piggy1" android:onClick="onClick" android:fontFamily="@font/karla_bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

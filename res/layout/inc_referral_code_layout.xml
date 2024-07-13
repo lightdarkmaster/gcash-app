@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:id="@id/referral_code_header_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_referral_code_title" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="@font/gcash_font_body_regular" />
+    <TextView android:enabled="true" android:textSize="@dimen/font_x4_large" android:textColor="@color/font_0024" android:gravity="center" android:id="@id/referral_code_tv" android:focusable="true" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/referral_code_header_tv" android:layout_centerHorizontal="true" android:textIsSelectable="true" android:textAllCaps="true" android:fontFamily="@font/gcash_font_header_bold" android:layout_marginEnd="10.0dip" />
+</RelativeLayout>

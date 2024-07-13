@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <SurfaceView android:id="@id/camera_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wrapper_tools" android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/img_video_gallery" android:padding="@dimen/padding_regular" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_video_gallery" android:layout_weight="1.0" />
+                <ImageView android:id="@id/img_take_video" android:padding="@dimen/padding_regular" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/red_circle" android:layout_weight="1.0" />
+                <ImageView android:padding="@dimen/padding_regular" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:srcCompat="@drawable/ic_flash_off" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/img_flash" android:padding="@dimen/padding_regular" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:srcCompat="@drawable/ic_flash_off" />
+</FrameLayout>

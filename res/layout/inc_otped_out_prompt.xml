@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_inset_rounded_corner_dialog" android:padding="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0035" android:id="@id/tvCustomHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="6.0sp" android:fontFamily="@font/gcash_font_header_bold" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/btnOk" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/padding_regular" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/padding_regular" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="OK" android:onClick="onClick" android:fontFamily="@font/body_bold" style="@style/GCashBlueButton2" />
+</LinearLayout>

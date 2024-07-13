@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckedTextView android:id="@id/tvSpinnerItem" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Item" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Header" />
+    <View android:background="@color/bg_0011" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

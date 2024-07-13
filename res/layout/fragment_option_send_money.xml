@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_regular" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="SEND MONEY VIA" android:fontFamily="@font/gcash_font_body_regular" />
+    <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/inc_option_send_money_gcash" />
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

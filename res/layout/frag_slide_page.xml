@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_guide" android:layout_width="fill_parent" android:layout_height="@dimen/welcome_page_img_height" android:scaleType="centerInside" />
+    <TextView android:textSize="18.0dip" android:textColor="@android:color/black" android:id="@id/tv_guide_title" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/welcome_page_title_margin_top" android:text="@string/onboarding_page1_instruction" android:maxLines="2" android:layout_marginStart="@dimen/welcome_title_margin" android:layout_marginEnd="@dimen/welcome_title_margin" style="@style/Header.H6" />
+    <TextView android:id="@id/tv_guide_instruction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/welcome_instruction_margin_top" android:layout_marginBottom="@dimen/welcome_instruction_margin_bottom" android:text="@string/onboarding_page1_instruction" android:maxLines="3" android:lineSpacingMultiplier="1.2" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" android:layout_marginStart="@dimen/welcome_title_margin" android:layout_marginEnd="@dimen/welcome_title_margin" style="@style/Body.1" />
+</LinearLayout>

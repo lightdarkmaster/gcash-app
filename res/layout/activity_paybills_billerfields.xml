@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainContent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" />
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_subheader" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textStyle="bold" android:textColor="@color/font_0035" android:ellipsize="end" android:id="@id/txt_biller_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="Globe Postpaid" android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="10.0dip" android:layout_marginEnd="15.0dip" />
+                <View android:background="@color/font_0076" android:layout_width="fill_parent" android:layout_height="4.0px" android:layout_marginTop="12.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="15.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/wrapperBillerDetails" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_biller_name" android:tag="billsPay_from_ctnBiller" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_biller_logo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="15.0dip" android:layout_marginEnd="10.0dip" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                        <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:textColor="@color/font_0035" android:ellipsize="end" android:id="@id/tv_biller_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Globe Postpaid" android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="5.0dip" android:layout_marginEnd="15.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_postingperiod" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_weight="2.0" android:layout_marginStart="5.0dip" android:layout_marginEnd="20.0dip">
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0036" android:id="@id/txt_other_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Posting period:" android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" />
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0020" android:id="@id/tv_sla_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="next business day" android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="5.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ffebecf0" android:layout_width="fill_parent" android:layout_height="5.0px" android:layout_marginTop="10.0dip" android:layout_marginStart="25.0dip" android:layout_marginEnd="25.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/wrapperAmount" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="85.0dip" android:layout_marginEnd="85.0dip">
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0035" android:id="@id/key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PHP" android:shadowRadius="2.0" android:fontFamily="@font/gcash_font_body_regular" />
+                        <androidx.appcompat.widget.AppCompatEditText android:textSize="@dimen/font_xx_large" android:textColor="@color/font_0035" android:gravity="center|right" android:id="@id/tv_amnt" android:tag="billsPay_from_etAmount" android:background="@null" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="0.00" android:ems="10" android:inputType="numberDecimal" android:fontFamily="@font/gcash_font_body_regular" />
+                    </LinearLayout>
+                    <View android:background="@color/font_0041" android:layout_width="fill_parent" android:layout_height="4.0px" android:layout_marginTop="5.0dip" android:layout_marginStart="80.0dip" android:layout_marginEnd="80.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/font_0046" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/gcash_balance_error" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:fontFamily="@font/karla_regular" app:layout_constrainedWidth="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/wrapperFee" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0036" android:id="@id/tv_feemsg" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="5.0dip" android:text="You will be charged a service fee of " android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" />
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0020" android:id="@id/tv_fee" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="5.0dip" android:text="PHP 5.00" android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="5.0dip" />
+                </LinearLayout>
+                <HorizontalScrollView android:id="@id/horizontalayout_denomination" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/biller_denomination" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <View android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0px" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/wrapperFields" android:background="@color/bg_0009" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+                <ScrollView android:orientation="vertical" android:id="@id/scrollView" android:background="@color/bg_0002" android:visibility="visible" android:fadingEdgeLength="5.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" android:requiresFadingEdge="vertical">
+                    <LinearLayout android:orientation="vertical" android:tag="billsPay_favoriteForm" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="vertical" android:tag="billsPay_from_ctnFields" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <LinearLayout android:orientation="vertical" android:id="@id/fieldWrapper" android:tag="billsPay_from_ctnFields" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <TextView android:textSize="@dimen/font_x_large" android:textColor="@color/font_0020" android:gravity="center" android:layout_gravity="center" android:id="@id/noFields" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_10sdp" android:fontFamily="@font/gcash_font_body_regular" />
+                        </LinearLayout>
+                        <include android:id="@id/incBillProtect" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" layout="@layout/inc_bill_protect" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/wrapperFooter" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/poweredByWrapperBottom" android:background="@color/bg_0009" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/pay_bill_layout_height" android:layout_marginTop="@dimen/pay_bill_layout_margin">
+                                <ImageView android:id="@id/ivPoweredByBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0041" android:gravity="center" android:id="@id/tvReminder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:fontFamily="@font/gcash_font_body_light" />
+                            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/btnNext" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="15.0dip" android:text="NEXT" android:onClick="onClick" style="@style/GCashBlueButton2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

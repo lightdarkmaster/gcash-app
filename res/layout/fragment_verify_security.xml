@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff7f7f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_setup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="24.0sp" android:textColor="#ff000000" android:id="@id/tv_center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="15.0dip" android:listSelector="@android:color/transparent" android:divider="@null" android:layout_above="@id/tv_confirm" android:layout_below="@id/ll_setup" />
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/verify_confirm_unselected" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="60.0dip" android:text="SUBMIT" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="17.0sp" android:textColor="#ff00bdf1" android:id="@id/change_method" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

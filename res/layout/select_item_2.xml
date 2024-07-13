@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:ellipsize="end" android:id="@id/key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_regular" android:maxLines="1" android:maxLength="16" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:textAllCaps="false" android:fontFamily="@font/gcash_font_body_regular" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textStyle="bold" android:textColor="@color/font_0024" android:gravity="center|right" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:maxLines="1" android:maxLength="14" android:layout_toRightOf="@id/key" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+    <ImageView android:id="@id/check" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

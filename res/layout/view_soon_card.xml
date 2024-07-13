@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/viewSoon" android:background="@color/bg_0009" android:paddingTop="@dimen/card_padding_bottom" android:paddingBottom="@dimen/card_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="18.0sp" android:id="@id/card_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/lbl_coming_soon" android:layout_marginStart="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/AdSectionTextViewTitle" />
+        <TextView android:gravity="center" android:id="@id/tv_empty_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="@dimen/card_content_margin_top" android:text="Stay tuned for more updates!" app:layout_constraintTop_toBottomOf="@id/card_title" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_card_content" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_content_margin_top" app:layout_constraintTop_toBottomOf="@id/card_title">
+            <View android:background="@drawable/bg_card" android:layout_width="180.0dip" android:layout_height="95.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+            <View android:background="@drawable/bg_card" android:layout_width="180.0dip" android:layout_height="95.0dip" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

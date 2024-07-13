@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/cl_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" layout="@layout/content_new_toolbar" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/cl_btn" app:layout_constraintTop_toBottomOf="@id/cl_toolbar">
+        <gcash.module.ggives.utils.CustomAppBarLayout android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsingToolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:contentScrim="@android:color/transparent" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/content_ggives_dashboard_collasible_app_bar" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_collapseMode="pin" app:tabTextAppearance="@style/GGives.AppTabTextAppearance" style="@style/GGives.AppTabLayout" />
+            <View android:id="@id/view_divider" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        </gcash.module.ggives.utils.CustomAppBarLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.cardview.widget.CardView android:id="@id/cl_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:outlineProvider="none" app:cardBackgroundColor="@color/font_f6f9fd" app:cardCornerRadius="0.0dip" app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/font_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/privacy_sub_text" android:textColor="@color/font_10346F" android:layout_gravity="center_horizontal" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_ggives_xxxlarge" android:layout_marginBottom="@dimen/show_case_dialog_margin_right_adjustment" android:text="Ready to pay in flexible payments?" android:alpha="0.6" android:fontFamily="@font/gilroy_semibold" app:layout_constraintBottom_toTopOf="@id/tv_btn_name" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatTextView android:gravity="center_horizontal" android:id="@id/tv_btn_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_ggives_xxxlarge" android:layout_marginRight="@dimen/margin_ggives_xxxlarge" android:layout_marginBottom="@dimen/margin_double_large_dp" android:text="@string/ggives_activate_now" android:layout_marginHorizontal="@dimen/margin_ggives_xxxlarge" app:layout_constraintBottom_toBottomOf="parent" style="@style/Cta.Button.New" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

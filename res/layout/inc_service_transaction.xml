@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/bg_0002" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="100.0">
+        <include layout="@layout/inc_merge_cash_in" />
+        <include layout="@layout/inc_merge_send_money" />
+        <include layout="@layout/inc_merge_pay_bills" />
+        <include layout="@layout/inc_merge_buy_load" />
+        <include layout="@layout/inc_merge_pay_qr" />
+    </LinearLayout>
+</LinearLayout>

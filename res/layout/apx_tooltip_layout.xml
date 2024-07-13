@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/apx_icon" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="12.0dip" android:layout_alignParentStart="true" />
+    <TextView android:id="@id/apx_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="this is title" android:layout_toLeftOf="@id/apx_close_icon" android:layout_toRightOf="@id/apx_icon" android:layout_toStartOf="@id/apx_close_icon" android:layout_toEndOf="@id/apx_icon" />
+    <TextView android:id="@id/apx_helper_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="this is description" android:layout_toLeftOf="@id/apx_close_icon" android:layout_toRightOf="@id/apx_icon" android:layout_below="@id/apx_title_text" android:layout_toStartOf="@id/apx_close_icon" android:layout_toEndOf="@id/apx_icon" />
+    <ImageView android:id="@id/apx_close_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/apx_tooltip_close_button" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    <com.apxor.androidsdk.plugins.realtimeui.utils.ButtonsLayout android:id="@id/apx_buttons_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/apx_helper_text" />
+</RelativeLayout>

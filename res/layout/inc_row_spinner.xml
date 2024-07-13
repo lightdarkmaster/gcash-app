@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/font_xxx_small" android:textColor="@color/bg_0001" android:id="@id/tvLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="N/A" android:fontFamily="@font/gcash_font_body_regular" android:textAlignment="center"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

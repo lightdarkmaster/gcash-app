@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recovery Email" android:fontFamily="@font/gcash_font_body_regular" />
+                    <EditText android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/txt_email" android:background="@android:drawable/screen_background_light_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Email Address (Required)" android:inputType="textEmailAddress" android:fontFamily="@font/gcash_font_body_regular" />
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" layout="@layout/inc_hr_0001" />
+                <LinearLayout android:orientation="horizontal" android:background="@color/bg_0009" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recovery Mobile No." android:fontFamily="@font/gcash_font_body_regular" />
+                    <EditText android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/txt_mobile" android:background="@android:drawable/screen_background_light_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Mobile No. (Optional)" android:maxLength="11" android:inputType="number" android:fontFamily="@font/gcash_font_body_regular" />
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:gravity="center" android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/text_0013" android:fontFamily="@font/gcash_font_body_regular" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:gravity="center" android:id="@id/gcash_care_text_copy_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/gcredit_application_message" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/btn_done" android:background="@drawable/bg_0004" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/padding_regular" android:text="CONFIRM" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

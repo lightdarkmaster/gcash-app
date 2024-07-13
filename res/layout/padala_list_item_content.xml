@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/bg_0096" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:id="@id/cv_padala_transaction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:foreground="?android:selectableItemBackground" app:cardCornerRadius="0.0dip" app:cardElevation="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="15.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_padala_logo" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="55.0dip" android:layout_weight="1.0" android:layout_marginStart="5.0dip">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0099" android:ellipsize="end" android:id="@id/tv_padala_send_money_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:maxLines="1" android:fontFamily="@font/gotham_rounded_bold" />
+                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0097" android:ellipsize="end" android:layout_gravity="start" android:id="@id/tv_padala_claim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" android:fontFamily="@font/gilroy_bold" android:layout_marginStart="3.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_peso_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawableEnd="@drawable/ic_peso_sign" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0099" android:id="@id/tv_padala_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1,500.00" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

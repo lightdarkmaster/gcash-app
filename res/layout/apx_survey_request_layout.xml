@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.apxor.androidsdk.plugins.survey.views.SurveyRequestView android:gravity="bottom" android:id="@id/apx_main_layout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/apx_dialog_close_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/apx_survey_close_icon" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    <RelativeLayout android:gravity="center" android:id="@id/apx_dialog_layout" android:background="@drawable/apx_dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/apx_dialog_image" android:visibility="gone" android:layout_width="128.0dip" android:layout_height="78.0dip" android:src="@drawable/apx_dialog_image" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/apx_dialog_title" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/apx_dialog_title" android:layout_below="@id/apx_dialog_image" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:id="@id/apx_dialog_description" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="Did you like this app? Please give feedback." android:layout_below="@id/apx_dialog_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.apxor.androidsdk.plugins.survey.views.SurveyRequestView>

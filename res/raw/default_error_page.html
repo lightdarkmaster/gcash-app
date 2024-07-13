@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="email=no" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0" />
+        <title>Error</title>
+        <style type="text/css">
+  html {
+    height: 100%;
+  }
+
+  body {
+    background-color: #FFF;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    height: 100%;
+  }
+
+  .am-page-result {
+    text-align: center;
+    margin: 0 17px;
+    position: relative;
+    min-height: 100%;
+  }
+
+  .am-page-result .am-page-result-pic {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 18px;
+    padding: 130px 0 0;
+  }
+
+  .am-page-result .am-page-result-pic img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .am-page-result p {
+    margin: 0;
+    font-size: 17px;
+    color: #8e8e93;
+  }
+
+  .am-page-result-button {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .am-button[am-mode~=white] {
+    border: 1px solid #108ee9;
+    color: #108ee9;
+    background-color: #FFF;
+  }
+
+  .am-button[am-mode~=white]:active {
+    border-color: #108ee9;
+    background-color: #F8F8F8;
+  }
+
+  .am-button[am-mode~=blue] {
+    border: 1px solid #108ee9;
+    color: #FFF;
+    background-color: #108ee9;
+  }
+
+  .am-button[am-mode~=blue]:active {
+    border-color: #17F;
+    background-color: #28F;
+  }
+
+  .am-button[am-mode~=light],
+  .am-button[am-mode~=light]:active {
+    border: none;
+    color: #39F;
+    background-color: #FFF;
+  }
+
+  .am-page-result-button-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 23px;
+    text-align: center;
+  }
+
+  .am-page-result-button {
+    margin-top: 15px;
+  }
+
+  .am-button {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    border: 0;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+  }
+
+  .am-page-result .error-detail {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ccc;
+  }
+  </style>
+    </head>
+
+    <body>
+        <div class="am-page-result">
+            <div class="am-page-result-pic">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MiA1MiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cmVjdCB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIGZpbGw9IiNGNDQzMzYiIHJ4PSIyNiIvPjxnIHN0cm9rZT0iI0ZGRiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYgMTEpIj48cmVjdCB3aWR0aD0iMTgiIGhlaWdodD0iMjgiIHg9IjEiIHk9IjEiIHN0cm9rZS13aWR0aD0iMiIgcng9IjIiLz48cGF0aCBzdHJva2Utd2lkdGg9IjIuNDYyIiBkPSJNMS4xMTMgMjMuNDYyaDE4LjI1Ii8+PC9nPjxnIHN0cm9rZT0iI0ZGRiI+PHBhdGggZD0iTTI0Ljk0IDI4LjA2YS4wMjIuMDIyIDAgMCAxIDAgLjAzMkwyNi4wMyAyN2wtLjAzLS4wMy0uMDMuMDMgMS4wOSAxLjA5MmEuMDIyLjAyMiAwIDEgMSAuMDMyLS4wM0wyNi4wMzIgMjd6bTEuNDE0LTEuMzgybC43MzgtLjc0YS4wMjIuMDIyIDAgMCAxLS4wMy0uMDNMMjYgMjYuOTY4bC0xLjA2LTEuMDZhLjAyMi4wMjIgMCAxIDEtLjAzMi4wM0wyNS45NjggMjdsLTEuMDYgMS4wNmEuMDIyLjAyMiAwIDEgMSAuMDMuMDMyTDI2LjAzMiAyN2wtLjAzLS4wM3oiLz48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0yMCAxOC45NDZjMS40NS0xLjcwMiAzLjU3OC0yLjc3NiA1Ljk1LTIuNzc2IDIuMzkgMCA0LjUzNCAxLjA5MiA1Ljk4NSAyLjgxOCIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTIxLjQ1IDIxLjA1YzEuMDczLTEuMzE4IDIuNjg1LTIuMTU3IDQuNDg2LTIuMTU3IDEuODIgMCAzLjQ0OC44NTcgNC41MiAyLjJtLTcuNjIgMi4wNjhhMy42NzMgMy42NzMgMCAwIDEgMi45Ni0xLjUxYzEuMjI3IDAgMi4zMTYuNjEzIDIuOTkyIDEuNTU4Ii8+PC9nPjwvZz48L3N2Zz4=" />
+            </div>
+            <p id="content"></p>
+            <p id="error" class="error-detail"></p>
+            <div class="am-page-result-button-container">
+                <div class="am-page-result-button">
+                    <button type="button" class="am-button buttonText" am-mode="blue" id="refresh"></button>
+                </div>
+                <div class="am-page-result-button">
+                    <button type="button" class="am-button buttonText" am-mode="white" id="close">Close</button>
+                </div>
+            </div>
+        </div>
+        <script>
+  /**
+   * Check Env
+   */
+  var UA = window.navigator.userAgent;
+  var device = {
+    iOS: /iPhone|iPad|iPod/i.test(UA),
+    Android: /Android/i.test(UA),
+  }
+  var isInContainer = UA.toLocaleLowerCase().indexOf('griver') !== -1
+
+  ERROR_INFO = window.ERROR_INFO || {}
+
+  var i18n = {
+    'en_US': {
+      'error.network': 'Network is unstable. Please try again later.',
+      'error.system': 'System is busy, please try again later.',
+      'btn.refresh': 'REFRESH',
+      'btn.close': 'CLOSE',
+      'title': 'Error'
+    },
+    'id_ID': {
+      'error.network': 'Kondisi jaringan Internet tidak stabil. Mohon coba lagi.',
+      'error.system': 'Sistem sedang sibuk, mohon coba sebentar lagi.',
+      'btn.refresh': 'COBA LAGI',
+      'btn.close': 'TUTUP',
+      'title': 'Error'
+    }
+  }
+  var locale = 'en_US';
+  if (ERROR_INFO.hasOwnProperty('locale')) {
+    if (ERROR_INFO.locale === 'id_ID' || ERROR_INFO.locale === 'en_US') {
+      locale = ERROR_INFO.locale;
+    }
+  }
+
+  function ready(callback) {
+    if (window.AlipayJSBridge) {
+      callback && callback();
+    } else {
+      document.addEventListener('AlipayJSBridgeReady', callback, false);
+    }
+  }
+
+  function setTitle(title) {
+    title = title.trim();
+
+    if (isInContainer) {
+      ready(function() {
+        window.AlipayJSBridge.call('setTitle', {
+          title: title
+        });
+      });
+    } else {
+      document.title = title
+    }
+  }
+  setTitle(i18n[locale]['title']);
+
+  var refresh = document.querySelector('#refresh');
+  if (refresh) {
+    refresh.innerHTML = i18n[locale]['btn.refresh'];
+    refresh.addEventListener('touchend', function() {
+      location.reload();
+    });
+  }
+
+  var close = document.querySelector('#close');
+  //if (close) {
+    if (isInContainer) {
+      close.innerHTML = i18n[locale]['btn.close'];
+      close.addEventListener('touchend', function() {
+        //ready(function() {
+          AlipayJSBridge.call('exitSession')
+        //})
+      });
+    } else {
+      close.style.display = 'none';
+    }
+  //}
+
+  if (ERROR_INFO) {
+    var errorType = '';
+    switch (ERROR_INFO.type) {
+      case 'network':
+        errorType = 'error.network';
+        break;
+      case 'http':
+        errorType = 'error.system';
+        break;
+      case 'ssl':
+      default:
+        errorType = 'error.system';
+        break;
+    }
+
+    if (errorType !== '') {
+      var content = document.querySelector('#content');
+      if (content) {
+        content.innerHTML = i18n[locale][errorType];
+      }
+    }
+
+    var errorDom = document.querySelector('#error');
+    if (errorDom && ERROR_INFO.type) {
+      errorDom.innerHTML = ERROR_INFO.type + (ERROR_INFO.statusCode ? (' | ' + ERROR_INFO.statusCode) : '');
+    }
+  }
+  </script>
+    </body>
+
+</html>

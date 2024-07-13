@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#9aea3c3c" />
+            <corners android:radius="@dimen/griver_AU_CORNER3" />
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <solid android:color="#ffea3c3c" />
+                    <corners android:radius="@dimen/griver_AU_CORNER3" />
+                </shape>
+            </item>
+            <item>
+                <shape
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <solid android:color="@color/griver_AU_COLOR_BUTTON_PRESS" />
+                    <corners android:radius="@dimen/griver_AU_CORNER3" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#ffea3c3c" />
+            <corners android:radius="@dimen/griver_AU_CORNER3" />
+        </shape>
+    </item>
+</selector>

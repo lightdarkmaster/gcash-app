@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:textSize="16.0dip" android:id="@id/etAmountField" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/_8sdp" android:inputType="numberDecimal" android:imeOptions="actionDone" android:drawableStart="@drawable/ic_peso_sign_new" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/GCashRevampEditText" />
+    <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0103" android:id="@id/tvAmountError" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:alpha="0.8" android:fontFamily="@font/gilroy_semibold" android:layout_marginStart="2.0dip" />
+    <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0102" android:id="@id/tvAmountHelper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:alpha="0.8" android:fontFamily="@font/gilroy_semibold" android:layout_marginStart="2.0dip" />
+</LinearLayout>

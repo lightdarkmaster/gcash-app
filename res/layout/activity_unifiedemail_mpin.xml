@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textStyle="italic" android:gravity="center" android:layout_gravity="center" android:id="@id/tvLabel1" android:padding="@dimen/gcash_font_body_regular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/gcash_font_body_regular" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:layout_gravity="center" android:id="@id/tvLabel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/text_0027" android:fontFamily="@font/gcash_font_body_regular" />
+            <com.dotx.dpasswordtext.DPasswordText android:textSize="@dimen/font_x4_large" android:layout_gravity="center_horizontal" android:id="@id/mpin" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:inputType="numberPassword" android:windowSoftInputMode="stateAlwaysVisible" android:imeOptions="actionDone" android:fontFamily="@font/gcash_font_body_regular" app:text_hint="dash" app:text_hint_color="@color/font_0024" app:text_mask="circle" app:text_mask_color="@color/font_0024" app:text_max_length="4" style="@style/Theme.AppCompat.Light">
+                <requestFocus />
+            </com.dotx.dpasswordtext.DPasswordText>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

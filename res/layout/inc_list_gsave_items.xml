@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_transparent_hover_10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_regular" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/padding_regular" android:layout_marginBottom="10.0dip" style="@style/GCashImageButton">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0024" android:ellipsize="end" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginEnd="20.0dip" android:layout_toStartOf="@id/tv_amount" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/font_small" android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="5.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0024" android:ellipsize="end" android:id="@id/tv_datetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginEnd="40.0dip" android:layout_toStartOf="@id/detail" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0023" android:ellipsize="end" android:id="@id/tv_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:text="Details" android:maxLines="1" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="5.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

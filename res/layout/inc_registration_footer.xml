@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wrapper_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/btn_continue">
+        <TextView android:textSize="@dimen/font_x_small" android:id="@id/lbl_by_registering" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="By registering your number, you agree to our" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+        <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0023" android:id="@id/lbl_terms_of_service" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Terms and Conditions." android:layout_below="@id/lbl_by_registering" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+    </RelativeLayout>
+</merge>

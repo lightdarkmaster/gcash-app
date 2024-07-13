@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="0.0dip" android:top="0.0dip">
+        <shape>
+            <size android:height="72.0dip" android:width="56.0dip" />
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="0.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="4.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="8.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="12.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="16.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="20.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="24.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="28.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="32.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="36.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="40.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="44.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="48.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="52.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="56.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="60.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="64.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="4.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="12.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="16.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="20.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="24.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="28.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="32.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="36.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="40.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="44.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+    <item android:left="48.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffffffff" />
+        </shape>
+    </item>
+    <item android:left="52.0dip" android:top="68.0dip">
+        <shape>
+            <solid android:color="#ffd3d3d3" />
+        </shape>
+    </item>
+</layer-list>

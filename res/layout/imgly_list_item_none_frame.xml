@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/contentHolder" style="?Imgly.PESDK.Editor.Panel.Frame.FrameItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ly.img.android.pesdk.ui.widgets.ImageSourceView android:id="@id/image" style="?Imgly.PESDK.Editor.Panel.Frame.FrameItem.NoneIcon" />
+    <TextView android:id="@id/label" style="?Imgly.PESDK.Editor.Panel.Frame.FrameItem.Label" />
+</RelativeLayout>

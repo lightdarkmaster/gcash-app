@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/font_x_large" android:textStyle="normal" android:textColor="@color/font_0a2757" android:id="@id/tv_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="6.0sp" android:fontFamily="@font/gotham_rounded_bold" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/font_small" android:textStyle="normal" android:textColor="@color/font_0102" android:id="@id/tv_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lineSpacingExtra="6.0sp" android:alpha="0.6" android:fontFamily="@font/gilroy_semibold" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_header" />
+    <View android:id="@id/border_bottom" android:background="@color/font_0088" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" app:layout_constraintTop_toBottomOf="@id/tv_sub_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

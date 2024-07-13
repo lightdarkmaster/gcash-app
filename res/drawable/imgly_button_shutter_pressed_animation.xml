@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/imgly_button_shutter_animation_frame_00001" />
+    <item android:duration="30" android:drawable="@drawable/imgly_button_shutter_animation_frame_00002" />
+    <item android:duration="30" android:drawable="@drawable/imgly_button_shutter_animation_frame_00003" />
+    <item android:duration="30" android:drawable="@drawable/imgly_button_shutter_animation_frame_00004" />
+    <item android:duration="30" android:drawable="@drawable/imgly_button_shutter_animation_frame_00005" />
+    <item android:duration="30" android:drawable="@drawable/imgly_button_shutter_animation_frame_00006" />
+    <item android:duration="30" android:drawable="@drawable/imgly_button_shutter_animation_frame_00007" />
+    <item android:duration="30" android:drawable="@drawable/imgly_button_shutter_animation_frame_00008" />
+    <item android:duration="30" android:drawable="@drawable/imgly_button_shutter_animation_frame_00009" />
+    <item android:duration="30" android:drawable="@drawable/imgly_button_shutter_animation_frame_00010" />
+</animation-list>

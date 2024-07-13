@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/apx_card_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/apx_default_question_text_color" android:autoLink="web" android:id="@id/apx_question" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/apx_default_question_text_color" android:id="@id/apx_question_description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/apx_question" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/apx_default_question_text_color" android:id="@id/apx_choices_limit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/apx_question_description" />
+    <ScrollView android:id="@id/apx_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/apx_choices_limit">
+        <LinearLayout android:orientation="vertical" android:id="@id/apx_options" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

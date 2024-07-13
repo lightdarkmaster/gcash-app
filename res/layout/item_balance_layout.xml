@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_balance" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:textColor="@color/font_0002" android:id="@id/txt_lbl_php" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="PHP" android:layout_marginEnd="5.0dip" style="@style/Body" />
+            <TextView android:textSize="32.0sp" android:textColor="@color/font_0002" android:id="@id/tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/gcash_font_header_bold" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_balance_cash_in" android:paddingBottom="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_plus_icon_white" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_manage_gcredit" android:paddingBottom="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_arrow_white" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_small" android:textStyle="bold" android:textColor="@color/font_0002" android:id="@id/tv_available" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Available Balance" android:fontFamily="@font/gcash_font_body_regular" />
+    </LinearLayout>
+</RelativeLayout>

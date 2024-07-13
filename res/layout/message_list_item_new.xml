@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/gli_cv_message_container" android:layout_width="fill_parent" android:layout_height="70.0dip" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="0.0dip" app:cardElevation="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.chauthai.swipereveallayout.SwipeRevealLayout android:id="@id/swipeLayout" android:background="@drawable/bg_transparent_hover_10" android:layout_width="fill_parent" android:layout_height="fill_parent" app:dragEdge="right" app:mode="same_level">
+        <LinearLayout android:orientation="horizontal" android:id="@id/llSwipeDetails" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toEndOf="@id/gli_container">
+            <RelativeLayout android:id="@id/rlMarkRead" android:background="#ff143793" android:layout_width="70.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv_gli_swipe_mark_ic" android:background="@drawable/ic_swipe_mark_as_read" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" android:layout_marginEnd="15.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlDelete" android:background="#ffdc1515" android:layout_width="70.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv_gli_swipe_del_ic" android:background="@drawable/ic_swipe_delete" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" android:layout_marginEnd="15.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/gli_container" android:background="@drawable/bg_transparent_hover_10" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/gli_iv_message_ic" android:padding="2.0dip" android:layout_width="24.0dip" android:layout_height="19.0dip" android:layout_marginTop="18.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="5.0dip" />
+            <ImageView android:id="@id/gli_iv_message_ic2" android:padding="2.0dip" android:visibility="gone" android:layout_width="23.0dip" android:layout_height="17.0dip" android:layout_marginTop="18.0dip" android:layout_marginStart="22.0dip" android:layout_marginEnd="5.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/gli_ll_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toEndOf="@id/gli_iv_message_ic">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0090" android:ellipsize="end" android:id="@id/gli_tv_title_unread" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="You just received a KKB request!" android:maxLines="1" android:layout_weight="1.0" android:fontFamily="@font/gotham_rounded_medium" android:layout_marginStart="14.0dip" android:layout_marginEnd="12.0dip" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_2D2F34" android:ellipsize="end" android:id="@id/gli_tv_title_read" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="You just received a KKB request!" android:maxLines="1" android:layout_weight="1.0" android:fontFamily="@font/gotham_rounded_medium" android:layout_marginStart="14.0dip" android:layout_marginEnd="12.0dip" />
+                <TextView android:textSize="@dimen/font_xx_small" android:textColor="@color/font_6780A9" android:gravity="end" android:id="@id/gli_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="3 min" android:fontFamily="@font/gilroy_medium" android:layout_marginEnd="20.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_6780A9" android:ellipsize="end" android:id="@id/gli_tv_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Hi James, we are happy to see you around..." android:maxLines="1" android:layout_below="@id/gli_ll_title" android:fontFamily="@font/gilroy_semibold" android:layout_marginStart="14.0dip" android:layout_marginEnd="20.0dip" android:layout_toEndOf="@id/gli_iv_message_ic" />
+            <View android:id="@id/gli_v_separator" android:background="#ff7c7a7a" android:layout_width="fill_parent" android:layout_height="0.00999999dip" android:layout_marginTop="15.0dip" android:layout_alignParentBottom="true" android:alpha="0.2" />
+        </RelativeLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+</androidx.cardview.widget.CardView>

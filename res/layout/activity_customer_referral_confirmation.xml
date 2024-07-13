@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/review_referral_code_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" layout="@layout/inc_review_referral_code" />
+            <include android:id="@id/referred_recipient_list_layout" android:layout_width="fill_parent" android:layout_height="190.0dip" android:layout_below="@id/review_referral_code_layout" android:layout_centerHorizontal="true" layout="@layout/inc_referral_confirm_recipients_layout" />
+            <include android:id="@id/referral_confirm_screen_message_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/referral_code_send_invite_button" android:layout_centerHorizontal="true" layout="@layout/inc_referral_confirm_screen_message" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textStyle="bold" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/referral_code_send_invite_button" android:background="@drawable/bg_0004" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/padding_regular" android:text="SEND INVITE" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

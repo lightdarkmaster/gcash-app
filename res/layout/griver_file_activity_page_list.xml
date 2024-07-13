@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.griver.ui.ant.AUTitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.alibaba.griver.file.ui.ZoomRecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.alibaba.griver.ui.ant.layout.AULinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_file_not_support" android:background="@color/griver_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.alibaba.griver.ui.ant.AUImageView android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="90.0dip" android:src="@drawable/griver_file_not_support" />
+            <com.alibaba.griver.ui.ant.text.AUTextView android:textSize="20.0sp" android:textColor="@color/griver_file_desc" android:gravity="center_horizontal" android:id="@id/tv_filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" />
+            <com.alibaba.griver.ui.ant.text.AUTextView android:textSize="16.0sp" android:textColor="@color/griver_file_desc" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" android:text="@string/griver_unable_to_open_file_desc" android:layout_weight="1.0" android:lineSpacingMultiplier="1.5" android:layout_marginStart="33.0dip" android:layout_marginEnd="33.0dip" />
+            <com.alibaba.griver.ui.ant.text.AUTextView android:textSize="17.0sp" android:textColor="@color/griver_white" android:gravity="center" android:id="@id/tv_share_btn" android:background="@drawable/open_btn_background" android:layout_width="183.0dip" android:layout_height="48.0dip" android:layout_marginBottom="150.0dip" android:text="@string/griver_open_file_with" />
+        </com.alibaba.griver.ui.ant.layout.AULinearLayout>
+    </FrameLayout>
+</LinearLayout>

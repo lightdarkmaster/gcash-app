@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/wrapper_a" android:layout_width="170.0dip" android:layout_height="wrap_content" android:layout_below="@id/lbl_description" android:layout_centerHorizontal="true">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:id="@id/tvEnterAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Enter Amount" android:fontFamily="@font/gcash_font_body_regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="5.0dip" android:paddingEnd="5.0dip">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0035" android:id="@id/txt_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PHP" android:fontFamily="@font/gcash_font_header_bold" />
+            <EditText android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center|right" android:id="@id/txt_amount" android:background="@null" android:layout_width="fill_parent" android:layout_height="30.0dip" android:hint="0.00" android:maxLength="9" android:inputType="numberDecimal" android:windowSoftInputMode="stateAlwaysHidden" android:imeOptions="actionDone" android:fontFamily="@font/gcash_font_body_regular" />
+        </LinearLayout>
+        <View android:id="@id/v_amount_line" android:background="@color/bg_0100" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0027" android:layout_gravity="center_horizontal" android:id="@id/tv_amount_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Maximum of PHP 50,000.00" android:fontFamily="@font/gcash_font_body_regular" android:textAlignment="center" />
+    </LinearLayout>
+</merge>

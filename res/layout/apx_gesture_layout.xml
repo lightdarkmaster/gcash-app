@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gesture_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/gesture_icon" android:visibility="visible" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/gif_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:layout_gravity="center_horizontal" android:id="@id/helper_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/apx_helper_layout" />
+</LinearLayout>

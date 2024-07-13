@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0041" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Amount" android:fontFamily="@font/gotham_rounded_normal" android:layout_marginStart="@dimen/font_small" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0099" android:id="@id/tvValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="Mobile Number" android:fontFamily="@font/gotham_rounded_bold" android:layout_marginStart="@dimen/font_small" />
+    <View android:background="#fff6f9fd" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginStart="@dimen/font_small" android:layout_marginEnd="@dimen/font_small" />
+</LinearLayout>

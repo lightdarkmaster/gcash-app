@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/wrapper_buy_load" android:background="@drawable/bg_transparent_hover_10" android:paddingLeft="@dimen/padding_regular" android:paddingTop="10.0dip" android:paddingRight="@dimen/padding_regular" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img_buy_load" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitStart" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Buy Load" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="55.0dip" layout="@layout/inc_hr_0001" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/wrapper_borrow_load" android:background="@drawable/bg_transparent_hover_10" android:paddingLeft="@dimen/padding_regular" android:paddingTop="10.0dip" android:paddingRight="@dimen/padding_regular" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img_borrow_load" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitStart" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Borrow Load" android:layout_toRightOf="@id/img_borrow_load" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+        </LinearLayout>
+    </ScrollView>
+</merge>

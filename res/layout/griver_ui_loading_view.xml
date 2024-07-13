@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.griver.ui.ant.layout.AURelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.griver.ui.ant.layout.AURelativeLayout android:gravity="center" android:id="@id/progress_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="@dimen/griver_AU_ICONSIZE5" android:layout_height="@dimen/griver_AU_ICONSIZE5" android:indeterminateDrawable="@drawable/griver_ui_pullrefresh_progress" android:layout_centerInParent="true" />
+        <com.alibaba.griver.ui.ant.text.AUTextView android:textSize="12.0sp" android:textColor="#ff1b82d2" android:id="@id/progress_current_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </com.alibaba.griver.ui.ant.layout.AURelativeLayout>
+    <com.alibaba.griver.ui.ant.dialog.AUEmptyGoneTextView android:textSize="16.0sp" android:textColor="@color/griver_AU_COLOR_SUB_CONTENT" android:gravity="center" android:id="@id/progress_loading_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/griver_AU_SPACE3" android:text="@string/griver_loading" android:layout_below="@id/progress_layout" />
+</com.alibaba.griver.ui.ant.layout.AURelativeLayout>

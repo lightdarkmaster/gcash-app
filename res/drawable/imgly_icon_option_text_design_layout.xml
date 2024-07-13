@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="48.0dip" android:width="48.0dip" android:viewportWidth="48.0" android:viewportHeight="48.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:translateX="8.0" android:translateY="8.0">
+        <path android:fillColor="?imgly_icon_color_active" android:pathData="M6,18.715V7.069L4.325,7.693C3.853,7.868 3.586,8.367 3.7,8.857L6,18.715Z" android:fillType="evenOdd" />
+        <path android:fillColor="?imgly_icon_color_active" android:pathData="M8,18.5L10.838,5.728L8.905,5.913C8.392,5.962 8,6.393 8,6.909V18.5Z" android:fillType="evenOdd" />
+        <path android:pathData="M9.562,23.853L21.153,26.959C21.287,26.994 21.424,26.915 21.46,26.782L26.118,9.395C26.154,9.262 26.075,9.125 25.942,9.089L14.351,5.983C14.217,5.948 14.08,6.027 14.044,6.16L9.386,23.547C9.35,23.68 9.429,23.817 9.562,23.853Z" android:strokeColor="?imgly_icon_color_active" android:strokeWidth="1.5" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="0.9" />
+        <path android:fillColor="?imgly_icon_color_active" android:pathData="M14.962,19.742L15.946,18.104L18.338,18.751L18.357,20.66L20.353,21.2L19.968,12.793L17.678,12.174L13.092,19.236L14.962,19.742ZM18.358,14.158L18.37,17.306L16.659,16.843L18.273,14.135L18.358,14.158Z" />
+    </group>
+</vector>

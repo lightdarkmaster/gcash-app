@@ -1,0 +1,124 @@
+.class Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor$7;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/concurrent/ThreadFactory;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor;->getExecutor(Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor$ExecutorType;)Ljava/util/concurrent/Executor;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic val$type:Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor$ExecutorType;
+
+
+# direct methods
+.method public constructor <init>(Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor$ExecutorType;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iput-object p1, p0, Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor$7;->val$type:Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor$ExecutorType;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+    .locals 2
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    new-instance v0, Ljava/lang/Thread;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor$7;->val$type:Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor$ExecutorType;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    const/4 v1, 0x5
+
+    .line 13
+    invoke-virtual {v0, v1}, Ljava/lang/Thread;->setPriority(I)V
+
+    .line 14
+    .line 15
+    .line 16
+    new-instance v0, Ljava/lang/Thread;
+
+    .line 17
+    .line 18
+    iget-object v1, p0, Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor$7;->val$type:Lcom/alipay/miniprogram/common/utils/MiniProgramExecutor$ExecutorType;
+
+    .line 19
+    .line 20
+    invoke-virtual {v1}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v1
+
+    .line 24
+    invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    return-object v0
+.end method

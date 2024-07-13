@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="@dimen/_112sdp" android:layout_height="@dimen/_108sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/maintain_cv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" app:cardCornerRadius="4.0dip" app:cardElevation="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_chainStyle="spread" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.33">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/maintain_ll" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/quick_link_icon" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gscore_icon_name" android:gravity="center" android:id="@id/quick_link_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/cash_in" android:fontFamily="@font/gotham_rounded_medium" android:textAlignment="center" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

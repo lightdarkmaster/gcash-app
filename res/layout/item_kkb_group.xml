@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center_vertical" android:id="@id/tvGroupName" android:layout_width="0.0dip" android:layout_height="35.0dip" android:text="Group Name" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ivRemove" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Body.2" />
+    <ImageView android:id="@id/ivRemove" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="@id/tvGroupName" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tvGroupName" app:srcCompat="@drawable/ic_close_blue" app:tint="@android:color/darker_gray" />
+    <View android:id="@id/memberLine" android:background="@android:color/darker_gray" android:layout_width="0.0dip" android:layout_height="1.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/barrier" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="tvGroupName,ivRemove" />
+</androidx.constraintlayout.widget.ConstraintLayout>

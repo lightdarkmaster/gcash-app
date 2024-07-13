@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/griver_core_main_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/tv_title" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="ifContentScrolls">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="@color/griver_core_sub_text_color" android:gravity="center" android:id="@id/tv_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/custom_view_Layout" android:paddingBottom="5.0dip" android:visibility="gone" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+    <RelativeLayout android:id="@id/layout_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginTop="10.0dip">
+        <View android:background="@color/griver_core_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <View android:id="@id/button_view_divider" android:background="@color/griver_core_divider" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="17.0sp" android:textColor="@color/griver_core_main_color" android:ellipsize="end" android:gravity="center" android:id="@id/tv_negative_text" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/griver_core_main_color" android:ellipsize="end" android:gravity="center" android:id="@id/tv_positive_text" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_vertical_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <View android:background="@color/griver_core_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/griver_core_main_color" android:ellipsize="end" android:gravity="center" android:id="@id/tv_positive_vertical_text" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip" android:singleLine="true" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+        <View android:id="@id/button_view_vertical_divider" android:background="@color/griver_core_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/griver_core_main_color" android:ellipsize="end" android:gravity="center" android:id="@id/tv_negative_vertical_text" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip" android:singleLine="true" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

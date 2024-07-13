@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:id="@id/gInvest_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:titleTextAppearance="@style/GcToolbar"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" android:fontFamily="@font/poppins_semibold" app:layout_constraintBottom_toBottomOf="@id/gInvest_toolbar" app:layout_constraintEnd_toEndOf="@id/gInvest_toolbar" app:layout_constraintStart_toStartOf="@id/gInvest_toolbar" app:layout_constraintTop_toTopOf="@id/gInvest_toolbar" />
+</androidx.appcompat.widget.Toolbar>

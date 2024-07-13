@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_send_money_confirmation" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:gravity="center" android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <RelativeLayout android:background="@color/bg_0110" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/wrapperFooter">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/incAmountDetail1" layout="@layout/inc_send_money_confirmation_amount_detail_1" />
+                    <include android:id="@id/incAmountDetail2" layout="@layout/inc_send_money_confirmation_amount_detail_2" />
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:orientation="vertical" android:id="@id/wrapperFooter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0040" android:gravity="center" android:id="@id/txt_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Please make sure that the information entered is correct." android:fontFamily="@font/karla_regular" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0040" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/warning_message" android:fontFamily="@font/karla_bold" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_next" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="CONFIRM" android:fontFamily="@font/gcash_font_header_bold" style="@style/GCashBlueButton2" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

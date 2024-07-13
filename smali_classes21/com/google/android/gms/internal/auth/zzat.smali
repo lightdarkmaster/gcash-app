@@ -1,0 +1,67 @@
+.class final Lcom/google/android/gms/internal/auth/zzat;
+.super Lcom/google/android/gms/internal/auth/zzaj;
+.source "SourceFile"
+
+
+# instance fields
+.field private final synthetic zzcf:Lcom/google/android/gms/internal/auth/zzas;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/internal/auth/zzas;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzat;->zzcf:Lcom/google/android/gms/internal/auth/zzas;
+
+    invoke-direct {p0}, Lcom/google/android/gms/internal/auth/zzaj;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zza(Lcom/google/android/gms/auth/api/proxy/ProxyResponse;)V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/auth/zzat;->zzcf:Lcom/google/android/gms/internal/auth/zzas;
+
+    new-instance v1, Lcom/google/android/gms/internal/auth/zzaw;
+
+    invoke-direct {v1, p1}, Lcom/google/android/gms/internal/auth/zzaw;-><init>(Lcom/google/android/gms/auth/api/proxy/ProxyResponse;)V
+
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->setResult(Lcom/google/android/gms/common/api/Result;)V
+
+    return-void
+.end method

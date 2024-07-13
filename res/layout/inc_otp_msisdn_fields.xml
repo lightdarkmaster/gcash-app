@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_below="@id/gcash" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0002" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:text="Enter your Mobile Number" android:fontFamily="@font/gcash_font_header_bold" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+63" android:fontFamily="@font/gcash_font_body_regular" />
+            <EditText android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:textColorHint="@color/font_0021" android:id="@id/txt_msisdn" android:background="@null" android:layout_width="wrap_content" android:layout_height="40.0dip" android:maxLength="10" android:inputType="number" android:imeOptions="actionGo" android:textCursorDrawable="@null" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginStart="1.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0002" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Now available for all networks!" android:fontFamily="@font/gcash_font_header_bold" />
+    </LinearLayout>
+</merge>

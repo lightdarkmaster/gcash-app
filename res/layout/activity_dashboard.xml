@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <include android:id="@id/wrapper_dashboard" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/content" />
+            <include layout="@layout/drawer" />
+        </androidx.drawerlayout.widget.DrawerLayout>
+    </FrameLayout>
+    <include layout="@layout/showcase_view" />
+</FrameLayout>

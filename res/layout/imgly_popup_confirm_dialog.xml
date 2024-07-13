@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/notificationBackground" style="?Imgly.PESDK.Editor.Popup.Confirm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="?Imgly.PESDK.Editor.Popup.Confirm.Background">
+        <TextView android:id="@id/titleText" android:text="@string/pesdk_editor_title_closeEditorAlert" style="?Imgly.PESDK.Editor.Popup.Confirm.Title" />
+        <TextView android:id="@id/contentText" android:text="@string/pesdk_editor_text_closeImageEditorAlert" style="?Imgly.PESDK.Editor.Popup.Confirm.Text" />
+        <LinearLayout style="?Imgly.PESDK.Editor.Popup.Confirm.ButtonContainer">
+            <Button android:id="@id/disagreeButton" android:text="@string/pesdk_editor_button_closeEditorAlertCancelation" style="?Imgly.PESDK.Editor.Popup.Button.Disagree" />
+            <Button android:id="@id/agreeButton" android:text="@string/pesdk_editor_button_closeEditorAlertConfirmation" style="?Imgly.PESDK.Editor.Popup.Confirm.Button.Agree" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

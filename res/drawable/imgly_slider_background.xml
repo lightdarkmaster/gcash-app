@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center|clip_vertical">
+        <shape android:shape="rectangle">
+            <padding android:left="10.0dip" android:top="7.0dip" android:right="10.0dip" android:bottom="7.0dip" />
+            <size android:height="16.0dip" />
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+    <item android:gravity="center|clip_vertical" android:height="2.0dip">
+        <shape android:shape="rectangle">
+            <size android:height="2.0dip" />
+            <solid android:color="?imgly_slider_track_color" />
+        </shape>
+    </item>
+</layer-list>

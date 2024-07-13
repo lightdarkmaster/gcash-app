@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/toolbar_color" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintTop_toTopOf="parent" app:titleTextAppearance="@style/GcToolbar" />
+    <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lhub_title" android:includeFontPadding="false" android:fontFamily="@font/gotham_rounded_medium" app:layout_constraintBottom_toBottomOf="@id/toolbar" app:layout_constraintEnd_toEndOf="@id/toolbar" app:layout_constraintStart_toStartOf="@id/toolbar" app:layout_constraintTop_toTopOf="@id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

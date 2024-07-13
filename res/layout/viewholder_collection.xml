@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/bg_f6f9fd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_chat_date" />
+        <include layout="@layout/item_chat_receipt_l" />
+        <include layout="@layout/item_chat_receipt_r" />
+        <include layout="@layout/item_chat_l" />
+        <include layout="@layout/item_chat_r" />
+        <include layout="@layout/item_chat_option" />
+    </LinearLayout>
+</ScrollView>

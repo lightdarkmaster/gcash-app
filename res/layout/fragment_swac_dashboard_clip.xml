@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_swac_clip" android:background="@color/bg_0096" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_swac_clip" android:background="@color/bg_0096" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_swac_clip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="70.0dip" app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_swac_clip_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:elevation="1.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rl_swac_clip_icon" android:background="@drawable/bg_circle_solid_white" android:layout_width="76.0dip" android:layout_height="76.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <ImageView android:id="@id/iv_swac_clip_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_send_with_a_clip_v2" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_swac_clip_options" android:background="@drawable/bg_rounded_white" android:paddingTop="30.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textSize="20.0dip" android:textColor="@color/font_0099" android:gravity="center" android:id="@id/tv_clip_options_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:layout_marginBottom="@dimen/_20sdp" android:text="@string/label_swac_clip_header" android:fontFamily="@font/gotham_rounded_bold" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_clip_options" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_clip_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_clip_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_swac_photo" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/font_0099" android:id="@id/tv_clip_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_photo" android:fontFamily="@font/gotham_rounded_bold" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_clip_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_clip_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_swac_video" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/font_0099" android:id="@id/tv_clip_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_video" android:fontFamily="@font/gotham_rounded_bold" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_clip_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_clip_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_swac_audio" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/font_0099" android:id="@id/tv_clip_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_audio" android:fontFamily="@font/gotham_rounded_bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.griver.video.view.GRVTextureView android:id="@id/tv_player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/rl_controller" android:background="@color/griver_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_back" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/grv_video_back" android:layout_marginStart="20.0dip" />
+        <ImageView android:id="@id/iv_mute" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/grv_video_mute" android:tint="@color/griver_white" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/iv_play" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/grv_video_play" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" android:layoutDirection="ltr" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+            <ImageView android:id="@id/iv_controller_play" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/grv_video_controller_play" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/griver_white" android:id="@id/tv_current_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_marginStart="9.0dip" />
+            <SeekBar android:id="@id/sb_controller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="5.0dip" android:progressDrawable="@drawable/grv_video_seek_bar_bg" android:minHeight="5.0dip" android:thumb="@drawable/grv_video_seek_bar_thume" android:layout_weight="1.0" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/griver_white" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_marginEnd="9.0dip" />
+            <ImageView android:id="@id/iv_controller_full" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/grv_video_controller_full" android:layout_centerInParent="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_loading" android:background="@drawable/griver_ui_loading_dialog_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_centerInParent="true" android:paddingStart="14.0dip" android:paddingEnd="14.0dip">
+        <ProgressBar android:id="@id/h5_loading_progress" android:layout_width="36.0dip" android:layout_height="36.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/h5_loading_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/griver_loading" />
+    </LinearLayout>
+</RelativeLayout>

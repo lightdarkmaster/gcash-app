@@ -1,0 +1,279 @@
+.class final Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchemas;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lcom/google/crypto/tink/shaded/protobuf/CheckReturnValue;
+.end annotation
+
+
+# static fields
+.field private static final FULL_SCHEMA:Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+.field private static final LITE_SCHEMA:Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    new-instance v0, Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchemaLite;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchemaLite;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchemas;->LITE_SCHEMA:Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchemas;->loadSchemaForFullRuntime()Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchemas;->FULL_SCHEMA:Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method static full()Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema<",
+            "*>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchemas;->FULL_SCHEMA:Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_2
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_2
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 7
+    .line 8
+    const-string v1, "67512"
+
+    invoke-static/range {v1 .. v1}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 9
+    .line 10
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 11
+    .line 12
+    .line 13
+    throw v0
+.end method
+
+.method static lite()Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema<",
+            "*>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchemas;->LITE_SCHEMA:Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+
+    return-object v0
+.end method
+
+.method private static loadSchemaForFullRuntime()Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema<",
+            "*>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 1
+    :try_start_0
+    const-string v0, "67513"
+
+    invoke-static/range {v0 .. v0}, Lruntime/Strings/StringIndexer;->_getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const/4 v1, 0x0
+
+    .line 8
+    new-array v2, v1, [Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    check-cast v0, Lcom/google/crypto/tink/shaded/protobuf/ExtensionSchema;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 21
+    .line 22
+    return-object v0
+
+    .line 23
+    :catch_0
+    const/4 v0, 0x0
+
+    .line 24
+    return-object v0
+.end method

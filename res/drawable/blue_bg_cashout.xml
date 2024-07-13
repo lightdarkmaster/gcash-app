@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="68.0dip" android:width="336.0dip" android:viewportWidth="336.0" android:viewportHeight="68.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0 0H336V68H0V0Z" />
+        <path android:fillColor="#fffdfeff" android:pathData="M0 0V68H336V0" />
+        <group android:pivotX="168.0" android:pivotY="34.0" android:scaleX="0.25" android:scaleY="0.25" android:rotation="90.0" android:translateX="0.562" android:translateY="0.0">
+            <path android:fillColor="@drawable/$blue_bg_cashout__0" android:pathData="M0 0V68H336V0" />
+        </group>
+    </group>
+</vector>

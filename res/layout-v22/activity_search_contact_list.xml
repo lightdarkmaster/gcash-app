@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/bg_0096" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <gcash.common_presentation.custom.CustomToolbar android:id="@id/tbSearchContactList" android:tag="@string/tb_contact_list" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_contact_search_bar" android:background="@color/bg_0101" android:layout_width="fill_parent" android:layout_height="60.0dip" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_contact_search_bar" android:background="#fffdfdfd" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:elevation="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_search_contacts" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/font_0099" android:layout_gravity="center_vertical" android:id="@id/et_contact_search" android:background="@null" android:layout_width="212.0dip" android:layout_height="wrap_content" android:hint="@string/hint_search" android:layout_weight="1.0" android:fontFamily="@font/gilroy_medium" android:layout_marginStart="10.0dip" android:lineHeight="20.0sp" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_contact_search_cancel" android:clickable="true" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/ic_search_cancel" android:layout_marginEnd="10.0dip" app:tint="@color/font_0099" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:id="@id/cl_search_filter" android:background="@drawable/bg_search_filter_inactive" android:layout_width="27.0dip" android:layout_height="27.0dip">
+                    <ImageView android:id="@id/iv_search_filter" android:clickable="true" android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/ic_search_filter" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintTop_toBottomOf="@id/cl_contact_search_bar">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_search_filter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="3.0dip" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_search_results" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_empty_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_empty_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_empty_search_result" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_2f4e9c" android:layout_gravity="center" android:id="@id/tv_empty_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/gotham_rounded_bold" app:layout_constraintTop_toBottomOf="@id/iv_empty_result" app:lineHeight="@dimen/_22sdp" />
+                <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_2f4e9c" android:layout_gravity="center" android:id="@id/tv_empty_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/txt_try_searching" android:fontFamily="@font/gilroy_medium" app:layout_constraintTop_toBottomOf="@id/iv_empty_result" app:lineHeight="@dimen/_22sdp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

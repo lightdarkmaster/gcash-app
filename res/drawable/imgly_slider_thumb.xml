@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:enterFadeDuration="0" android:exitFadeDuration="0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/imgly_slider_thumb_disabled" />
+    <item android:state_pressed="true" android:drawable="@drawable/imgly_slider_thumb_pressed" />
+    <item android:state_enabled="true" android:drawable="@drawable/imgly_slider_thumb_normal" />
+    <item android:drawable="@drawable/imgly_slider_thumb_normal" />
+</selector>

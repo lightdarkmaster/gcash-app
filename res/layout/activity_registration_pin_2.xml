@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/lbl_gcash" android:layout_width="wrap_content" android:layout_height="27.0dip" android:layout_marginTop="80.0dip" android:src="@drawable/gcash_logo" android:layout_below="@id/img_a" android:layout_centerHorizontal="true" app:tint="@color/font_0022" />
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:id="@id/lbl_create_pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Verify MPIN digit" android:layout_below="@id/lbl_gcash" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+        <com.dotx.dpasswordtext.DPasswordText android:textSize="@dimen/font_x4_large" android:layout_gravity="center_horizontal" android:id="@id/txt_pin" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lbl_create_pin" android:inputType="number" android:fontFamily="@font/gcash_font_body_regular" app:text_hint="dash" app:text_hint_color="@color/bg_0001" app:text_mask="circle" app:text_mask_color="@color/bg_0001" app:text_max_length="4" style="@style/Theme.AppCompat.Light.DarkActionBar" />
+    </RelativeLayout>
+</FrameLayout>

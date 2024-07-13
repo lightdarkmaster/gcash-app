@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/acsdk_loading_bg" android:layout_width="90.0dip" android:layout_height="90.0dip" android:alpha="0.8">
+        <ProgressBar android:layout_gravity="center" android:layout_width="36.0dip" android:layout_height="36.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/acsdk_anim_progress" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/acsdk_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/acsdk_loading" />
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

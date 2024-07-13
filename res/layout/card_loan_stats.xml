@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/cardParent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorAccent" app:cardCornerRadius="15.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/card" android:padding="20.0dip" android:layout_width="300.0dip" android:layout_height="180.0dip" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0sp" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/font_0025" android:id="@id/tvDetailKey" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" android:fontFamily="@font/gcash_font_body_regular" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/font_0025" android:gravity="end" android:id="@id/tvDetailValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" android:fontFamily="@font/gcash_font_body_regular" android:textAlignment="textEnd" android:layout_alignParentEnd="true" />
+</LinearLayout>

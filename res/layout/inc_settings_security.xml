@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:paddingLeft="@dimen/padding_regular" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="SECURITY" android:fontFamily="@font/gcash_font_body_regular" />
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_change_pin" android:background="@drawable/bg_transparent_hover_10" android:paddingLeft="@dimen/padding_regular" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/change_mpin_iv" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_padlock" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_regular" android:text="Change GCash MPIN" android:layout_toRightOf="@id/change_mpin_iv" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_chevron_iris_blue" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="50.0dip" layout="@layout/inc_hr_0001" />
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/btn_account_recovery" android:background="@drawable/bg_transparent_hover_10" android:paddingLeft="@dimen/padding_regular" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/account_recovery_iv" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_account_recovery_2" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_regular" android:text="Account Authentication" android:layout_toRightOf="@id/account_recovery_iv" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+            <ImageView android:id="@id/iv_account_recovery_arrow" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_chevron_iris_blue" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="#ff00bdf1" android:id="@id/tv_recovery_is_set" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set Now" android:layout_toLeftOf="@id/iv_account_recovery_arrow" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" android:layout_marginEnd="10.0dip" />
+        </RelativeLayout>
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+    </LinearLayout>
+</merge>

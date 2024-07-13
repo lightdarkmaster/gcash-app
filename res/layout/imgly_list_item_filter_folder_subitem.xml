@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/contentHolder" android:layout_width="72.0dip" android:layout_height="66.0dip" android:layout_marginTop="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ly.img.android.pesdk.ui.panels.FilterPreviewView android:id="@id/filterPreview" style="?Imgly.PESDK.Editor.Panel.Filter.FilterItem.Icon" />
+    <TextView android:id="@id/label" style="?Imgly.PESDK.Editor.Panel.Filter.FilterItem.Label" />
+    <View style="?Imgly.PESDK.Editor.Panel.Filter.FilterItem.Border" />
+</RelativeLayout>

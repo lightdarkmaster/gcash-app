@@ -1,0 +1,252 @@
+.class final Lj$/util/stream/A3;
+.super Lj$/util/stream/B3;
+.source "SourceFile"
+
+# interfaces
+.implements Lj$/util/F;
+.implements Lj$/util/function/d0;
+
+
+# instance fields
+.field e:J
+
+
+# direct methods
+.method constructor <init>(Lj$/util/F;JJ)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    invoke-direct/range {p0 .. p5}, Lj$/util/stream/B3;-><init>(Lj$/util/I;JJ)V
+
+    return-void
+.end method
+
+.method constructor <init>(Lj$/util/F;Lj$/util/stream/A3;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, p2}, Lj$/util/stream/B3;-><init>(Lj$/util/I;Lj$/util/stream/B3;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a(Lj$/util/function/Consumer;)Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    invoke-static {p0, p1}, Lj$/util/n;->m(Lj$/util/F;Lj$/util/function/Consumer;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final accept(J)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    iput-wide p1, p0, Lj$/util/stream/A3;->e:J
+
+    return-void
+.end method
+
+.method public final synthetic forEachRemaining(Lj$/util/function/Consumer;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    invoke-static {p0, p1}, Lj$/util/n;->g(Lj$/util/F;Lj$/util/function/Consumer;)V
+
+    return-void
+.end method
+
+.method public final h(Lj$/util/function/d0;)Lj$/util/function/d0;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 0
+    new-instance v0, Lj$/util/function/a0;
+
+    invoke-direct {v0, p0, p1}, Lj$/util/function/a0;-><init>(Lj$/util/function/d0;Lj$/util/function/d0;)V
+
+    return-object v0
+.end method
+
+.method protected final q(Lj$/util/Spliterator;)Lj$/util/Spliterator;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    check-cast p1, Lj$/util/F;
+
+    .line 0
+    new-instance v0, Lj$/util/stream/A3;
+
+    invoke-direct {v0, p1, p0}, Lj$/util/stream/A3;-><init>(Lj$/util/F;Lj$/util/stream/A3;)V
+
+    return-object v0
+.end method
+
+.method protected final s(Ljava/lang/Object;)V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    check-cast p1, Lj$/util/function/d0;
+
+    .line 0
+    iget-wide v0, p0, Lj$/util/stream/A3;->e:J
+
+    invoke-interface {p1, v0, v1}, Lj$/util/function/d0;->accept(J)V
+
+    return-void
+.end method
+
+.method protected final t()Lj$/util/stream/a3;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-nez v0, :cond_0
+
+    and-int/2addr v0, v0
+
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 0
+    new-instance v0, Lj$/util/stream/Z2;
+
+    invoke-direct {v0}, Lj$/util/stream/Z2;-><init>()V
+
+    return-object v0
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@drawable/simple_toast_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/body" android:padding="@dimen/z_dimen_15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:baselineAligned="false">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_success" />
+    </LinearLayout>
+</FrameLayout>

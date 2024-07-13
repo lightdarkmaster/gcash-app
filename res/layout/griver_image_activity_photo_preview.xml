@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alibaba.griver.image.photo.widget.PhotoBrowseView android:id="@id/photo_browse_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.alibaba.griver.ui.ant.AUTitleBar android:id="@id/cashier_top_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+</RelativeLayout>

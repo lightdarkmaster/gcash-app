@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alibaba.ariver.app.ui.tabbar.RVTabBarRootLayout android:layout_width="wrap_content" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0dip" android:gravity="center" android:id="@id/ariver_tabbar_item_text" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-14.0dip" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/ariver_tabbar_item_text">
+        <TextView android:textSize="8.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/ariver_tabbar_item_badge" android:background="@drawable/ariver_tabbar_badge" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="20.0dip" android:maxLines="1" />
+        <com.alibaba.ariver.app.ui.tabbar.RVTabDotView android:id="@id/ariver_tabbar_item_dot_view" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+    </RelativeLayout>
+</com.alibaba.ariver.app.ui.tabbar.RVTabBarRootLayout>

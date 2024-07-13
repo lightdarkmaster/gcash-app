@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/header_blue" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:layout_gravity="top" android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/GcToolbar"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:background="@color/bg_0009" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" android:layout_alignParentBottom="true">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/btn_qr_code_scanner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/qr_code_regular_text_size" android:textColor="@color/font_0020" android:gravity="center" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="Payments made easier via \nGCash QR Code or Barcode!" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+                    <ImageView android:id="@id/img_qr_scanner" android:layout_width="120.0dip" android:layout_height="120.0dip" android:scaleType="centerInside" android:layout_below="@id/label" android:layout_centerInParent="true" />
+                    <TextView android:textSize="@dimen/qr_code_regular_text_size" android:textColor="@color/font_0020" android:gravity="center" android:id="@id/textView6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="Scan QR Code" android:layout_below="@id/img_qr_scanner" android:fontFamily="@font/gcash_font_body_regular" />
+                </RelativeLayout>
+                <include android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="20.0dip" layout="@layout/inc_hr_0001" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/btn_qr_code_generator" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/img_qr" android:padding="5.0dip" android:layout_width="120.0dip" android:layout_height="120.0dip" />
+                    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                    <ImageView android:id="@id/img_barcode" android:padding="5.0dip" android:layout_width="300.0dip" android:layout_height="50.0dip" android:src="@drawable/img_barcode" />
+                    <TextView android:textSize="@dimen/qr_code_regular_text_size" android:textColor="@color/font_0020" android:gravity="center" android:id="@id/textView5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="Generate Code" android:fontFamily="@font/gcash_font_body_regular" />
+                </LinearLayout>
+                <TextView android:textColor="@color/bg_0022" android:gravity="center" android:id="@id/tvMerchantSearch" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_regular" android:text="Where can I use GCash?" android:fontFamily="@font/gcash_font_header_bold" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

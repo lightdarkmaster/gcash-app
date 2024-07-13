@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gcash.module.payqr.refactored.presentation.widget.f2fpay.F2FPayBarcodeView android:id="@id/f2f_pay_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textColor="#ff00bded" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/f2f_pay_barcode_text" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show more" android:fontFamily="@font/gcash_font_body_regular" />
+</LinearLayout>

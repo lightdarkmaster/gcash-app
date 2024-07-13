@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card_credit_limit" android:layout_width="0.0dip" android:layout_height="@dimen/profile_limit_indicator_height" android:layout_marginTop="4.0dip" app:cardBackgroundColor="@color/bg_d5d6d6" app:cardCornerRadius="5.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_used">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/clCreditParent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+            <View android:id="@id/viewFirstAccount" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/viewSecondAccount" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <View android:id="@id/viewSecondAccount" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/viewThirdAccount" app:layout_constraintStart_toEndOf="@id/viewFirstAccount" app:layout_constraintTop_toTopOf="parent" />
+            <View android:id="@id/viewThirdAccount" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/viewFourthAccount" app:layout_constraintStart_toEndOf="@id/viewSecondAccount" app:layout_constraintTop_toTopOf="parent" />
+            <View android:id="@id/viewFourthAccount" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/viewFifthAccount" app:layout_constraintStart_toEndOf="@id/viewThirdAccount" app:layout_constraintTop_toTopOf="parent" />
+            <View android:id="@id/viewFifthAccount" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/viewFourthAccount" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

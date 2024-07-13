@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivCheckbox" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/ic_radio_check_off" android:layout_centerVertical="true" android:layout_marginStart="24.0dip" android:layout_alignParentEnd="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/font_0A2757" android:id="@id/tvOccupation" android:layout_width="0.0dip" android:layout_height="wrap_content" android:alpha="0.8" android:fontFamily="@font/gotham_rounded_medium" android:layout_marginStart="15.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/ivCheckbox" app:layout_constraintTop_toTopOf="@id/ivCheckbox" />
+</androidx.constraintlayout.widget.ConstraintLayout>

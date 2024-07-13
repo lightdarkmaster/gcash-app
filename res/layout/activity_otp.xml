@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_back" android:paddingLeft="10.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="44.0dip">
+            <ImageView android:id="@id/img_back" android:background="@drawable/otp_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <TextView android:textColor="@android:color/white" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="18.0dip" android:textColor="@android:color/black" android:id="@id/tv_verification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/theme_title" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="21.0dip" android:paddingTop="30.0dip" android:paddingRight="21.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.alipay.androidinter.app.safepaybase.widget.CenterTextView android:textSize="17.0dip" android:textColor="#ff777777" android:gravity="center" android:id="@id/tv_send_tip" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="A 6-digit code has been sent to" />
+        <TextView android:textSize="24.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView@sinax.com" />
+        <com.alipay.androidinter.app.safepaybase.widget.CenterTextView android:gravity="center" android:id="@id/tv_middle_describe" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        <com.alipay.mobile.verifyidentity.uitools.verification.VerificationCodeEditText android:textSize="20.0dip" android:textColor="#ff333333" android:id="@id/tv_ver" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="30.0dip" android:text="" android:cursorVisible="true" android:inputType="number" android:textCursorDrawable="@drawable/edit_focus" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:gravity="center" android:id="@id/tv_resent_front" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="17.0dip" android:gravity="center" android:id="@id/tv_resend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resend" />
+        </LinearLayout>
+        <TextView android:textSize="17.0dip" android:textColor="#ff2d8bdf" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_remember" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/otp_submit_unselected" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/submit" />
+    </LinearLayout>
+</LinearLayout>

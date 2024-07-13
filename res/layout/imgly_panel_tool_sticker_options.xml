@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/rootView" style="?Imgly.PESDK.Editor.Panel.Sticker.StickerOption"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ly.img.android.pesdk.ui.widgets.HorizontalListView android:id="@id/quickOptionList" app:animateItems="false" style="?Imgly.PESDK.Editor.Panel.Sticker.SmallOptionList" />
+    <ly.img.android.pesdk.ui.widgets.SeekSlider android:id="@id/seekBar" style="?Imgly.PESDK.Editor.Panel.Sticker.SeekSlider" />
+    <include app:animateItems="false" layout="@layout/imgly_option_list" style="?Imgly.PESDK.Editor.Panel.Sticker.OptionList" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/_4sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cvOnline" android:layout_width="wrap_content" android:layout_height="0.0dip" app:cardBackgroundColor="@color/font_FF6B00" app:cardCornerRadius="@dimen/margin_ggives_xsmall_uniform" app:cardElevation="0.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/font_note" android:textColor="@color/white" android:id="@id/tvOnline" android:paddingTop="@dimen/_2sdp" android:paddingBottom="@dimen/_2sdp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Online" android:includeFontPadding="false" android:fontFamily="@font/gotham_rounded_bold" android:paddingStart="@dimen/payment_schedule_icon_margin" android:paddingEnd="@dimen/payment_schdule_vertical_div_margin" android:paddingVertical="@dimen/_2sdp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:paddingLeft="@dimen/padding_regular" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="APPLICATION" android:fontFamily="@font/gcash_font_body_regular" />
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/wrapperSetReminder" android:background="@drawable/bg_transparent_hover_10" android:paddingLeft="@dimen/padding_regular" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_invest" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_invest_money_grey" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:id="@id/txt_set_reminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_regular" android:text="Set Reminder for GInvest" android:layout_toRightOf="@id/img_invest" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_body_regular" />
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_chevron_iris_blue" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+    </LinearLayout>
+</merge>

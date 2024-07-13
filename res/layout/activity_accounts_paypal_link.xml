@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_send_money_confirmation" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+                <ImageView android:id="@id/img_logo_a" android:layout_width="180.0dip" android:layout_height="70.0dip" />
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/bg_0009" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_gravity="center_vertical" android:layout_width="95.0dip" android:layout_height="wrap_content" android:text="Email" android:fontFamily="@font/gcash_font_body_regular" />
+                <EditText android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/txt_email" android:background="@android:drawable/screen_background_light_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter PayPal email address" android:inputType="textEmailAddress" android:fontFamily="@font/gcash_font_body_regular">
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+            <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+            <TextView android:textColor="@color/font_0028" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/txt_paypal_link_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="@string/text_paypal_linking_reminder" android:fontFamily="@font/gcash_font_body_regular" style="@style/Header.Caption" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="Cash-in from your PayPal account to GCash" android:fontFamily="@font/gcash_font_body_regular" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="Don't have a PayPal account?" android:fontFamily="@font/gcash_font_body_regular" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textStyle="bold" android:textColor="@color/font_0023" android:gravity="center" android:id="@id/txt_create_now" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="Create One Now!" android:fontFamily="@font/gcash_font_body_regular" />
+            </LinearLayout>
+            <RelativeLayout android:paddingBottom="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_next" android:background="@drawable/bg_0004" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="LINK" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center" android:id="@id/footer" android:paddingLeft="@dimen/padding_regular" android:paddingRight="@dimen/padding_regular" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="By linking my PayPal account to my GCash account, I confirm that I agree to the existing GCash" android:layout_above="@id/btn_next" android:fontFamily="@font/gcash_font_body_light" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

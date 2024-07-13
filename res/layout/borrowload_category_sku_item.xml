@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/padding_regular" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/sku_wrapper" android:background="@drawable/bg_0016" android:layout_width="50.0dip" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="21.0sp" android:textColor="@color/bg_0052" android:id="@id/tv_sku_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/gcash_font_header_bold" />
+            <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/bg_0020" android:id="@id/tv_php" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:text="php" android:fontFamily="@font/gcash_font_body_regular" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toLeftOf="@id/img_check" android:layout_toRightOf="@id/sku_wrapper">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:ellipsize="end" android:id="@id/tv_sku_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/gcash_font_header_bold" android:layout_marginEnd="10.0dip" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/font_x_small" android:textColor="@color/font_0020" android:ellipsize="end" android:id="@id/tv_sku_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="2" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="@font/gcash_font_body_regular" />
+    </LinearLayout>
+    <ImageView android:id="@id/img_check" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="18.0dip" android:src="@drawable/ic_check_blue" android:layout_alignParentRight="true" />
+</RelativeLayout>

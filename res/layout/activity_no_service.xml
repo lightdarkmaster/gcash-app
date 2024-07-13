@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/wrapper_splashscreen" android:background="@color/bg_0103" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="19.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tvHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="5.0dip" android:fontFamily="@font/poppins_semibold" android:textAlignment="center" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tvMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="50.0dip" android:fontFamily="@font/karla_regular" android:textAlignment="center" />
+        <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="320.0dip" android:src="@drawable/img_gcat_with_hard_hat" android:scaleType="fitXY" />
+    </LinearLayout>
+</RelativeLayout>

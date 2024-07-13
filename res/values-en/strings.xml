@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_error_no_storage_permission">]!`~+-156</string>
+    <string name="applovin_agree_message">]!`~+-169</string>
+    <string name="applovin_alt_privacy_policy_text" />
+    <string name="applovin_continue_button_text">]!`~+-171</string>
+    <string name="applovin_pp_and_tos_title">]!`~+-175</string>
+    <string name="applovin_pp_title">]!`~+-177</string>
+    <string name="applovin_privacy_policy_text">]!`~+-179</string>
+    <string name="applovin_terms_of_service_text">]!`~+-181</string>
+    <string name="applovin_terms_of_use_text">]!`~+-183</string>
+    <string name="mbridge_reward_heat_count_unit">]!`~+-2189</string>
+    <string name="mbridge_reward_viewed_text_str">]!`~+-2194</string>
+    <string name="tt_full_screen_skip_tx">]!`~+-3464</string>
+    <string name="tt_logo_cn">]!`~+-3477</string>
+    <string name="tt_logo_en">]!`~+-3479</string>
+    <string name="tt_reward_feedback">]!`~+-3506</string>
+    <string name="tt_slide_up_3d">]!`~+-3514</string>
+    <string name="tt_splash_brush_mask_hint">]!`~+-3517</string>
+    <string name="tt_splash_brush_mask_title">]!`~+-3519</string>
+    <string name="tt_splash_default_click_shake">]!`~+-3523</string>
+    <string name="tt_splash_rock_text">]!`~+-3526</string>
+    <string name="tt_splash_rock_top_text">]!`~+-3528</string>
+    <string name="tt_splash_wriggle_text">]!`~+-3531</string>
+    <string name="tt_splash_wriggle_top_text">]!`~+-3533</string>
+    <string name="tt_splash_wriggle_top_text_style_17">]!`~+-3535</string>
+    <string name="tt_text_privacy_app_version">]!`~+-3541</string>
+    <string name="tt_text_privacy_development">]!`~+-3543</string>
+    <string name="zoloz_branding">]!`~+-3936</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_qr_code_payment" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/toolbar" />
+        <RelativeLayout android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_next">
+                    <RelativeLayout android:id="@id/merchant_name" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/font_x3_large" android:textColor="@color/font_0020" android:gravity="center" android:id="@id/img_merchant" android:background="@drawable/bg_circle_gray" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_body_regular" />
+                        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:gravity="center" android:id="@id/txt_merchant_name" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/img_merchant" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:fontFamily="@font/gcash_font_header_bold" />
+                    </RelativeLayout>
+                    <include layout="@layout/inc_type_amount_0001" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_payment_wrapper" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0024" android:gravity="center_vertical" android:paddingLeft="@dimen/padding_regular" android:paddingTop="@dimen/padding_toolbar_subtitle" android:paddingBottom="@dimen/padding_toolbar_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="MY PAYMENT SOURCE" android:fontFamily="@font/gcash_font_body_regular" />
+                        <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr_0001" />
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:paddingBottom="80.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/bg_transparent_hover_10" android:nestedScrollingEnabled="false" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_next" android:background="@drawable/bg_0004" android:paddingLeft="@dimen/btn_01_padding_left" android:paddingTop="@dimen/btn_01_padding_top" android:paddingRight="@dimen/btn_01_padding_right" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/padding_regular" android:text="NEXT" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

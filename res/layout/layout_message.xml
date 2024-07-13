@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <zoloz.ap.com.toolkit.ui.CustomTextView android:textColor="@color/zdoc_frame_tips_color" android:gravity="center" android:id="@id/remind_text" android:paddingLeft="@dimen/z_dimen_10" android:paddingRight="@dimen/z_dimen_10" android:paddingBottom="@dimen/z_dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:z_textview_font="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/message_opt_layout" android:background="@color/zdoc_message_view_bg_color" android:paddingLeft="@dimen/z_dimen_20" android:paddingRight="@dimen/z_dimen_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:paddingTop="@dimen/message_view_text_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <zoloz.ap.com.toolkit.ui.CustomTextView android:textSize="@dimen/z_text_size_15" android:textColor="@color/zdoc_message_tips_color" android:gravity="center" android:id="@id/zdoc_capture" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zdoc_capture" android:layout_alignParentTop="true" />
+            <zoloz.ap.com.toolkit.ui.CustomTextView android:textSize="@dimen/z_text_size_15" android:textColor="@color/zdoc_message_tips_color" android:gravity="center" android:id="@id/tv_confirm_msg" android:paddingLeft="@dimen/z_dimen_15" android:paddingRight="@dimen/z_dimen_15" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/zdoc_confirm" android:layout_below="@id/btn_ok" app:z_textview_font="true" />
+            <zoloz.ap.com.toolkit.ui.CustomTextView android:textSize="@dimen/z_text_size_15" android:textColor="@color/zdoc_message_tips_color" android:gravity="center" android:id="@id/tv_main_message" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:z_textview_font="true" />
+        </FrameLayout>
+        <FrameLayout android:paddingTop="@dimen/message_view_text_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:id="@id/btn_press" android:background="@drawable/zdoc_take_photo_btn_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/btn_X" android:background="@drawable/zdoc_retake_bg" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0" android:layout_marginEnd="5.0dip">
+                    <zoloz.ap.com.toolkit.ui.CustomButton android:textColor="@color/zdoc_retake_text_color" android:layout_gravity="center" android:id="@id/btn_X_label" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zdoc_retry" app:z_textview_font="true" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/btn_ok" android:background="@drawable/zdoc_confirm_bg" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" android:layout_marginStart="5.0dip">
+                    <zoloz.ap.com.toolkit.ui.CustomButton android:textColor="@color/zdoc_submit_text_color" android:layout_gravity="center" android:id="@id/zdoc_submit_text" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zdoc_submit" app:z_button_font="true" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <zoloz.ap.com.toolkit.ui.CustomTextView android:textSize="@dimen/z_text_size_12" android:textColor="@color/brand_text_color" android:gravity="center_horizontal" android:id="@id/tv_branding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/z_dimen_10" android:text="@string/zoloz_brand" android:layout_alignParentBottom="true" app:z_textview_font="true" />
+    </RelativeLayout>
+</RelativeLayout>

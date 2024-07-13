@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/small_icon" android:layout_width="@dimen/metadata_small_icon_x" android:layout_height="@dimen/metadata_small_icon_y" android:layout_marginRight="@dimen/metadata_margin_x" android:layout_marginEnd="@dimen/metadata_margin_x" />
+    <TextView android:textAppearance="@style/MetaData" android:gravity="center_vertical" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/padding_negative" />
+    <ImageView android:id="@id/sep_subtitle" android:padding="1.0dip" android:layout_width="6.0dip" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:src="@drawable/pt_dot_sep" android:scaleType="centerInside" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip" />
+    <TextView android:textAppearance="@style/MetaData" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/padding_negative" android:maxWidth="120.0dip" android:maxLines="1" />
+    <ImageView android:id="@id/sep" android:padding="1.0dip" android:layout_width="6.0dip" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:src="@drawable/pt_dot_sep" android:scaleType="centerInside" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip" />
+    <TextView android:textAppearance="@style/MetaData" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/timestamp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/padding_negative" android:maxLines="1" />
+</LinearLayout>

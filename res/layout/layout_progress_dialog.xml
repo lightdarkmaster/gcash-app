@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@drawable/simple_toast_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/body" android:padding="@dimen/z_dimen_15" android:layout_width="wrap_content" android:layout_height="fill_parent" android:baselineAligned="false">
+        <ProgressBar android:id="@android:id/progress" android:layout_width="@dimen/z_dimen_30" android:layout_height="@dimen/z_dimen_30" android:max="10000" style="@android:style/Widget.ProgressBar.Large.Inverse" />
+        <zoloz.ap.com.toolkit.ui.CustomTextView android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/z_text_size_12" app:z_textview_font="true" />
+    </LinearLayout>
+</FrameLayout>

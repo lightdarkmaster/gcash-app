@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="?Imgly.PESDK.Widget.ColorPicker.Background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ly.img.android.pesdk.ui.widgets.colorpicker.HueView android:id="@id/color_picker_hue" style="?Imgly.PESDK.Widget.ColorPicker.HueSlider" />
+    <ly.img.android.pesdk.ui.widgets.colorpicker.SelectView android:id="@id/color_picker_select" style="?Imgly.PESDK.Widget.ColorPicker.ColorValueSlider" />
+    <ly.img.android.pesdk.ui.widgets.colorpicker.AlphaView android:id="@id/color_picker_alpha" style="?Imgly.PESDK.Widget.ColorPicker.AlphaSlider" />
+</LinearLayout>

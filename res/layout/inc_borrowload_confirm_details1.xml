@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0" android:layout_below="@id/txt_description">
+        <RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Service Fee" android:fontFamily="@font/gcash_font_body_regular" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:id="@id/txt_service_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="php 0.00" android:layout_alignParentRight="true" android:fontFamily="@font/gcash_font_header_bold" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Amount Due" android:fontFamily="@font/gcash_font_body_regular" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:id="@id/txt_total_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="php 20.00" android:layout_alignParentRight="true" android:fontFamily="@font/gcash_font_header_bold" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pay On" android:fontFamily="@font/gcash_font_body_regular" />
+            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0020" android:id="@id/txt_due_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="08/01/17 | 09:00 AM" android:layout_alignParentRight="true" android:fontFamily="@font/gcash_font_header_bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

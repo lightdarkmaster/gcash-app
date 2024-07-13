@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/bg_transparent_hover_10" android:layout_above="@id/btn_next" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_wrapper_no_promo" android:padding="@dimen/padding_regular" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_next">
+        <ImageView android:id="@id/img_buyload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_buyload_disable_grey" />
+        <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0026" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buyload_no_promo" android:fontFamily="@font/gcash_font_body_regular" />
+    </LinearLayout>
+    <TextView android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Cta.Button" />
+</RelativeLayout>

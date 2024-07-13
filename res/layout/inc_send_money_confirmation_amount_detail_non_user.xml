@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lLNonGcashUser" android:background="@drawable/bg_rectangle_rounded_light_pink_border" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+            <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_critical" android:layout_marginEnd="10.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/font_0046" android:id="@id/tvNonGcashUserHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sending to a Non-GCash Number" android:fontFamily="@font/karla_bold" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ff292b30" android:layout_gravity="end|center" android:id="@id/tvNonGcashUserMessage" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your recipient is currently not registered. They'll be able to use the money once they create a GCash account." android:lineSpacingExtra="6.0sp" android:fontFamily="@font/karla_regular" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    </LinearLayout>
+</merge>

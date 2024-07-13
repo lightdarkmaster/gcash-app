@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/barcode_wrapper" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_close" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_regular" android:src="@drawable/ic_close_barcode" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="@dimen/qr_code_large_text_size" android:layout_gravity="center_horizontal" android:id="@id/tv_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/img_barcode" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+    </RelativeLayout>
+</FrameLayout>

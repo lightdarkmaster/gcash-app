@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/fade_black" android:gravity="center_vertical" android:id="@id/tvItemName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:text="Item" android:fontFamily="@font/karla_regular" style="@style/Header" />
+    <View android:id="@id/vItemName" android:background="@color/bg_0105" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" style="@style/Header" />
+</RelativeLayout>

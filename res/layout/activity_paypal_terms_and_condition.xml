@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_send_money_confirmation" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <gcash.common_presentation.custom.CustomToolbar android:id="@id/ctPaypalTC" android:tag="Terms and Conditions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/terms_conditions" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_5sdp" android:paddingBottom="@dimen/_15sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/_10sdp" android:paddingEnd="@dimen/_10sdp">
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_1972f9" android:gravity="center" android:layout_gravity="center" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/message_terms_and_condition" android:fontFamily="@font/gotham_rounded_bold" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/pp_terms_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

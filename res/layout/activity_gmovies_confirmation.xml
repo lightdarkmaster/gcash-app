@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/wrapper_buyload_confirmation" android:background="@color/header_blue" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/toolbar" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+                <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/wrapperGmoviesConfirmation" android:background="@color/bg_0052" android:layout_width="fill_parent" android:layout_height="150.0dip">
+                            <TextView android:textSize="@dimen/font_small" android:textColor="@color/font_0002" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="You are about to pay" android:fontFamily="@font/gcash_font_body_regular" />
+                            <TextView android:textSize="@dimen/font_large" android:textColor="@color/font_0002" android:id="@id/txt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:fontFamily="@font/gcash_font_header_bold" />
+                            <View android:background="@color/bg_0009" android:layout_width="150.0dip" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+                            <TextView android:textSize="@dimen/font_x_large" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/movieTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:fontFamily="@font/gcash_font_body_regular" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:id="@id/codeValidWrapper" android:background="@color/bg_0050" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Promo Code Valid" android:fontFamily="@font/gcash_font_header_bold" />
+                            <ImageView android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_gmovies_promocode_verified" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/bg_0009" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" android:layout_below="@id/wrapperGmoviesConfirmation">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:weightSum="2.0">
+                                <TextView android:textSize="@dimen/font_small" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Cinema" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_body_regular" />
+                                <TextView android:textSize="@dimen/font_small" android:gravity="end" android:id="@id/movieCinema" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Movie Title" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:weightSum="2.0">
+                                <TextView android:textSize="@dimen/font_small" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Seat No/s" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_body_regular" />
+                                <TextView android:textSize="@dimen/font_small" android:gravity="end" android:id="@id/seatNo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:weightSum="2.0">
+                                <TextView android:textSize="@dimen/font_small" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Ticket Price" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_body_regular" />
+                                <TextView android:textSize="@dimen/font_small" android:gravity="end" android:id="@id/ticketPrice" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:weightSum="2.0">
+                                <TextView android:textSize="@dimen/font_small" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Convenience Fee (per ticket)" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_body_regular" />
+                                <TextView android:textSize="@dimen/font_small" android:gravity="end" android:id="@id/convinienceFee" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Php 20.00" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:weightSum="2.0">
+                                <TextView android:textSize="@dimen/font_small" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Ticket Count" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_body_regular" />
+                                <TextView android:textSize="@dimen/font_small" android:gravity="end" android:id="@id/totalTicket" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/discountWrapper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:weightSum="2.0">
+                                <TextView android:textSize="@dimen/font_small" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="Discount" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_body_regular" />
+                                <TextView android:textSize="@dimen/font_small" android:gravity="end" android:id="@id/tvDiscount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                            </LinearLayout>
+                            <include android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@layout/inc_hr" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:weightSum="2.0">
+                                <TextView android:textSize="@dimen/font_small" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="TOTAL" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_body_regular" />
+                                <TextView android:textSize="@dimen/font_small" android:gravity="end" android:id="@id/tvTotal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/gcash_font_header_bold" />
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/font_small" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:hint="Email receipt to" android:fontFamily="@font/gcash_font_body_regular" />
+                            <TextView android:textSize="@dimen/font_small" android:layout_gravity="center" android:id="@id/email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/gcash_font_header_bold" />
+                            <TextView android:textSize="@dimen/gcash_font_body_regular" android:textColor="@color/font_0002" android:gravity="center" android:id="@id/btn_bookmovies_confirm" android:background="@drawable/bg_0004" android:paddingTop="@dimen/btn_01_padding_top" android:paddingBottom="@dimen/btn_01_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="CONFIRM" android:layout_centerHorizontal="true" android:fontFamily="@font/gcash_font_header_bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+                <include android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true" layout="@layout/inc_gmovies_poweredby" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,23 @@
+.class public interface abstract Lcom/inmobi/media/o2$d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/inmobi/media/o2;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "d"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Lcom/inmobi/commons/core/configs/Config;)V
+    .param p1    # Lcom/inmobi/commons/core/configs/Config;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+.end method
